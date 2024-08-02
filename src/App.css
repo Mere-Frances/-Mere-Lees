@@ -441,7 +441,7 @@ footer .footer--container .copyright {
   z-index: 2;
 }
 .projects-items--container .project-item--1 {
-  background-image: url(./public/images/seastay-prev.jpg);
+  background-image: url(/public/images/seastay-prev.jpg);
 }
 .projects-items--container .project-item--2 {
   background-image: url(./images/hugo-prev.jpg);
