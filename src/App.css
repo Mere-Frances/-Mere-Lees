@@ -131,7 +131,7 @@ header .header-img--container {
   justify-content: center;
   flex-direction: row;
   padding: 3rem;
-  background-image: url(./images/me-cover-large.jpg);
+  background-image: url(../public/images/me-cover-large.jpg);
   background-size: cover;
   width: 80%;
   height: 100%;
@@ -144,7 +144,7 @@ header .header-img--container {
   flex-direction: row;
   padding: 3rem;
   height: 60vh;
-  background-image: url(./images/breaker.jpg);
+  background-image: url(../public/images/breaker.jpg);
   background-size: cover;
   background-position: right;
 }
@@ -209,15 +209,15 @@ header .header-img--container {
   transition: filter 0.3s ease;
 }
 .main-links--container .graphic-designs:before {
-  background-image: url(./images/graphics.jpg);
+  background-image: url(../public/images/graphics.jpg);
   background-size: cover;
 }
 .main-links--container .web-designs:before {
-  background-image: url(./images/web.jpg);
+  background-image: url(../public/images/web.jpg);
   background-size: cover;
 }
 .main-links--container .blog:before {
-  background-image: url(./images/blog.jpg);
+  background-image: url(../public/images/blog.jpg);
   background-size: cover;
 }
 .main-links--container .graphic-designs:hover:before,
@@ -292,7 +292,7 @@ header .header-img--container {
   grid-area: 2/1/3/3;
 }
 .latest-projects--container .latest-project--box .prev-one {
-  background-image: url(./images/seastay-prev.jpg);
+  background-image: url(../public/images/seastay-prev.jpg);
   background-size: cover;
   filter: grayscale(100%);
   transition: all 0.2s ease-in-out;
@@ -300,7 +300,7 @@ header .header-img--container {
   height: 100%;
 }
 .latest-projects--container .latest-project--box .prev-two {
-  background-image: url(./images/hugo-prev.jpg);
+  background-image: url(../public/images/hugo-prev.jpg);
   background-size: cover;
   filter: grayscale(100%);
   transition: all 0.2s ease-in-out;
@@ -444,25 +444,25 @@ footer .footer--container .copyright {
   background-image: url(../public/images/seastay-prev.jpg);
 }
 .projects-items--container .project-item--2 {
-  background-image: url(./images/hugo-prev.jpg);
+  background-image: url(../public/images/hugo-prev.jpg);
 }
 .projects-items--container .project-item--3 {
-  background-image: url(./images/goldenbay-prev.jpg);
+  background-image: url(../public/images/goldenbay-prev.jpg);
 }
 .projects-items--container .project-item--4 {
-  background-image: url(./images/amy-prev.jpg);
+  background-image: url(../public/images/amy-prev.jpg);
 }
 .projects-items--container .project-item--5 {
-  background-image: url(./images/cupcake-prev.jpg);
+  background-image: url(../public/images/cupcake-prev.jpg);
 }
 .projects-items--container .project-item--6 {
-  background-image: url(./images/loosies-prev.jpg);
+  background-image: url(../public/images/loosies-prev.jpg);
 }
 .projects-items--container .project-item--7 {
-  background-image: url(./images/bigbird-prev.jpg);
+  background-image: url(../public/images/bigbird-prev.jpg);
 }
 .projects-items--container .project-item--8 {
-  background-image: url(./images/lego-prev.jpg);
+  background-image: url(../public/images/lego-prev.jpg);
 }
 .projects-items--container .project-item:hover {
   box-shadow: none;
@@ -529,7 +529,7 @@ footer .footer--container .copyright {
 }
 .blog-container .blog-item--container .blog-content--titles .pinned-image {
   height: 60vh;
-  background-image: url(./images/myblog.jpg);
+  background-image: url(../public/images/myblog.jpg);
 }
 .blog-container .blog-item--container .blog-content--text {
   display: flex;
@@ -588,7 +588,7 @@ footer .footer--container .copyright {
   gap: 2rem;
 }
 .graphics-header--container .graphics-header--text .graphics-scribble--text .scribble-text {
-  background-image: url(./images/hand-scribble.png);
+  background-image: url(../public/images/hand-scribble.png);
   background-size: cover;
   width: 50%;
   height: 20vh;
@@ -598,7 +598,7 @@ footer .footer--container .copyright {
   padding: 0 3rem 0 0;
 }
 .graphics-header--container .graphics-header--image {
-  background-image: url(./images/pins.png);
+  background-image: url(../public/images/pins.png);
   background-size: cover;
   width: 50%;
   height: 70vh;
@@ -619,40 +619,40 @@ footer .footer--container .copyright {
   background-position: center;
 }
 .projects-items--container .graphic-item:nth-child(1) {
-  background-image: url(./images/scrap-one.jpg);
+  background-image: url(../public/images/scrap-one.jpg);
 }
 .projects-items--container .graphic-item:nth-child(1) .graphic-item--image {
-  background-image: url(./images/hoodie-1-front.png);
+  background-image: url(../public/images/hoodie-1-front.png);
 }
 .projects-items--container .graphic-item:nth-child(1) .graphic-item--image:hover {
-  background-image: url(./images/hoodie-1-back.jpg);
+  background-image: url(../public/images/hoodie-1-back.jpg);
 }
 .projects-items--container .graphic-item:nth-child(2) {
-  background-image: url(./images/scrap-two.jpg);
+  background-image: url(../public/images/scrap-two.jpg);
 }
 .projects-items--container .graphic-item:nth-child(2) .graphic-item--image {
-  background-image: url(./images/hoodie-2-front.jpg);
+  background-image: url(../public/images/hoodie-2-front.jpg);
 }
 .projects-items--container .graphic-item:nth-child(2) .graphic-item--image:hover {
-  background-image: url(./images/hoodie-2-back.jpg);
+  background-image: url(../public/images/hoodie-2-back.jpg);
 }
 .projects-items--container .graphic-item:nth-child(3) {
-  background-image: url(./images/scrap-three.jpg);
+  background-image: url(../public/images/scrap-three.jpg);
 }
 .projects-items--container .graphic-item:nth-child(3) .graphic-item--image {
-  background-image: url(./images/top-1-front.jpg);
+  background-image: url(../public/images/top-1-front.jpg);
 }
 .projects-items--container .graphic-item:nth-child(3) .graphic-item--image:hover {
-  background-image: url(./images/top-1-back.jpg);
+  background-image: url(../public/images/top-1-back.jpg);
 }
 .projects-items--container .graphic-item:nth-child(4) {
-  background-image: url(./images/scrap-four.jpg);
+  background-image: url(../public/images/scrap-four.jpg);
 }
 .projects-items--container .graphic-item:nth-child(4) .graphic-item--image {
-  background-image: url(./images/top-2-back.jpg);
+  background-image: url(../public/images/top-2-back.jpg);
 }
 .projects-items--container .graphic-item:nth-child(4) .graphic-item--image:hover {
-  background-image: url(./images/top-2-front.jpg);
+  background-image: url(../public/images/top-2-front.jpg);
 }
 .projects-items--container .graphic-item--image {
   background-size: cover;
@@ -669,7 +669,7 @@ footer .footer--container .copyright {
     gap: 3rem;
   }
   header .header-img--container {
-    background-image: url(./images/me-cover-med.jpg);
+    background-image: url(../public/images/me-cover-med.jpg);
   }
   header .header-text--container {
     width: 30%;
@@ -756,7 +756,7 @@ footer .footer--container .copyright {
   }
   header .header-img--container {
     width: 100%;
-    background-image: url(./images/me-cover-large.jpg);
+    background-image: url(../public/images/me-cover-large.jpg);
   }
   .page-breaker--container .page-breaker--content .page-breaker--text {
     padding: 10rem 0 0 0;

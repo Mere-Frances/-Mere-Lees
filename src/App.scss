@@ -175,7 +175,7 @@ header {
 
     .header-img--container {
         @include main-box-sizing;
-        background-image: url(./images/me-cover-large.jpg);
+        background-image: url(../public/images/me-cover-large.jpg);
         background-size: cover;
         width: 80%;
         height: 100%;
@@ -185,7 +185,7 @@ header {
 .page-breaker--container {
     @include main-box-sizing;
     height: 60vh;
-    background-image: url(./images/breaker.jpg);
+    background-image: url(../public/images/breaker.jpg);
     background-size: cover;
     background-position: right;
 
@@ -244,21 +244,21 @@ header {
 
     .graphic-designs {
         &:before {
-            background-image: url(./images/graphics.jpg);
+            background-image: url(../public/images/graphics.jpg);
             background-size: cover;
         }
     }
 
     .web-designs {
         &:before {
-            background-image: url(./images/web.jpg);
+            background-image: url(../public/images/web.jpg);
             background-size: cover;
         }
     }
 
     .blog {
         &:before {
-            background-image: url(./images/blog.jpg);
+            background-image: url(../public/images/blog.jpg);
             background-size: cover;
         }
     }
@@ -326,7 +326,7 @@ header {
         }
 
         .prev-one {
-            background-image: url(./images/seastay-prev.jpg);
+            background-image: url(../public/images/seastay-prev.jpg);
             background-size: cover;
             filter: grayscale(100%);
             transition: all .2s ease-in-out;
@@ -335,7 +335,7 @@ header {
         }
 
         .prev-two {
-            background-image: url(./images/hugo-prev.jpg);
+            background-image: url(../public/images/hugo-prev.jpg);
             background-size: cover;
             filter: grayscale(100%);
             transition: all .2s ease-in-out;
@@ -474,31 +474,31 @@ footer {
     }
 
     .project-item--2 {
-        background-image: url(./images/hugo-prev.jpg);
+        background-image: url(../public/images/hugo-prev.jpg);
     }
 
     .project-item--3 {
-        background-image: url(./images/goldenbay-prev.jpg);
+        background-image: url(../public/images/goldenbay-prev.jpg);
     }
 
     .project-item--4 {
-        background-image: url(./images/amy-prev.jpg);
+        background-image: url(../public/images/amy-prev.jpg);
     }
 
     .project-item--5 {
-        background-image: url(./images/cupcake-prev.jpg);
+        background-image: url(../public/images/cupcake-prev.jpg);
     }
 
     .project-item--6 {
-        background-image: url(./images/loosies-prev.jpg);
+        background-image: url(../public/images/loosies-prev.jpg);
     }
 
     .project-item--7 {
-        background-image: url(./images/bigbird-prev.jpg);
+        background-image: url(../public/images/bigbird-prev.jpg);
     }
 
     .project-item--8 {
-        background-image: url(./images/lego-prev.jpg);
+        background-image: url(../public/images/lego-prev.jpg);
     }
 
     .project-item:hover {
@@ -560,7 +560,7 @@ footer {
 
             .pinned-image {
                 height: 60vh;
-                background-image: url(./images/myblog.jpg);
+                background-image: url(../public/images/myblog.jpg);
             }
         }
 
@@ -609,7 +609,7 @@ footer {
             width: 100%;
             gap: 2rem;
             .scribble-text {
-                background-image: url(./images/hand-scribble.png);
+                background-image: url(../public/images/hand-scribble.png);
                 background-size: cover;
                 width: 50%;
                 height: 20vh;
@@ -622,7 +622,7 @@ footer {
     }
 
     .graphics-header--image {
-        background-image: url(./images/pins.png);
+        background-image: url(../public/images/pins.png);
         background-size: cover;
         width: 50%;
         height: 70vh;
@@ -642,39 +642,39 @@ footer {
     }
 
     .graphic-item:nth-child(1) {
-        background-image: url(./images/scrap-one.jpg);
+        background-image: url(../public/images/scrap-one.jpg);
         .graphic-item--image{
-            background-image: url(./images/hoodie-1-front.png);
+            background-image: url(../public/images/hoodie-1-front.png);
         }
         .graphic-item--image:hover{
-            background-image: url(./images/hoodie-1-back.jpg);
+            background-image: url(../public/images/hoodie-1-back.jpg);
         }
     }
     .graphic-item:nth-child(2) {
-        background-image: url(./images/scrap-two.jpg);
+        background-image: url(../public/images/scrap-two.jpg);
         .graphic-item--image{
-            background-image: url(./images/hoodie-2-front.jpg);
+            background-image: url(../public/images/hoodie-2-front.jpg);
         }
         .graphic-item--image:hover{
-            background-image: url(./images/hoodie-2-back.jpg);
+            background-image: url(../public/images/hoodie-2-back.jpg);
         }
     }
     .graphic-item:nth-child(3) {
-        background-image: url(./images/scrap-three.jpg);
+        background-image: url(../public/images/scrap-three.jpg);
         .graphic-item--image{
-            background-image: url(./images/top-1-front.jpg);
+            background-image: url(../public/images/top-1-front.jpg);
         }
         .graphic-item--image:hover {
-            background-image: url(./images/top-1-back.jpg);
+            background-image: url(../public/images/top-1-back.jpg);
         }
     }
     .graphic-item:nth-child(4) {
-        background-image: url(./images/scrap-four.jpg);
+        background-image: url(../public/images/scrap-four.jpg);
         .graphic-item--image{
-            background-image: url(./images/top-2-back.jpg);
+            background-image: url(../public/images/top-2-back.jpg);
         }
         .graphic-item--image:hover {
-            background-image: url(./images/top-2-front.jpg);
+            background-image: url(../public/images/top-2-front.jpg);
         }
     }
 
@@ -698,7 +698,7 @@ footer {
         gap: 3rem;
 
         .header-img--container {
-            background-image: url(./images/me-cover-med.jpg);
+            background-image: url(../public/images/me-cover-med.jpg);
         }
     }
 
@@ -806,7 +806,7 @@ footer {
 
         .header-img--container {
             width: 100%;
-            background-image: url(./images/me-cover-large.jpg);
+            background-image: url(../public/images/me-cover-large.jpg);
         }
     }
 
