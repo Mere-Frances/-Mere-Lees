@@ -1,0 +1,42 @@
+[
+    {
+        "name": "SeaStay",
+        "description": "Accommodation",
+        "url": "https://sea-stay.vercel.app/"
+    },
+    {
+        "name": "Hugo",
+        "description": "Print shop",
+        "url": "https://hugo-designs.vercel.app/"
+    },
+    {
+        "name": "Friends of",
+        "description": "Golden Bay",
+        "url": "https://friends-of-golden-bay.vercel.app/"
+    },
+    {
+        "name": "Amy's",
+        "description": "Beauty Salon",
+        "url": ""
+    },
+    {
+        "name": "Toronto",
+        "description": "Cupcake",
+        "url": ""
+    },
+    {
+        "name": "Loosies",
+        "description": "Superette",
+        "url": "https://loosies-superette.vercel.app/"
+    },
+    {
+        "name": "Big",
+        "description": "Bird",
+        "url": ""
+    },
+    {
+        "name": "Lego Star Wars",
+        "description": "Minifig Catalog",
+        "url": "https://lego-star-wars-minifigs.vercel.app/"
+    }
+]
