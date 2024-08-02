@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Header from '../components/Header'
 
 const HomePage = () => {
@@ -10,15 +11,15 @@ const HomePage = () => {
       </div>
 
       <div className="main-links--container">
-        <a href="./graphics.html" className="main-link--box graphic-designs">
-            <h3>Graphic Designs</h3>
-        </a>
-        <a href="./projects.html" className="main-link--box web-designs">
-            <h3>Web Designs</h3>
-        </a>
-        <a href="./blog.html" className="main-link--box blog">
-            <h3>Blog</h3>
-        </a>
+        <Link to="/graphics" className="main-link--box graphic-designs">
+          <h3>Graphic Designs</h3>
+        </Link>
+        <Link to="/projects" className="main-link--box web-designs">
+          <h3>Web Designs</h3>
+        </Link>
+        <Link to="/blog" className="main-link--box blog">
+          <h3>Blog</h3>
+        </Link>
       </div>
 
       <div className="page-break--line">
