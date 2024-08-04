@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Header from '../components/Header'
+import Skills from '../components/Skills';
 
 const HomePage = () => {
   return (
@@ -25,6 +26,8 @@ const HomePage = () => {
       <div className="page-break--line">
         <span/>
       </div>
+
+      <Skills/>
 
       <div className="title-breaker--container">
         <h2>Latest Projects</h2>

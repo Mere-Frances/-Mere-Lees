@@ -298,6 +298,57 @@ header {
     }
 }
 
+.skills-container{
+    height: 20vh;
+    width: 100%;
+    padding: 5rem;
+    .skill-file{
+        display:flex;
+        align-items:center;
+        flex-direction:column;
+        width:15rem;
+        .skill-file-container{
+            position:relative;
+            height: 15rem;
+            width:15rem;
+            .folder-back{
+                position:relative;
+                height:inherit;
+                width:inherit;
+                background-image: url(../public/images/folder-back.png);
+                background-size: cover;
+            }
+            .folder-front{
+                position:relative;
+                bottom:15em;
+                left:.2rem;
+                position:relative;
+                height:inherit;
+                width:inherit;
+                background-image: url(../public/images/folder-front.png);
+                background-size: cover;
+                z-index: 10;
+            }
+            .skill-file-icon{
+                position:relative;
+                bottom:28em;
+                left: 3em;
+                height:70%;
+                width:50%;
+                background-image: url(../public/images/folder-page-react.png);
+                background-size: cover;
+                z-index:5;
+                transition:all .5s ease;
+            }
+        }
+        .skill-file-container:hover > .skill-file-icon{
+            transform: rotate(10deg);
+            bottom:30em;
+            left:5em;
+        }
+    }
+}
+
 .latest-projects--container {
     @include main-box-sizing;
     gap: 5rem;
