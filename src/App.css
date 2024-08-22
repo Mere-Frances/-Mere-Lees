@@ -260,20 +260,25 @@ header .header-img--container {
 }
 
 .skills-container {
-  height: 20vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(5, 1fr);
+  height: 100vh;
   width: 100%;
   padding: 5rem;
 }
 .skills-container .skill-file {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  width: 15rem;
+  width: 100%;
 }
 .skills-container .skill-file .skill-file-container {
   position: relative;
   height: 15rem;
-  width: 15rem;
+  width: 10rem;
 }
 .skills-container .skill-file .skill-file-container .folder-back {
   position: relative;
@@ -296,10 +301,9 @@ header .header-img--container {
 .skills-container .skill-file .skill-file-container .skill-file-icon {
   position: relative;
   bottom: 28em;
-  left: 3em;
-  height: 70%;
-  width: 50%;
-  background-image: url(../public/images/folder-page-react.png);
+  left: 2em;
+  height: 55%;
+  width: 60%;
   background-size: cover;
   z-index: 5;
   transition: all 0.5s ease;
@@ -492,27 +496,33 @@ footer .footer--container .copyright {
   z-index: 2;
 }
 .projects-items--container .project-item--1 {
-  background-image: url(../public/images/seastay-prev.jpg);
+  background-image: url(../public/images/workout-prev.jpg);
 }
 .projects-items--container .project-item--2 {
-  background-image: url(../public/images/hugo-prev.jpg);
+  background-image: url(../public/images/seastay-prev.jpg);
 }
 .projects-items--container .project-item--3 {
-  background-image: url(../public/images/goldenbay-prev.jpg);
+  background-image: url(../public/images/hugo-prev.jpg);
 }
 .projects-items--container .project-item--4 {
-  background-image: url(../public/images/amy-prev.jpg);
+  background-image: url(../public/images/goldenbay-prev.jpg);
 }
 .projects-items--container .project-item--5 {
-  background-image: url(../public/images/cupcake-prev.jpg);
+  background-image: url(../public/images/pokedex-prev.jpg);
 }
 .projects-items--container .project-item--6 {
-  background-image: url(../public/images/loosies-prev.jpg);
+  background-image: url(../public/images/amy-prev.jpg);
 }
 .projects-items--container .project-item--7 {
-  background-image: url(../public/images/bigbird-prev.jpg);
+  background-image: url(../public/images/cupcake-prev.jpg);
 }
 .projects-items--container .project-item--8 {
+  background-image: url(../public/images/loosies-prev.jpg);
+}
+.projects-items--container .project-item--9 {
+  background-image: url(../public/images/bigbird-prev.jpg);
+}
+.projects-items--container .project-item--10 {
   background-image: url(../public/images/lego-prev.jpg);
 }
 .projects-items--container .project-item:hover {

@@ -1,5 +1,10 @@
 [
     {
+        "name": "Workout",
+        "description": "App",
+        "url": "https://frontend-boilerplate-cyan.vercel.app/"
+    },
+    {
         "name": "SeaStay",
         "description": "Accommodation",
         "url": "https://sea-stay.vercel.app/"
@@ -13,6 +18,11 @@
         "name": "Friends of",
         "description": "Golden Bay",
         "url": "https://friends-of-golden-bay.vercel.app/"
+    },
+    {
+        "name": "The",
+        "description": "Pokedex",
+        "url": "https://pokedev-api.vercel.app/"
     },
     {
         "name": "Amy's",
