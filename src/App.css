@@ -535,6 +535,72 @@ footer .footer--container .copyright {
   display: flex;
 }
 
+.project-detail--page {
+  margin-top: 6rem;
+}
+.project-detail--page .project-content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 3rem;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 5rem;
+  width: 100%;
+}
+.project-detail--page .project-content-container .project-left-border {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  height: 230vh;
+}
+.project-detail--page .project-content-container .project-left-border span {
+  display: flex;
+  width: 3px;
+  opacity: 50%;
+}
+.project-detail--page .project-content-container .project-left-border .vertical-span-one {
+  height: 70%;
+  background-color: #292929;
+}
+.project-detail--page .project-content-container .project-left-border .vertical-span-two {
+  height: 30%;
+  background-color: #292929;
+}
+.project-detail--page .project-content-container .project-content-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 3rem;
+}
+.project-detail--page .project-content-container .project-content-grid .project-grid-item-1 {
+  grid-area: 1/1/2/2;
+}
+.project-detail--page .project-content-container .project-content-grid .project-grid-item-2 {
+  grid-area: 2/1/6/2;
+}
+.project-detail--page .project-content-container .project-content-grid .project-grid-item-3 {
+  grid-area: 6/1/9/2;
+}
+.project-detail--page .project-content-container .project-content-grid .project-grid-item-4 {
+  grid-area: 1/2/4/3;
+}
+.project-detail--page .project-content-container .project-content-grid .project-grid-item-4 img {
+  width: 100%;
+}
+.project-detail--page .project-content-container .project-content-grid .project-grid-item-5 {
+  grid-area: 4/2/8/3;
+}
+.project-detail--page .project-content-container .project-content-grid .project-grid-item-6 {
+  grid-area: 8/2/9/3;
+}
+.project-detail--page .project-content-container .project-content-grid .project-grid-item img {
+  width: 100%;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
 .blog-container {
   display: flex;
   align-items: center;

@@ -1,52 +1,95 @@
 [
     {
+        "id": 1,
         "name": "Workout",
         "description": "App",
-        "url": "https://frontend-boilerplate-cyan.vercel.app/"
+        "url": "https://frontend-boilerplate-cyan.vercel.app/",
+        "mockup": "./images/-mockup.png",
+        "imageLarge": "./images/-large.jpg",
+        "imageMed": "./images/-med.jpg",
+        "imageSmall": "./images/-small.jpg"
     },
     {
+        "id": 2,
         "name": "SeaStay",
         "description": "Accommodation",
-        "url": "https://sea-stay.vercel.app/"
+        "url": "https://sea-stay.vercel.app/",
+        "mockup": "./images/seastay-mockup.png",
+        "imageLarge": "./images/seastay-large.jpg",
+        "imageMed": "./images/seastay-med.jpg",
+        "imageSmall": "./images/seastay-small.jpg"
     },
     {
+        "id": 3,
         "name": "Hugo",
         "description": "Print shop",
-        "url": "https://hugo-designs.vercel.app/"
+        "url": "https://hugo-designs.vercel.app/",
+        "mockup": "./images/-mockup.png",
+        "imageLarge": "./images/-large.jpg",
+        "imageMed": "./images/-med.jpg",
+        "imageSmall": "./images/-small.jpg"
     },
     {
         "name": "Friends of",
         "description": "Golden Bay",
-        "url": "https://friends-of-golden-bay.vercel.app/"
+        "url": "https://friends-of-golden-bay.vercel.app/",
+        "mockup": "./images/-mockup.png",
+        "imageLarge": "./images/-large.jpg",
+        "imageMed": "./images/-med.jpg",
+        "imageSmall": "./images/-small.jpg"
     },
     {
         "name": "The",
         "description": "Pokedex",
-        "url": "https://pokedev-api.vercel.app/"
+        "url": "https://pokedev-api.vercel.app/",
+        "mockup": "./images/-mockup.png",
+        "imageLarge": "./images/-large.jpg",
+        "imageMed": "./images/-med.jpg",
+        "imageSmall": "./images/-small.jpg"
     },
     {
         "name": "Amy's",
         "description": "Beauty Salon",
-        "url": ""
+        "url": "",
+        "mockup": "./images/-mockup.png",
+        "imageLarge": "./images/-large.jpg",
+        "imageMed": "./images/-med.jpg",
+        "imageSmall": "./images/-small.jpg"
     },
     {
         "name": "Toronto",
         "description": "Cupcake",
-        "url": ""
+        "url": "",
+        "mockup": "./images/-mockup.png",
+        "imageLarge": "./images/-large.jpg",
+        "imageMed": "./images/-med.jpg",
+        "imageSmall": "./images/-small.jpg"
     },
     {
         "name": "Loosies",
         "description": "Superette",
-        "url": "https://loosies-superette.vercel.app/"
+        "url": "https://loosies-superette.vercel.app/",
+        "mockup": "./images/-mockup.png",
+        "imageLarge": "./images/-large.jpg",
+        "imageMed": "./images/-med.jpg",
+        "imageSmall": "./images/-small.jpg"
     },
     {
         "name": "Big",
         "description": "Bird",
-        "url": ""
+        "url": "",
+        "mockup": "./images/-mockup.png",
+        "imageLarge": "./images/-large.jpg",
+        "imageMed": "./images/-med.jpg",
+        "imageSmall": "./images/-small.jpg"
     },
     {
         "name": "Lego Star Wars",
         "description": "Minifig Catalog",
-        "url": "https://lego-star-wars-minifigs.vercel.app/"
+        "url": "https://lego-star-wars-minifigs.vercel.app/",
+        "mockup": "./images/-mockup.png",
+        "imageLarge": "./images/-large.jpg",
+        "imageMed": "./images/-med.jpg",
+        "imageSmall": "./images/-small.jpg"
     }
 ]

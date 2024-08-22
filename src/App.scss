@@ -580,6 +580,71 @@ footer {
     }
 }
 
+// ---------------------------------INDIVIDUAL PROJECT
+
+.project-detail--page{
+    margin-top: 6rem;
+    .project-content-container{
+        @include main-box-sizing;
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 5rem;
+        width: 100%;
+        .project-left-border{
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+            height: 230vh;
+            span{
+                display: flex;
+                width: 3px;
+                opacity: 50%;
+            }
+            .vertical-span-one{
+                height: 70%;
+                background-color: $primary-color;
+            }
+            .vertical-span-two{
+                height: 30%;
+                background-color: $primary-color;
+            }
+        }
+        .project-content-grid{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            gap: 3rem;
+            .project-grid-item-1{
+                grid-area: 1 / 1 / 2 / 2;
+            }
+            .project-grid-item-2{
+                grid-area: 2 / 1 / 6 / 2;
+            }
+            .project-grid-item-3{
+                grid-area: 6 / 1 / 9 / 2;
+            }
+            .project-grid-item-4{
+                grid-area: 1 / 2 / 4 / 3;
+                img{
+                    width: 100%;
+                }
+            }
+            .project-grid-item-5{
+                grid-area: 4 / 2 / 8 / 3;
+            }
+            .project-grid-item-6{
+                grid-area: 8 / 2 / 9 / 3;
+            }
+            .project-grid-item img{
+                width: 100%;
+                @include shadow;
+            }
+        }
+    }
+}
+
+
 
 // ---------------------------------BLOG PAGE 3
 
