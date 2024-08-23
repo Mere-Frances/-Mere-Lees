@@ -595,6 +595,7 @@ footer {
             flex-direction: column;
             gap: 5rem;
             height: 230vh;
+            align-items: center;
             span{
                 display: flex;
                 width: 3px;
@@ -605,38 +606,67 @@ footer {
                 background-color: $primary-color;
             }
             .vertical-span-two{
-                height: 30%;
+                height: 50%;
                 background-color: $primary-color;
             }
         }
-        .project-content-grid{
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(8, 1fr);
-            gap: 3rem;
+        .project-content-grid-1, .project-content-grid-2{
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+            justify-content: flex-end;
+            width: 50%;
             .project-grid-item-1{
-                grid-area: 1 / 1 / 2 / 2;
-            }
-            .project-grid-item-2{
-                grid-area: 2 / 1 / 6 / 2;
-            }
-            .project-grid-item-3{
-                grid-area: 6 / 1 / 9 / 2;
-            }
-            .project-grid-item-4{
-                grid-area: 1 / 2 / 4 / 3;
-                img{
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                width: 100%;
+                .viewing-button{
                     width: 100%;
+                    align-items: flex-end;
+                    display: flex; 
                 }
             }
-            .project-grid-item-5{
-                grid-area: 4 / 2 / 8 / 3;
+            .project-grid-item-2 img{
+                margin-top: 10rem;
+                width: 100%;
             }
-            .project-grid-item-6{
-                grid-area: 8 / 2 / 9 / 3;
+            .project-grid-item-4 img{
+                width: 100%;
             }
-            .project-grid-item img{
+            .project-grid-item-3{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 70%;
+                }
+            }
+        }
+    }
+    .project-navigation-container{
+        height: 30vh;
+        @include main-box-sizing;
+        flex-direction: row;
+        justify-content: space-between;
+        .page-nav-arrows{
+            display: flex;
+            align-items: center;
+            width: 30%;
+            padding-left: 5rem;
+            height: 100%;
+            gap: 5rem;
+            .previous-arrow, .next-arrow{
+                cursor: pointer;
+            }
+        }
+        .project-overlap-img{
+            position: relative;
+            width: 45%;
+            img{
+                position: relative;
+                bottom: 20vh;
+                right: 10rem;
                 width: 100%;
                 @include shadow;
             }

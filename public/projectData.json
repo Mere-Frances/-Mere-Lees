@@ -17,7 +17,9 @@
         "mockup": "./images/seastay-mockup.png",
         "imageLarge": "./images/seastay-large.jpg",
         "imageMed": "./images/seastay-med.jpg",
-        "imageSmall": "./images/seastay-small.jpg"
+        "imageSmall": "./images/seastay-small.jpg",
+        "biographyMajor": "SeaStay was a fictional assingment to replicate a collaborative project with Tourism New Zealand, aiming to create a dedicated platform for finding and booking beachside accommodations across New Zealand. The website is designed to promote sustainable and authentic tourism while highlighting the beauty and diversity of New Zealand's coastal regions. By offering refined search filters, detailed location information, and user ratings, SeaStay provides a streamlined, user-friendly experience that not only enhances the booking process for travelers but also supports local tourism businesses. The site reflects a clean, modern design that aligns with TourismNZ's brand identity, fostering increased traffic and awareness for local tourism initiatives.",
+        "biographyMinor": "Through the SeaStay project, I gained valuable experience in several key areas of web development. I learned to effectively debug JavaScript code to eliminate errors, integrate and extend JavaScript libraries with third-party plugins, and use a variety of production tools to streamline development. I honed my skills in manipulating the DOM with raw JavaScript and libraries, implementing UI component functionality, and maintaining consistent code quality by adhering to a style guide and testing against industry standards. The project also reinforced the importance of thorough planning, including defining deliverables based on use cases, setting critical deadlines, and writing detailed proposals. Analyzing variations from the planned milestones during the project's execution provided important lessons in project management and adaptability."
     },
     {
         "id": 3,
@@ -27,69 +29,92 @@
         "mockup": "./images/-mockup.png",
         "imageLarge": "./images/-large.jpg",
         "imageMed": "./images/-med.jpg",
-        "imageSmall": "./images/-small.jpg"
+        "imageSmall": "./images/-small.jpg",
+        "biographyMajor": "",
+        "biographyMinor": ""
     },
     {
+        "id": 4,
         "name": "Friends of",
         "description": "Golden Bay",
         "url": "https://friends-of-golden-bay.vercel.app/",
-        "mockup": "./images/-mockup.png",
-        "imageLarge": "./images/-large.jpg",
-        "imageMed": "./images/-med.jpg",
-        "imageSmall": "./images/-small.jpg"
+        "mockup": "./images/fogb-mockup.png",
+        "imageLarge": "./images/fogb-large.jpg",
+        "imageMed": "./images/fogb-med.jpg",
+        "imageSmall": "./images/fogb-small.jpg",
+        "biographyMajor": "The Friends of Golden Bay (FOGB) project involved redesigning their existing website to better communicate their mission, enhance functionality, and improve usability across devices. The goal was to create a modern and representative site that aligns with FOGB's brand identity, encourages new participants to join their cause, and maintains engagement with current users. The redesign was informed by extensive research into the existing site's usability and user experience, identifying pain points and opportunities for improvement. The resulting website effectively communicates FOGB's mission and impact on the Golden Bay environment.",
+        "biographyMinor": "Throughout the Friends of Golden Bay (FOGB) project, I gained valuable insights and experience in various aspects of web development and design. I learned to identify and consider the implications of the Treaty of Waitangi in project planning, ensuring cultural respect and alignment. I implemented visual design principles and applied formative UX research techniques to inform initial design concepts, ensuring a user-centered approach. Additionally, I tested design prototypes using collaborative tools, produced CSS with a CSS processor, and utilized advanced HTML, CSS, and introductory JavaScript to create interactive interfaces. The project involved developing usability standards, employing appropriate testing methodologies, and consistently applying a selected CSS methodology. Working within a group, I contributed to achieving common goals, presented the completed project to a group, and adhered to standard copyright conventions, reinforcing the importance of ethical practices in web development."
     },
     {
-        "name": "The",
+        "id": 5,
+        "name": "The Pokedex",
         "description": "Pokedex",
         "url": "https://pokedev-api.vercel.app/",
-        "mockup": "./images/-mockup.png",
+        "mockup": "./images/pokemon-mockup.png",
         "imageLarge": "./images/-large.jpg",
         "imageMed": "./images/-med.jpg",
-        "imageSmall": "./images/-small.jpg"
+        "imageSmall": "./images/-small.jpg",
+        "biographyMajor": "",
+        "biographyMinor": ""
     },
     {
-        "name": "Amy's",
+        "id": 6,
+        "name": "Amy's Beauty Salon",
         "description": "Beauty Salon",
         "url": "",
-        "mockup": "./images/-mockup.png",
+        "mockup": "./images/amy-mockup.png",
         "imageLarge": "./images/-large.jpg",
         "imageMed": "./images/-med.jpg",
-        "imageSmall": "./images/-small.jpg"
+        "imageSmall": "./images/-small.jpg",
+        "biographyMajor": "",
+        "biographyMinor": ""
     },
     {
-        "name": "Toronto",
+        "id": 7,
+        "name": "Toronto Cupcake",
         "description": "Cupcake",
         "url": "",
         "mockup": "./images/-mockup.png",
         "imageLarge": "./images/-large.jpg",
         "imageMed": "./images/-med.jpg",
-        "imageSmall": "./images/-small.jpg"
+        "imageSmall": "./images/-small.jpg",
+        "biographyMajor": "",
+        "biographyMinor": ""
     },
     {
-        "name": "Loosies",
+        "id": 8,
+        "name": "Loosies Superette",
         "description": "Superette",
         "url": "https://loosies-superette.vercel.app/",
-        "mockup": "./images/-mockup.png",
-        "imageLarge": "./images/-large.jpg",
-        "imageMed": "./images/-med.jpg",
-        "imageSmall": "./images/-small.jpg"
+        "mockup": "./images/loosies-mockup.png",
+        "imageLarge": "./images/loosies-large.jpg",
+        "imageMed": "./images/loosies-med.jpg",
+        "imageSmall": "./images/loosies-small.jpg",
+        "biographyMajor": "This project was a collaborative effort where our group worked closely together to improve the user experience of Loosie’s primary website. The existing site lacked key information, such as service details and opening hours, and didn't visually reflect the diner's brand. Together, we addressed these issues by developing a comprehensive UX brief that documented each step of the design process, providing a solid foundation for the internal team during the development stage. Our team focused on delivering essential information to users, such as menu details and contact information, while ensuring the design accurately represented Loosie's brand and met the needs of its target audience. Throughout the project, we collaborated effectively, leveraging each other's strengths to achieve our common goal.",
+        "biographyMinor": "In this project, I developed key skills in applying formative research techniques, analyzing research results to draw meaningful insights, and making informed design decisions based on those findings. I also enhanced my abilities in prototyping and visual design, ensuring that the final product met user expectations and business goals. Working closely with my team, I learned the value of collaboration, effectively contributing to our shared objectives and supporting each other throughout the design process."
     },
     {
-        "name": "Big",
+        "id": 9,
+        "name": "Big Bird",
         "description": "Bird",
         "url": "",
-        "mockup": "./images/-mockup.png",
+        "mockup": "./images/bigbird-mockup.png",
         "imageLarge": "./images/-large.jpg",
         "imageMed": "./images/-med.jpg",
-        "imageSmall": "./images/-small.jpg"
+        "imageSmall": "./images/-small.jpg",
+        "biographyMajor": "",
+        "biographyMinor": ""
     },
     {
-        "name": "Lego Star Wars",
+        "id": 10,
+        "name": "Lego Star Wars Minifig Catalog",
         "description": "Minifig Catalog",
         "url": "https://lego-star-wars-minifigs.vercel.app/",
-        "mockup": "./images/-mockup.png",
-        "imageLarge": "./images/-large.jpg",
-        "imageMed": "./images/-med.jpg",
-        "imageSmall": "./images/-small.jpg"
+        "mockup": "./images/lego-mockup.png",
+        "imageLarge": "./images/lego-large.jpg",
+        "imageMed": "./images/lego-med.jpg",
+        "imageSmall": "./images/lego-small.jpg",
+        "biographyMajor": "",
+        "biographyMinor": ""
     }
 ]
