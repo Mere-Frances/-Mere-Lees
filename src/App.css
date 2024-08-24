@@ -259,61 +259,6 @@ header .header-img--container {
   width: 10rem;
 }
 
-.skills-container {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: repeat(5, 1fr);
-  height: 100vh;
-  width: 100%;
-  padding: 5rem;
-}
-.skills-container .skill-file {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-}
-.skills-container .skill-file .skill-file-container {
-  position: relative;
-  height: 15rem;
-  width: 10rem;
-}
-.skills-container .skill-file .skill-file-container .folder-back {
-  position: relative;
-  height: inherit;
-  width: inherit;
-  background-image: url(../public/images/folder-back.png);
-  background-size: cover;
-}
-.skills-container .skill-file .skill-file-container .folder-front {
-  position: relative;
-  bottom: 15em;
-  left: 0.2rem;
-  position: relative;
-  height: inherit;
-  width: inherit;
-  background-image: url(../public/images/folder-front.png);
-  background-size: cover;
-  z-index: 10;
-}
-.skills-container .skill-file .skill-file-container .skill-file-icon {
-  position: relative;
-  bottom: 28em;
-  left: 2em;
-  height: 55%;
-  width: 60%;
-  background-size: cover;
-  z-index: 5;
-  transition: all 0.5s ease;
-}
-.skills-container .skill-file .skill-file-container:hover > .skill-file-icon {
-  transform: rotate(10deg);
-  bottom: 30em;
-  left: 5em;
-}
-
 .latest-projects--container {
   display: flex;
   align-items: center;
@@ -474,6 +419,7 @@ footer .footer--container .copyright {
   width: 100%;
   height: 55vh;
   background-size: cover;
+  background-position: top;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.5s ease;
   cursor: pointer;
@@ -576,6 +522,9 @@ footer .footer--container .copyright {
   justify-content: flex-end;
   width: 50%;
 }
+.project-detail--page .project-content-container .project-content-grid-1 .project-grid-item, .project-detail--page .project-content-container .project-content-grid-2 .project-grid-item {
+  display: none;
+}
 .project-detail--page .project-content-container .project-content-grid-1 .project-grid-item-1, .project-detail--page .project-content-container .project-content-grid-2 .project-grid-item-1 {
   display: flex;
   flex-direction: column;
@@ -587,7 +536,10 @@ footer .footer--container .copyright {
   align-items: flex-end;
   display: flex;
 }
-.project-detail--page .project-content-container .project-content-grid-1 .project-grid-item-2 img, .project-detail--page .project-content-container .project-content-grid-2 .project-grid-item-2 img {
+.project-detail--page .project-content-container .project-content-grid-1 .hidden-project-details, .project-detail--page .project-content-container .project-content-grid-2 .hidden-project-details {
+  display: none;
+}
+.project-detail--page .project-content-container .project-content-grid-1 .project-grid-item-2 img, .project-detail--page .project-content-container .project-content-grid-1 .project-grid-item img, .project-detail--page .project-content-container .project-content-grid-2 .project-grid-item-2 img, .project-detail--page .project-content-container .project-content-grid-2 .project-grid-item img {
   margin-top: 10rem;
   width: 100%;
 }
@@ -873,7 +825,7 @@ footer .footer--container .copyright {
     grid-template-columns: repeat(2, 1fr);
   }
   .projects-items--container .project-item {
-    height: 45vh;
+    height: 35vh;
   }
   .graphics-header--container .graphics-header--text .graphics-scribble--text {
     align-items: flex-start;
@@ -891,6 +843,55 @@ footer .footer--container .copyright {
   }
   .projects-items--container .graphic-item {
     height: 50vh;
+  }
+  .project-detail--page .project-content-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .project-detail--page .project-content-container .project-left-border {
+    flex-direction: row;
+    height: 5rem;
+    width: 100%;
+  }
+  .project-detail--page .project-content-container .project-left-border .vertical-span-one {
+    height: 3px;
+    width: 70%;
+  }
+  .project-detail--page .project-content-container .project-left-border .vertical-span-two {
+    height: 3px;
+    width: 50%;
+  }
+  .project-detail--page .project-content-container .project-content-grid-1 {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: justify;
+  }
+  .project-detail--page .project-content-container .project-content-grid-1 .project-grid-item-2 {
+    display: none;
+  }
+  .project-detail--page .project-content-container .project-content-grid-1 .project-grid-item-1 {
+    display: none;
+  }
+  .project-detail--page .project-content-container .project-content-grid-1 .project-grid-item {
+    display: flex;
+    float: right;
+    margin: 4rem 0 1rem 2rem;
+    width: 44vw;
+    height: 37vh;
+  }
+  .project-detail--page .project-content-container .project-content-grid-1 .project-grid-item img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: auto;
+  }
+  .project-detail--page .project-content-container .project-content-grid-1 .hidden-project-details {
+    display: flex;
+  }
+  .project-detail--page .project-content-container .project-content-grid-2 .project-grid-item-3 {
+    display: none;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -960,7 +961,7 @@ footer .footer--container .copyright {
     flex-direction: column;
   }
   .projects-items--container .project-item {
-    height: 35vh;
+    height: 27vh;
   }
   .projects-items--container .graphic-item {
     height: 40vh;
@@ -1034,7 +1035,7 @@ footer .footer--container .copyright {
     grid-template-columns: repeat(1, 1fr);
   }
   .projects-items--container .project-item {
-    height: 45vh;
+    height: 41vh;
   }
   .blog-container .blog-item--container {
     flex-direction: column;
@@ -1120,7 +1121,7 @@ footer .footer--container .copyright {
     padding: 1rem;
   }
   .projects-items--container .project-item {
-    height: 35vh;
+    height: 28vh;
   }
   .graphics-header--container .graphics-header--text .back-button {
     margin-top: 3rem;

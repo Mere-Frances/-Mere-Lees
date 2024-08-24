@@ -37,8 +37,18 @@ const ProjectDetail = () => {
                     <span className="vertical-span vertical-span-one"></span>
                     <span className="vertical-span vertical-span-two"></span>
                 </div>
+
+                {/* title, text and mockup */}
                 <div className="project-content-grid-1">
+                    {/* hidden mockup image */}
+                    <div className="project-grid-item">
+                        <img src={project.mockup}/>
+                    </div>
                     {/* titles */}
+                    <h2 className="hidden-project-details">{project.name} {project.description}</h2>
+                    <p className="hidden-project-details">{project.biographyMajor}<br/><br/></p>
+                    <p className="hidden-project-details">{project.biographyMinor}</p>
+                        
                     <div className="project-grid-item-1">
                         <h2>{project.name} {project.description}</h2>
                         <p>{project.biographyMajor}<br/></p>
@@ -51,10 +61,13 @@ const ProjectDetail = () => {
                     </div>
 
                     {/* med image */}
-                    <div className="project-grid-item project-grid-item-2">
+                    <div className="project-grid-item-2">
                         <img src={project.imageMed}/>
                     </div>
+
                 </div>
+
+                {/*  */}
                 <div className="project-content-grid-2">
                     {/* mockup */}
                     <div className="project-grid-item-3">
@@ -62,7 +75,7 @@ const ProjectDetail = () => {
                     </div>
 
                     {/* large image */}
-                    <div className="project-grid-item project-grid-item-4">
+                    <div className=" project-grid-item-4">
                         <img src={project.imageLarge}/>
                     </div>
                     <div className="project-grid-item-5"></div>
