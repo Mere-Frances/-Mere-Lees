@@ -496,34 +496,34 @@ footer .footer--container .copyright {
   z-index: 2;
 }
 .projects-items--container .project-item--1 {
-  background-image: url(../public/images/workout-prev.jpg);
+  background-image: url(../public/images/goldenbay-prev.jpg);
 }
 .projects-items--container .project-item--2 {
   background-image: url(../public/images/seastay-prev.jpg);
 }
 .projects-items--container .project-item--3 {
-  background-image: url(../public/images/hugo-prev.jpg);
+  background-image: url(../public/images/workout-prev.jpg);
 }
 .projects-items--container .project-item--4 {
-  background-image: url(../public/images/goldenbay-prev.jpg);
-}
-.projects-items--container .project-item--5 {
-  background-image: url(../public/images/pokedex-prev.jpg);
-}
-.projects-items--container .project-item--6 {
-  background-image: url(../public/images/amy-prev.jpg);
-}
-.projects-items--container .project-item--7 {
-  background-image: url(../public/images/cupcake-prev.jpg);
-}
-.projects-items--container .project-item--8 {
   background-image: url(../public/images/loosies-prev.jpg);
 }
-.projects-items--container .project-item--9 {
+.projects-items--container .project-item--5 {
   background-image: url(../public/images/bigbird-prev.jpg);
 }
-.projects-items--container .project-item--10 {
+.projects-items--container .project-item--6 {
+  background-image: url(../public/images/pokedex-prev.jpg);
+}
+.projects-items--container .project-item--7 {
   background-image: url(../public/images/lego-prev.jpg);
+}
+.projects-items--container .project-item--8 {
+  background-image: url(../public/images/amy-prev.jpg);
+}
+.projects-items--container .project-item--9 {
+  background-image: url(../public/images/hugo-prev.jpg);
+}
+.projects-items--container .project-item--10 {
+  background-image: url(../public/images/cupcake-prev.jpg);
 }
 .projects-items--container .project-item:hover {
   box-shadow: none;
