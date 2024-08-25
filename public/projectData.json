@@ -9,7 +9,8 @@
         "imageMed": "./images/fogb-med.jpg",
         "imageSmall": "./images/fogb-small.jpg",
         "biographyMajor": "The Friends of Golden Bay (FOGB) project involved redesigning their existing website to better communicate their mission, enhance functionality, and improve usability across devices. The goal was to create a modern and representative site that aligns with FOGB's brand identity, encourages new participants to join their cause, and maintains engagement with current users. The redesign was informed by extensive research into the existing site's usability and user experience, identifying pain points and opportunities for improvement. The resulting website effectively communicates FOGB's mission and impact on the Golden Bay environment.",
-        "biographyMinor": "Throughout the Friends of Golden Bay (FOGB) project, I gained valuable insights and experience in various aspects of web development and design. I learned to identify and consider the implications of the Treaty of Waitangi in project planning, ensuring cultural respect and alignment. I implemented visual design principles and applied formative UX research techniques to inform initial design concepts, ensuring a user-centered approach. Additionally, I tested design prototypes using collaborative tools, produced CSS with a CSS processor, and utilized advanced HTML, CSS, and introductory JavaScript to create interactive interfaces. The project involved developing usability standards, employing appropriate testing methodologies, and consistently applying a selected CSS methodology. Working within a group, I contributed to achieving common goals, presented the completed project to a group, and adhered to standard copyright conventions, reinforcing the importance of ethical practices in web development."
+        "biographyMinor": "Throughout the Friends of Golden Bay (FOGB) project, I gained valuable insights and experience in various aspects of web development and design. I learned to identify and consider the implications of the Treaty of Waitangi in project planning, ensuring cultural respect and alignment. I implemented visual design principles and applied formative UX research techniques to inform initial design concepts, ensuring a user-centered approach. Additionally, I tested design prototypes using collaborative tools, produced CSS with a CSS processor (SASS), and utilized advanced HTML, CSS, and introductory JavaScript to create interactive interfaces. The project involved developing usability standards, employing appropriate testing methodologies, and consistently applying a selected CSS methodology. Working within a group, I contributed to achieving common goals, presented the completed project to a group, and adhered to standard copyright conventions, reinforcing the importance of ethical practices in web development.",
+        "tags": ["SCSS/SASS", "Javascript", "Responsiveness", "User Testing"]
     },
     {
         "id": 2,
@@ -21,7 +22,8 @@
         "imageMed": "./images/seastay-med.jpg",
         "imageSmall": "./images/seastay-small.jpg",
         "biographyMajor": "SeaStay was a fictional assingment to replicate a collaborative project with Tourism New Zealand, aiming to create a dedicated platform for finding and booking beachside accommodations across New Zealand. The website is designed to promote sustainable and authentic tourism while highlighting the beauty and diversity of New Zealand's coastal regions. By offering refined search filters, detailed location information, and user ratings, SeaStay provides a streamlined, user-friendly experience that not only enhances the booking process for travelers but also supports local tourism businesses. The site reflects a clean, modern design that aligns with TourismNZ's brand identity, fostering increased traffic and awareness for local tourism initiatives.",
-        "biographyMinor": "Through the SeaStay project, I gained valuable experience in several key areas of web development. I learned to effectively debug JavaScript code to eliminate errors, integrate and extend JavaScript libraries with third-party plugins, and use a variety of production tools to streamline development. I honed my skills in manipulating the DOM with raw JavaScript and libraries, implementing UI component functionality, and maintaining consistent code quality by adhering to a style guide and testing against industry standards. The project also reinforced the importance of thorough planning, including defining deliverables based on use cases, setting critical deadlines, and writing detailed proposals. Analyzing variations from the planned milestones during the project's execution provided important lessons in project management and adaptability."
+        "biographyMinor": "Through the SeaStay project, I gained valuable experience in several key areas of web development. I learned to effectively debug JavaScript code to eliminate errors, integrate and extend JavaScript libraries with third-party plugins, and use a variety of production tools to streamline development. I honed my skills in manipulating the DOM with raw JavaScript and libraries, implementing UI component functionality, and maintaining consistent code quality by adhering to a style guide and testing against industry standards. The project also reinforced the importance of thorough planning, including defining deliverables based on use cases, setting critical deadlines, and writing detailed proposals. Analyzing variations from the planned milestones during the project's execution provided important lessons in project management and adaptability.",
+        "tags": ["Gulp JS", "JQuery", "Mapbox", "Swiper JS", "Fullpage JS", "Figma", "Vercel"]
     },
     {
         "id": 3,
@@ -31,7 +33,10 @@
         "mockup": "./images/-mockup.png",
         "imageLarge": "./images/-large.jpg",
         "imageMed": "./images/-med.jpg",
-        "imageSmall": "./images/-small.jpg"
+        "imageSmall": "./images/-small.jpg",
+        "biographyMajor": "",
+        "biographyMinor": "",
+        "tags": ["API", "Postman", "Fullstack", "SCSS/SASS", "Express JS", "MongoDB", "Mongoose", "Mern"]
     },
     {
         "id": 4,
@@ -43,7 +48,8 @@
         "imageMed": "./images/loosies-med.jpg",
         "imageSmall": "./images/loosies-small.jpg",
         "biographyMajor": "This project was a collaborative effort where our group worked closely together to improve the user experience of Loosie’s primary website. The existing site lacked key information, such as service details and opening hours, and didn't visually reflect the diner's brand. Together, we addressed these issues by developing a comprehensive UX brief that documented each step of the design process, providing a solid foundation for the internal team during the development stage. Our team focused on delivering essential information to users, such as menu details and contact information, while ensuring the design accurately represented Loosie's brand and met the needs of its target audience. Throughout the project, we collaborated effectively, leveraging each other's strengths to achieve our common goal.",
-        "biographyMinor": "In this project, I developed key skills in applying formative research techniques, analyzing research results to draw meaningful insights, and making informed design decisions based on those findings. I also enhanced my abilities in prototyping and visual design, ensuring that the final product met user expectations and business goals. Working closely with my team, I learned the value of collaboration, effectively contributing to our shared objectives and supporting each other throughout the design process."
+        "biographyMinor": "In this project, I developed key skills in applying formative research techniques, analyzing research results to draw meaningful insights, and making informed design decisions based on those findings. I also enhanced my abilities in prototyping and visual design, ensuring that the final product met user expectations and business goals. Working closely with my team, I learned the value of collaboration, effectively contributing to our shared objectives and supporting each other throughout the design process.",
+        "tags": ["Scums", "Research", "User Testing", "Figma", "SCSS/SASS", "Collaboration"]
     },
     {
         "id": 5,
@@ -55,7 +61,8 @@
         "imageMed": "./images/bigbird-med.png",
         "imageSmall": "./images/bigbird-small.png",
         "biographyMajor": "This project was an educational assignment where our team collaborated on a fictional brief for Wellington City Council and Zealandia Ecosanctuary, where we worked together to design a smartphone app aimed at increasing youth engagement with local recreational facilities. This project focused on creating an effective and engaging app that would encourage young people to explore Wellington's free or low-cost recreational offerings, especially during the holidays. By drawing inspiration from nostalgic arcade games, our design featured a unique pixelated style that appealed to the target audience of young teens. Throughout the project, we used Figma and other collaboration tools to communicate, plan, and iterate on the design, ensuring that the final product aligned with the client’s goals and resonated with users. Each team member contributed significantly, and the successful outcome of the project highlighted our ability to work together effectively and creatively.",
-        "biographyMinor": "During this educational assignment, I gained valuable experience in problem-solving by identifying appropriate research methods, defining key stakeholders, and understanding the advantages and disadvantages of user interfaces. The project emphasized an iterative design process, where usability testing and feedback were integral to developing a user interface. I learned to create prototypes, set and meet project milestones, and respond to feedback effectively. Presenting my work and addressing moral and ethical concerns were also key aspects. This project honed my leadership and collaborative skills, which are crucial in user interface development."
+        "biographyMinor": "During this educational assignment, I gained valuable experience in problem-solving by identifying appropriate research methods, defining key stakeholders, and understanding the advantages and disadvantages of user interfaces. The project emphasized an iterative design process, where usability testing and feedback were integral to developing a user interface. I learned to create prototypes, set and meet project milestones, and respond to feedback effectively. Presenting my work and addressing moral and ethical concerns were also key aspects. This project honed my leadership and collaborative skills, which are crucial in user interface development.",
+        "tags": ["Collaboration", "Scrums", "Figma", "User Testing", "Research"]
     },
     {
         "id": 6,
@@ -67,7 +74,8 @@
         "imageMed": "./images/pokedex-med.png",
         "imageSmall": "./images/pokedex-small.jpg",
         "biographyMajor": "This project involved creating a Pokedex app using React and the PokeAPI. The app allows users to browse a list of all Pokemon, filter them by type, name, or number, and view detailed information about each individual Pokemon. The project was designed to deepen my understanding of working with APIs, implementing filters, and building responsive, accessible user interfaces in React.",
-        "biographyMinor": ""
+        "biographyMinor": "",
+        "tags": ["API", "Vite", "React JS", "Filtering"]
     },
     {
         "id": 7,
@@ -79,7 +87,8 @@
         "imageMed": "./images/lego-med.jpg",
         "imageSmall": "./images/lego-small.jpg",
         "biographyMajor": "For the LEGO Star Wars minifigure catalog website, I utilized several JavaScript plugins and libraries to enhance functionality and streamline the development process. I implemented fullpage.js to create a seamless, interactive single-page experience, allowing users to navigate smoothly between sections of the catalog. To automate tasks and optimize the workflow, I used gulp.js, a toolkit that helps with tasks such as minifying CSS and JavaScript files, compiling Sass, and refreshing the browser on file changes. Additionally, Node modules were employed to manage dependencies and build tools, ensuring that the website was both efficient and easy to maintain. These technologies collectively allowed me to create a dynamic and engaging user experience while maintaining a clean and efficient codebase.",
-        "biographyMinor": ""
+        "biographyMinor": "",
+        "tags": ["Fullpage JS", "JQuery", "Javascript", "Figma", "Filtering"]
     },
     {
         "id": 8,
@@ -91,7 +100,8 @@
         "imageMed": "./images/amy-med.jpg",
         "imageSmall": "./images/amy-small.jpg",
         "biographyMajor": "This project was my first coding assignment, where I had the opportunity to apply my design skills and knowledge. I created a minimalistic and functional website design using primarily HTML, CSS and minimal Javascript. This experience ignited my passion for web design and coding, as I thoroughly enjoyed the process. The encouraging feedback I received on the design and functionality, especially considering it was my first time creating a website, motivated me to push myself even further in future projects.",
-        "biographyMinor": ""
+        "biographyMinor": "",
+        "tags": ["HTMl", "CSS", "Javascript", "Figma"]
     },
     {
         "id": 9,
@@ -103,18 +113,20 @@
         "imageMed": "./images/hugo-med.png",
         "imageSmall": "./images/hugo-small.jpg",
         "biographyMajor": "As a personal side project, I designed and developed an example page for a family member's online print store. The goal was to create a visually appealing and functional single-page website that could serve as a prototype for their business. I utilized HTML for the structure, SCSS for styling, and JavaScript, along with jQuery and other JavaScript libraries, to add interactivity and enhance the user experience. This project allowed me to experiment with front-end technologies and refine my skills in creating responsive, modern web designs.",
-        "biographyMinor": ""
+        "biographyMinor": "",
+        "tags": ["JQuery", "Swiper JS", "Mapbox", "SCSS/SASS", "Figma", "Filtering"]
     },
     {
         "id": 10,
-        "name": "Toronto",
-        "description": "Cupcake",
+        "name": "Whoops,",
+        "description": "nothing to see here",
         "url": "",
-        "mockup": "./images/-mockup.png",
-        "imageLarge": "./images/-large.jpg",
-        "imageMed": "./images/-med.jpg",
-        "imageSmall": "./images/-small.jpg",
+        "mockup": "",
+        "imageLarge": "",
+        "imageMed": "",
+        "imageSmall": "",
         "biographyMajor": "",
-        "biographyMinor": ""
+        "biographyMinor": "",
+        "tags": []
     }
 ]
