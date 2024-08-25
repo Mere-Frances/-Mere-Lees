@@ -10,7 +10,7 @@ const Blog = () => {
     }, []);
 
     return (
-        <div id="blogResults">
+        <div id="blogResults" className="blog-results">
             {blogs.map((blog, index) => (
                 <div key={index} className="blog-item--container">
                     <div className="blog-content--titles">
