@@ -1,27 +1,29 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Header from '../components/Header'
+import MainLinks from '../components/MainLinks';
+import Marquee from '../components/SkillsMarquee';
 // import Skills from '../components/Skills';
 
 const HomePage = () => {
   return (
     <>
       <Header/>
-      <div className="page-breaker--container">
-        <div className="page-breaker--content"/>
+
+      <div className="page-break--line">
+        <span/>
       </div>
 
-      <div className="main-links--container">
-        <Link to="/graphics" className="main-link--box graphic-designs">
-          <h3>Graphic Designs</h3>
-        </Link>
-        <Link to="/projects" className="main-link--box web-designs">
-          <h3>Web Designs</h3>
-        </Link>
-        <Link to="/blog" className="main-link--box blog">
-          <h3>Blog</h3>
-        </Link>
+      <MainLinks/>
+
+      <div className="page-break--line">
+        <span/>
       </div>
+
+      <div className="title-breaker--container">
+        <h2>My Knowledge</h2>
+      </div>
+      <Marquee/>
 
       <div className="page-break--line">
         <span/>
