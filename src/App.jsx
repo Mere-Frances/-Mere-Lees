@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { HashRouter } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 // components
@@ -11,6 +12,7 @@ const App = () => {
 
   return (
     <HashRouter>
+      <ScrollToTop />
       <NavBar/>
       <Footer/>
     </HashRouter>
