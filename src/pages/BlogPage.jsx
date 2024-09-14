@@ -39,7 +39,7 @@ const BlogPage = () => {
                     Ko Tahu Pōtiki te whare<br/>
                     Ko Te Rau Aroha te marae<br/>
                     Ko Ngāi Tahu te iwi<br/>
-                    Ko Meredith Lees tōku ingoa<br/>
+                    Ko Meredith Lees tōku ingoa<br/><br/>
                     With love and code.</p>
                 <div className="blog-date" id="blogDate">
                     <h6>March 2024</h6>

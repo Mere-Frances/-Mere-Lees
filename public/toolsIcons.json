@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "icon": "./images/tools-icons/api-icon.jpg"
+    },
+    {
+        "id": 2,
+        "icon": "./images/tools-icons/figma-icon.png"
+    },
+    {
+        "id": 3,
+        "icon": "./images/tools-icons/github-icon.png"
+    },
+    {
+        "id": 4,
+        "icon": "./images/tools-icons/html-icon.jpg"
+    },
+    {
+        "id": 5,
+        "icon": "./images/tools-icons/js-icon.jpg"
+    },
+    {
+        "id": 6,
+        "icon": "./images/tools-icons/sass-icon.png"
+    },
+    {
+        "id": 7,
+        "icon": "./images/tools-icons/wordpress-icon.png"
+    },
+    {
+        "id": 8,
+        "icon": "./images/tools-icons/react-icon.png"
+    }
+]
