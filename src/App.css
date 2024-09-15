@@ -1079,6 +1079,198 @@ footer .footer--container .copyright {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
+.calculator {
+  background-color: rgb(255, 229, 229);
+  width: 27vw;
+  margin: 50px auto;
+  border: 1px solid #ce9696;
+  border-radius: 5px;
+  padding: 20px 20px 50px 20px;
+}
+
+#display {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 25px 15px;
+  font-size: 20px;
+  border-radius: 15px;
+  border: 5px solid #ebafa8;
+}
+
+.key-container {
+  display: flex;
+  -moz-columns: 2;
+       columns: 2;
+  gap: 15px;
+  background-color: #ffeeec;
+  width: 100%;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  width: 40%;
+}
+
+.number-keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  width: 60%;
+}
+
+.keys button {
+  position: relative;
+  border: none;
+  background: #ffa89e;
+  color: #fff;
+  font-size: 1rem;
+}
+
+button {
+  position: relative;
+  border: none;
+  background: #ffc0b9;
+  color: #fff;
+  padding: 1em;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: 0.2s;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  box-shadow: #d47b72 0px 7px 2px, #000 0px 8px 5px;
+}
+button:hover {
+  opacity: 1;
+}
+button:active {
+  top: 4px;
+  box-shadow: #c0392b 0px 3px 2px, #000 0px 3px 5px;
+}
+
+#calculate {
+  grid-area: 4/1/5/3;
+}
+
+#zero {
+  grid-area: 4/2/5/3;
+}
+
+.color-picker {
+  width: 27rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.color-picker .picker-container {
+  display: flex;
+  justify-content: center;
+}
+.color-picker .picker-container .chrome-picker {
+  width: 100% !important;
+  /* Ensure picker fits the container */
+  border-radius: 5px;
+  box-shadow: none;
+}
+.color-picker .color-display,
+.color-picker .rgba-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.clock {
+  width: 35rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  border: 2px solid #333;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.clock .clock-time {
+  font-size: 3.5rem;
+  font-family: "Courier New", Courier, monospace;
+  color: #333;
+  margin-bottom: 2rem;
+}
+.clock .clock-controls {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+.clock .clock-controls .clock-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 9rem;
+  height: 4.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: transparent;
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+.clock .clock-controls .clock-button:hover {
+  background: #ffa89e;
+  transition: all 1s ease;
+  color: #EEEEEE;
+}
+.clock .clock-controls .tokyo {
+  background-image: url("../public/images/flags/japan.png");
+}
+.clock .clock-controls .beijing {
+  background-image: url("../public/images/flags/china.png");
+}
+.clock .clock-controls .delhi {
+  background-image: url("../public/images/flags/india.webp");
+}
+.clock .clock-controls .moscow {
+  background-image: url("../public/images/flags/russia.png");
+}
+.clock .clock-controls .sydney {
+  background-image: url("../public/images/flags/aussie.png");
+}
+.clock .clock-controls .newyork {
+  background-image: url("../public/images/flags/usa.webp");
+}
+.clock .clock-controls .paris {
+  background-image: url("../public/images/flags/france.png");
+}
+.clock .clock-controls .london {
+  background-image: url("../public/images/flags/uk.webp");
+}
+.clock .clock-controls .auckland {
+  background-image: url("../public/images/flags/nz.png");
+}
+
 .blog-results {
   display: flex;
   flex-direction: column;
@@ -1285,6 +1477,9 @@ footer .footer--container .copyright {
   .projects-header .projects-title--header h2 {
     font-size: 2.5rem;
   }
+  .projects-items--container {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .floating-container .circle {
     width: 150px;
     height: 150px;
@@ -1355,6 +1550,25 @@ footer .footer--container .copyright {
       width: 0;
       text-indent: 0;
     }
+  }
+  .clock {
+    width: 30rem;
+    padding: 2.5rem 1.5rem;
+  }
+  .clock .clock-time {
+    font-size: 3rem;
+  }
+  .clock .clock-controls {
+    gap: 1.5rem;
+  }
+  .clock .clock-controls .clock-button {
+    padding: 1.25rem;
+    max-width: 8rem;
+    height: 4rem;
+    font-size: 1.25rem;
+  }
+  .calculator {
+    width: 42vw;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -1570,6 +1784,43 @@ footer .footer--container .copyright {
     width: 35px;
     height: 35px;
   }
+  .clock {
+    width: 21rem;
+    padding: 2rem 1rem;
+  }
+  .clock .clock-time {
+    font-size: 2.5rem;
+  }
+  .clock .clock-controls {
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .clock .clock-controls .clock-button {
+    padding: 1rem;
+    max-width: 9rem;
+    height: 4.5rem;
+    font-size: 1.125rem;
+  }
+  .calculator {
+    width: 36vw;
+  }
+  .calculator .key-container {
+    flex-direction: column;
+  }
+  .calculator .key-container .number-keys {
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .calculator .key-container .number-keys .number {
+    font-size: 1rem;
+  }
+  .calculator .key-container .keys {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+  .color-picker {
+    width: 19rem;
+  }
 }
 @media only screen and (max-width: 768px) {
   h2 {
@@ -1765,6 +2016,29 @@ footer .footer--container .copyright {
       width: 0;
       text-indent: 0;
     }
+  }
+  .clock {
+    width: 15rem;
+    padding: 1rem;
+  }
+  .clock .clock-time {
+    font-size: 2rem;
+  }
+  .clock .clock-controls {
+    gap: 0.75rem;
+  }
+  .clock .clock-controls .clock-button {
+    padding: 0.75rem;
+    max-width: 5.5rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+  .color-picker {
+    width: 15rem;
+  }
+  .calculator .key-container .number-keys {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media only screen and (max-width: 600px) {
@@ -2055,6 +2329,35 @@ footer .footer--container .copyright {
       text-indent: 0;
     }
   }
+  .clock {
+    height: 55vh;
+    width: 100%;
+    padding: 1rem;
+  }
+  .clock .clock-time {
+    font-size: 3.5rem;
+  }
+  .clock .clock-controls {
+    grid-template-rows: repeat(5, 1fr);
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+  }
+  .clock .clock-controls .clock-button {
+    padding: 0.5rem;
+    max-width: 12rem;
+    height: 90%;
+    font-size: 0.875rem;
+  }
+  .calculator {
+    width: 100%;
+  }
+  .calculator .key-container .keys #calculate {
+    grid-area: 4/1/3/4;
+  }
+  .color-picker {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 440px) {
   h4 {
@@ -2178,5 +2481,39 @@ footer .footer--container .copyright {
   }
   .project-detail--page .project-navigation-container .project-overlap-img img {
     left: 3rem;
+  }
+  .projects-items--container .color-picker {
+    width: 19rem;
+    margin: 0;
+  }
+  .clock {
+    height: 35vh;
+    width: 100%;
+    padding: 1rem;
+  }
+  .clock .clock-time {
+    font-size: 2.5rem;
+  }
+  .clock .clock-controls {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+  }
+  .clock .clock-controls .clock-button {
+    padding: 0.5rem;
+    max-width: 12rem;
+    height: 90%;
+    font-size: 0.875rem;
+  }
+  .calculator {
+    margin: 0;
+  }
+  .calculator .key-container .number-keys {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .calculator .key-container .number-keys .number {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=App.css.map */
