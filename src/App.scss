@@ -40,6 +40,9 @@ $grey: #EEEEEE;
     justify-content: center;
     flex-direction: row;
     padding: 3rem;
+    @media (max-width: 440px) {
+        padding: 1.5rem;
+    }
 }
 
 @mixin shadow {
@@ -1018,7 +1021,7 @@ footer {
             display: flex;
             flex-direction: column;
             gap: 5rem;
-            height: 230vh;
+            height: 140vh;
             align-items: center;
 
             span {
@@ -1028,12 +1031,7 @@ footer {
             }
 
             .vertical-span-one {
-                height: 70%;
-                background-color: $primary-color;
-            }
-
-            .vertical-span-two {
-                height: 50%;
+                height: 100%;
                 background-color: $primary-color;
             }
         }
@@ -1899,17 +1897,13 @@ button {
 
             .project-left-border {
                 flex-direction: row;
-                height: 5rem;
+                height: 2rem;
                 width: 100%;
+                gap: 2rem;
 
                 .vertical-span-one {
                     height: 3px;
-                    width: 70%;
-                }
-
-                .vertical-span-two {
-                    height: 3px;
-                    width: 50%;
+                    width: 100%;
                 }
             }
 
@@ -2233,6 +2227,9 @@ button {
 
     // ---------- INDIVIDUAL PROJECTS
     .project-detail--page {
+        .project-left-border{
+            gap: 2rem;
+        }
         .project-content-container {
             .large-project-left-side-content {
                 display: flex;
@@ -2522,6 +2519,7 @@ button {
             flex-direction: row;
             height: 0rem;
             width: 100%;
+            gap: 2rem;
         }
 
         .large-project-left-side-content {
@@ -2802,6 +2800,15 @@ button {
 
 
 @media only screen and (max-width: 440px) {
+
+    @mixin main-box-sizing {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        padding: 2rem;
+    }
+
     h4 {
         font-size: 40px;
     }
@@ -2821,8 +2828,9 @@ button {
         margin-top: 1.3rem;
 
         .header-text--container {
-            gap: 1rem;
-            height: 50%;
+            gap: 2rem;
+            height: 60%;
+            margin-top: 5rem;
 
             section .title span {
                 font-size: 6vw;
@@ -2830,7 +2838,9 @@ button {
 
             .header-links--container {
                 gap: 0rem;
-
+                padding: 1.5rem 0;
+                width: 100%;
+                justify-content: space-between;
                 .main-button a {
                     font-size: 8vw;
                 }
@@ -2897,7 +2907,7 @@ button {
     // -----------
     .graphics-header--container .graphics-header--text .back-button {
         margin-top: 3rem;
-        padding: 0 3rem 0 0;
+        padding: 0 2rem 0 0;
     }
 
     .graphics-header--container .graphics-header--text .graphics-scribble--text {
@@ -2932,6 +2942,9 @@ button {
         }
 
         .project-content-container {
+            .project-left-border{
+                gap: 1rem;
+            }
             .large-project-left-side-content {
                 .small-project-mockup img {
                     display: flex;
@@ -2970,6 +2983,10 @@ button {
                 }
             }
         }
+    }
+
+    .projects-header--container {
+        padding: 0 1.5rem;
     }
 
     .projects-items--container {

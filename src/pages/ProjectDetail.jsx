@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; 
 import { useParams, useNavigate } from 'react-router-dom';
 import projectData from '/public/projectData.json';
 import BackButton from '../components/BackButton';
@@ -25,26 +25,23 @@ const ProjectDetail = () => {
         navigate(`/project/${prevId}`);
     };
 
-    if (!project) {
-        return <h2>Project not found</h2>;
-    }
-
     return (
         <div className="project-detail--page">
-            <BackButton/>
+            <BackButton />
             <div className="project-content-container">
                 <div className="project-left-border">
                     <h4>0{project.id}</h4>
                     <span className="vertical-span vertical-span-one"></span>
-                    <span className="vertical-span vertical-span-two"></span>
                 </div>
 
                 {/* title, text and mockup */}
                 <div className="large-project-left-side-content">
                     {/* hidden mockup image */}
-                    <div className="small-project-mockup">
-                        <img src={project.mockup}/>
-                    </div>
+                    {project.mockup && (
+                        <div className="small-project-mockup">
+                            <img src={project.mockup} alt="Mockup" />
+                        </div>
+                    )}
                     {/* titles */}
                     <h2 className="hidden-project-text-details">{project.name} {project.description}</h2>
                     <p className="hidden-project-text-details">{project.biographyMajor}<br/><br/></p>
@@ -56,12 +53,14 @@ const ProjectDetail = () => {
                             </span>
                         ))}
                     </div>
-                    <div className="hidden-project-text-details viewing-button">
+                    {project.url && (
+                        <div className="hidden-project-text-details viewing-button">
                             <div className="main-button">
                                 <a href={project.url}>See the real thing</a>
                                 <MdOutlineArrowOutward />
                             </div>
                         </div>
+                    )}
                     
                     <div className="large-project-text">
                         <h2>{project.name} {project.description}</h2>
@@ -74,54 +73,68 @@ const ProjectDetail = () => {
                                 </span>
                             ))}
                         </div>
-                        <div className="viewing-button">
-                            <div className="main-button">
-                                <a href={project.url}>See the real thing</a>
-                                <MdOutlineArrowOutward />
+                        {project.url && (
+                            <div className="viewing-button">
+                                <div className="main-button">
+                                    <a href={project.url}>See the real thing</a>
+                                    <MdOutlineArrowOutward />
+                                </div>
                             </div>
-                        </div>
+                        )}
                     </div>
                     {/* med image */}
-                    <div className="large-project-med-image">
-                        <img src={project.imageMed}/>
-                    </div>
+                    {project.imageMed && (
+                        <div className="large-project-med-image">
+                            <img src={project.imageMed} alt="Medium" />
+                        </div>
+                    )}
                 </div>
 
-                {/*  */}
                 <div className="large-project-right-side-content">
                     {/* mockup */}
-                    <div className="large-project-mockup">
-                        <img src={project.mockup}/>
-                    </div>
+                    {project.mockup && (
+                        <div className="large-project-mockup">
+                            <img src={project.mockup} alt="Mockup" />
+                        </div>
+                    )}
 
                     {/* large image */}
-                    <div className="large-project-large">
-                        <img src={project.imageLarge}/>
-                    </div>
+                    {project.imageLarge && (
+                        <div className="large-project-large">
+                            <img src={project.imageLarge} alt="Large" />
+                        </div>
+                    )}
                     <div className="project-grid-item-5"></div>
                 </div>
             </div>
 
             <div className="hidden-small-project-images">
-                <div className="small-project-med-image">
-                    <img src={project.imageMed}/>
-                </div>
-                <div className="small-project-large-image">
-                    <img src={project.imageLarge}/>
-                </div>
+                {project.imageMed && (
+                    <div className="small-project-med-image">
+                        <img src={project.imageMed} alt="Medium" />
+                    </div>
+                )}
+                {project.imageLarge && (
+                    <div className="small-project-large-image">
+                        <img src={project.imageLarge} alt="Large" />
+                    </div>
+                )}
             </div>
 
             <div className="project-navigation-container">
                 <div className="page-nav-arrows">
                     <div className="previous-arrow" onClick={handlePrevious}>
-                        <img src={prevArrow} alt="Previous Arrow" className="arrow-icon previous-arrow-icon" />                    </div>
+                        <img src={prevArrow} alt="Previous Arrow" className="arrow-icon previous-arrow-icon" />
+                    </div>
                     <div className="next-arrow" onClick={handleNext}>
                         <img src={nextArrow} alt="Next Arrow" className="arrow-icon next-arrow-icon" />
                     </div>
                 </div>
-                <div className="project-overlap-img">
-                    <img src={project.imageSmall}/>
-                </div>
+                {project.imageSmall && (
+                    <div className="project-overlap-img">
+                        <img src={project.imageSmall} alt="Small" />
+                    </div>
+                )}
             </div>
             {/* Add more project details here, and customize as needed */}
         </div>

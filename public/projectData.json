@@ -30,13 +30,12 @@
         "name": "Workout",
         "description": "App",
         "url": "https://frontend-boilerplate-cyan.vercel.app/",
-        "mockup": "./images/-mockup.png",
-        "imageLarge": "./images/-large.jpg",
-        "imageMed": "./images/-med.jpg",
-        "imageSmall": "./images/-small.jpg",
-        "biographyMajor": "",
-        "biographyMinor": "",
-        "tags": ["API", "Postman", "Fullstack", "SCSS/SASS", "Express JS", "MongoDB", "Mongoose", "Mern"]
+        "mockup": "./images/workout-mockup.png",
+        "imageLarge": "./images/workout-large.jpg",
+        "imageMed": "./images/workout-small.png",
+        "biographyMajor": "This was my first full-stack project that was built with React, Express.js, MongoDB, SCSS as well as including password hashing and salting for security. The project was deisgned to create an interactive space where users can register, log in, manage their postings, and engage withother users posts. This project focused on the CRUD method, of creating, editing, and deleting posts, along with a commenting system. I used a custom database API to keep things running smoothly and securely. The design is clean and modern, thanks to SCSS/SASS, making the whole site easy to navigate and pleasant to look at. ",
+        "biographyMinor": "Working on a fullStack project was a great way to dive into the MERN stack and see how all these technologies come together. The project shows how flexible full-stack development can be for building interactive and user-friendly applications. Plus, it’s satisfying to see all the features like user management and content interaction working seamlessly together. Overall, this was an exciting activity to push myself and discover new technologies and tools.",
+        "tags": ["API", "Postman", "Fullstack", "SCSS/SASS", "Express JS", "MongoDB", "Custom Database", "Mern"]
     },
     {
         "id": 4,
