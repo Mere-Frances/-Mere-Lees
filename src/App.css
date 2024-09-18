@@ -2192,7 +2192,7 @@ button:active {
     background-position: bottom;
   }
   .title-breaker--container {
-    padding: 0 3rem 0 3rem;
+    padding: 0 3rem;
   }
   footer .footer--container {
     flex-direction: column;
@@ -2652,5 +2652,18 @@ button:active {
   }
   .calculator .key-container .number-keys .number {
     font-size: 1rem;
+  }
+  .blog-container .blog-item--container .pinned-icon {
+    height: 40px;
+    width: 40px;
+    top: 26vh;
+    right: 3rem;
+  }
+  .page-break--line {
+    padding: 1rem 1.5rem;
+    width: 100%;
+  }
+  .title-breaker--container {
+    padding: 1rem 1.5rem;
   }
 }/*# sourceMappingURL=App.css.map */

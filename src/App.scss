@@ -2423,7 +2423,7 @@ button {
     }
 
     .title-breaker--container {
-        padding: 0 3rem 0 3rem;
+        padding: 0 3rem;
     }
 
     footer .footer--container {
@@ -3030,5 +3030,18 @@ button {
                 }
             }
         }
+    }
+    .blog-container .blog-item--container .pinned-icon {
+        height: 40px;
+        width: 40px;
+        top: 26vh;
+        right: 3rem;
+    }
+    .page-break--line {
+        padding: 1rem 1.5rem;
+        width: 100%;
+    }
+    .title-breaker--container {
+        padding: 1rem 1.5rem;
     }
 }
