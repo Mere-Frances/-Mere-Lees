@@ -33,18 +33,19 @@
         "id": 3,
         "name": "Platypus",
         "description": "Marketplace",
-        "url": "https://frontend-boilerplate-cyan.vercel.app/",
+        "url": "https://github.com/PSTL-02/Second-Hand-Shoe-Reselling",
         "previewImage": "./images/platypusmarkerplace-mockup3.jpg",
         "coverImage": "./images/platypus-prev.jpg",
-        "mockup": "./images/workout-mockup.png",
-        "imageLarge": "./images/workout-large.jpg",
-        "imageMed": "./images/workout-small.png",
+        "mockup": "./images/platypus-marketplace-mockup2.png",
+        "imageLarge": "./images/platypus-large.png",
+        "imageMed": "./images/platypus-med.png",
+        "imageSmall": "./images/platypus-small.png",
         "biographyMajor": "Platypus Marketplace, is a fictitious website, created alongside a team of fellow students, to function as a user-friendly platform for buying and selling pre-loved shoes. Designed with an emphasis on accessibility and ease of use, this secondhand marketplace allows users to browse listings, create new posts, and navigate seamlessly with clear hierarchies and intuitive filters. Key features include a streamlined search function, categorized filters, and a create listing modal that simplifies the posting process. Each listing page is thoughtfully structured to keep essential details in view without obstructing images, offering a consistent and visually appealing experience for shoe enthusiasts looking to give footwear a second life.",
         "biographyMinor": "",
         "tags": ["API", "Postman", "Fullstack", "SCSS/SASS", "Express JS", "MongoDB", "Custom Database", "Mern"]
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "Workout",
         "description": "App",
         "url": "https://frontend-boilerplate-cyan.vercel.app/",
@@ -58,7 +59,7 @@
         "tags": ["API", "Postman", "Fullstack", "SCSS/SASS", "Express JS", "MongoDB", "Custom Database", "Mern"]
     },
     {
-        "id": 4,
+        "id": 5,
         "name": "Lego Star Wars",
         "description": "Minifig Catalog",
         "url": "https://lego-star-wars-minifigs.vercel.app/",
@@ -73,7 +74,7 @@
         "tags": ["Fullpage JS", "JQuery", "Javascript", "Figma", "Filtering"]
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "Loosies",
         "description": "Superette",
         "url": "https://loosies-superette.vercel.app/",
@@ -88,7 +89,7 @@
         "tags": ["Scrums", "Research", "User Testing", "Figma", "SCSS/SASS", "Collaboration"]
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "The",
         "description": "Pokedex",
         "url": "https://pokedev-api.vercel.app/",
@@ -103,7 +104,7 @@
         "tags": ["API", "Vite", "React JS", "Filtering"]
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "Amy's",
         "description": "Beauty Salon",
         "url": "",
@@ -118,7 +119,7 @@
         "tags": ["HTMl", "CSS", "Javascript", "Figma"]
     },
     {
-        "id": 8,
+        "id": 9,
         "name": "Hugo",
         "description": "Prints ",
         "url": "https://hugo-designs.vercel.app/",

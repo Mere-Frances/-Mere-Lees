@@ -10,11 +10,23 @@ import Clock from '../components/Clock';
 const ProjectsPage = () => {
   // Creating a reference for the container of the Projects component
   const projectsContainerRef = useRef(null);
+  const prototypesContainerRef = useRef(null);
+  const practicesContainerRef = useRef(null);
 
   // Scroll function using `scrollIntoView`
   const scrollToProjects = () => {
     if (projectsContainerRef.current) {
       projectsContainerRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  const scrollToPrototypes = () => {
+    if (prototypesContainerRef.current) {
+      prototypesContainerRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  const scrollToPractices = () => {
+    if (practicesContainerRef.current) {
+      practicesContainerRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -23,24 +35,28 @@ const ProjectsPage = () => {
       <BackButton />
 
       <div className="projects-header--container">
-        <FloatingCircles scrollToProjects={scrollToProjects}/>
+        <FloatingCircles 
+        scrollToProjects={scrollToProjects}
+        scrollToPrototypes={scrollToPrototypes}
+        scrollToPractices={scrollToPractices}
+        />
       </div>
 
       <div className="page-break--line">
         <span />
       </div>
 
-      <div className="title-breaker--container">
+      <div className="title-breaker--container" ref={projectsContainerRef}>
         <span></span>
         <h2>Web Development Projects</h2>
       </div>
 
       {/* website projects */}
-      <div className="projects-items--container" ref={projectsContainerRef}>
+      <div className="projects-items--container">
         <Projects />
       </div>
 
-      <div className="title-breaker--container">
+      <div className="title-breaker--container" ref={prototypesContainerRef}>
         <span></span>
         <h2>Design Prototypes & Visuals</h2>
       </div>
@@ -49,12 +65,12 @@ const ProjectsPage = () => {
         <Prototypes />
       </div>
 
-      <div className="title-breaker--container">
+      <div className="title-breaker--container" ref={practicesContainerRef}>
         <span></span>
         <h2>Exercises & Mini Projects</h2>
       </div>
       
-      <div className="projects-items--container">
+      <div className="projects-items--container" >
         <Calculator />
         <ColorPicker />
         <Clock />
