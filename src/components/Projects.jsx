@@ -17,6 +17,11 @@ const Projects = () => {
                     key={index} 
                     to={`/project/${index}`} 
                     className={`project-item project-item--${index + 1}`}
+                    style={{ 
+                        backgroundImage: `url(${project.previewImage})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'top',
+                    }}
                 >
                     <h3>
                         {project.name}<br />{project.description}

@@ -130,6 +130,10 @@ const Marquee = () => {
           <span className="text js-text">Backend</span>
           <span className="text js-text">JS Libraries</span>
           <span className="text js-text">JS Packages</span>
+          <span className="text js-text">MongoDB</span>
+          <span className="text js-text">SEO</span>
+          <span className="text js-text">Wordpress</span>
+          <span className="text js-text">Database</span>
         </div>
       </div>
     </div>
