@@ -496,7 +496,6 @@ header .header-img--container {
   flex-direction: column;
   align-items: center;
   height: 5rem;
-  background-color: white;
   z-index: 900;
 }
 
