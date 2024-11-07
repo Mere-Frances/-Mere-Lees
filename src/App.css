@@ -41,7 +41,7 @@ h4 {
   font-family: "Reenie Beanie", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 50px;
+  font-size: 60px;
   color: #e995a9;
 }
 
@@ -220,7 +220,11 @@ header .header-text--container .header-links--container {
 header .header-text--container .header-links--container .header-links a {
   color: #e995a9;
   font-family: "Reenie Beanie", cursive;
-  font-size: 38px;
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: #e995a9;
 }
 header .header-img--container {
   display: flex;
@@ -484,6 +488,65 @@ header .header-img--container {
   cursor: grabbing;
 }
 
+.icon-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 5rem;
+  background-color: white;
+  z-index: 900;
+}
+
+.jumping-icon {
+  height: inherit;
+  cursor: pointer;
+  animation: bounce 1.5s ease infinite;
+}
+
+.jumping-icon.stopped {
+  animation: none;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 0rem;
+  right: 5rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  width: 60rem;
+  cursor: url("../public/images/grab-cursor.png"), auto;
+  z-index: 900;
+}
+.message-container h3 {
+  color: #292929;
+}
+.message-container .ignore-title {
+  font-size: 1.5rem;
+  color: #e995a9;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-1rem);
+  }
+  60% {
+    transform: translateY(-0.5rem);
+  }
+}
 footer {
   display: flex;
   align-items: center;
@@ -1902,6 +1965,12 @@ button:active {
   .color-picker {
     width: 19rem;
   }
+  .message-container {
+    width: 45rem;
+  }
+  .message-container h3 {
+    color: #292929;
+  }
 }
 @media only screen and (max-width: 768px) {
   h2 {
@@ -2123,6 +2192,12 @@ button:active {
   .calculator .key-container .number-keys {
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .message-container {
+    max-width: 32rem;
+  }
+  .message-container h3 {
+    color: #292929;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -2443,6 +2518,12 @@ button:active {
   .color-picker {
     width: 100%;
   }
+  .message-container {
+    width: 23rem;
+  }
+  .message-container h3 {
+    color: #292929;
+  }
 }
 @media only screen and (max-width: 440px) {
   h4 {
@@ -2623,5 +2704,11 @@ button:active {
   }
   .title-breaker--container {
     padding: 1rem 1.5rem;
+  }
+  .message-container {
+    width: 15rem;
+  }
+  .message-container h3 {
+    color: #292929;
   }
 }/*# sourceMappingURL=App.css.map */

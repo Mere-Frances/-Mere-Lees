@@ -1,7 +1,7 @@
 import projectData from '/public/toolsIcons.json';
 import React, { useEffect, useRef, useState } from 'react';
 
-export const FloatingCircles = ({scrollToProjects}) => {
+export const FloatingCircles = ({scrollToProjects, scrollToPrototypes, scrollToPractices}) => {
   const containerRef = useRef(null);
   const circlesRef = useRef([]);
   const [circlesData, setCirclesData] = useState([]);
@@ -88,12 +88,12 @@ export const FloatingCircles = ({scrollToProjects}) => {
           )}
         </div>
       ))}
-      <ProjectHeader scrollToProjects={scrollToProjects}/>
+      <ProjectHeader scrollToProjects={scrollToProjects} scrollToPrototypes={scrollToPrototypes} scrollToPractices={scrollToPractices}/>
     </div>
   );
 };
 
-const ProjectHeader = ({ scrollToProjects }) => {
+const ProjectHeader = ({ scrollToProjects, scrollToPractices, scrollToPrototypes }) => {
   return (
     <div className="projects-header">
       <span className="hidden-message-title">Explore my </span>
@@ -117,10 +117,10 @@ const ProjectHeader = ({ scrollToProjects }) => {
         <div className="main-button" onClick={scrollToProjects}>
           <a>Development</a>
         </div>
-        <div className="main-button" onClick={scrollToProjects}>
+        <div className="main-button" onClick={scrollToPrototypes}>
           <a>Designs</a>
         </div>
-        <div className="main-button" onClick={scrollToProjects}>
+        <div className="main-button" onClick={scrollToPractices}>
           <a>Exercises</a>
         </div>
       </div>

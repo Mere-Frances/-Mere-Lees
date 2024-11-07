@@ -1,12 +1,12 @@
-import React from 'react'
 import Header from '../components/Header'
 import MainLinks from '../components/MainLinks';
 import Marquee from '../components/SkillsMarquee';
 import ProjectPreview from '../components/ProjectPreview';
-
+import React from 'react';
 import projectData from '/public/projectData.json';
 
 const HomePage = () => {
+
   return (
     <>
       <Header/>
@@ -35,6 +35,8 @@ const HomePage = () => {
       <div className="projects">
         <ProjectPreview/>
       </div> */}
+
+
     </>
   )
 }
