@@ -23,7 +23,7 @@ const DisclaimerCat = () => {
     onMouseLeave={handleMouseLeave}
     style={{ display: isVisible ? 'flex' : 'none' }}
     >
-      <img src='../public/images/cat-icon.png'
+      <img src='../images/cat-icon.png'
         className={`jumping-icon`}
       />
     {isHovered && (
