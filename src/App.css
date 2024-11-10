@@ -973,7 +973,7 @@ footer .footer--container .copyright {
   animation: byBottom 1s ease both;
 }
 .project-detail--page .project-detail--header .title-content h1 {
-  font-size: 8rem;
+  font-size: 6.5rem;
 }
 .project-detail--page .project-detail--header .title-content .project-tags {
   display: flex;
@@ -1183,7 +1183,7 @@ footer .footer--container .copyright {
   width: 100%;
   justify-content: space-between;
   padding: 3rem;
-  height: 80vh;
+  height: 91vh;
   gap: 3rem;
 }
 .project-detail--page .project-carousel--container .carousel-image--section {
@@ -1210,6 +1210,7 @@ footer .footer--container .copyright {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  padding: 1rem;
 }
 .project-detail--page .project-carousel--container .carousel-details--section .carousel-details h3 {
   color: #292929;
