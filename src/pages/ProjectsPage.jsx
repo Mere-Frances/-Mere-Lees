@@ -56,14 +56,14 @@ const ProjectsPage = () => {
         <Projects />
       </div>
 
-      <div className="title-breaker--container" ref={prototypesContainerRef}>
+      {/* <div className="title-breaker--container" ref={prototypesContainerRef}>
         <span></span>
         <h2>Design Prototypes & Visuals</h2>
       </div>
 
       <div className="projects-items--container">
         <Prototypes />
-      </div>
+      </div> */}
 
       <div className="title-breaker--container" ref={practicesContainerRef}>
         <span></span>
