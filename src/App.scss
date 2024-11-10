@@ -375,7 +375,7 @@ header {
 
     .header-img--container {
         @include main-box-sizing;
-        background-image: url(../public/images/me-cover-large.jpg);
+        background-image: url(../public/images/me-cover-large.webp);
         background-size: cover;
         width: 80%;
         height: 100%;
@@ -385,7 +385,7 @@ header {
 .page-breaker--container {
     @include main-box-sizing;
     height: 110vh;
-    background-image: url(../public/images/banner-2.png);
+    background-image: url(../public/images/banner-2.webp);
     background-size: cover;
     background-position: right;
 
@@ -444,21 +444,21 @@ header {
 
     .graphic-designs {
         &:before {
-            background-image: url(../public/images/graphics.jpg);
+            background-image: url(../public/images/graphics.webp);
             background-size: cover;
         }
     }
 
     .web-designs {
         &:before {
-            background-image: url(../public/images/web.jpg);
+            background-image: url(../public/images/web.webp);
             background-size: cover;
         }
     }
 
     .blog {
         &:before {
-            background-image: url(../public/images/blog.jpg);
+            background-image: url(../public/images/blog.webp);
             background-size: cover;
         }
     }
@@ -1706,7 +1706,7 @@ button {
 
             .pinned-image {
                 height: 60vh;
-                background-image: url(../public/images/myblog.jpg);
+                background-image: url(../public/images/myblog.webp);
             }
         }
 
@@ -1771,7 +1771,7 @@ button {
     }
 
     .graphics-header--image {
-        background-image: url(../public/images/pins.png);
+        background-image: url(../public/images/pins.webp);
         background-size: cover;
         width: 50%;
         height: 70vh;
@@ -1792,50 +1792,50 @@ button {
     }
 
     .graphic-item:nth-child(1) {
-        background-image: url(../public/images/scrap-one.jpg);
+        background-image: url(../public/images/scrap-one.webp);
 
         .graphic-item--image {
-            background-image: url(../public/images/hoodie-1-front.png);
+            background-image: url(../public/images/hoodie-1-front.webp);
         }
 
         .graphic-item--image:hover {
-            background-image: url(../public/images/hoodie-1-back.jpg);
+            background-image: url(../public/images/hoodie-1-back.webp);
         }
     }
 
     .graphic-item:nth-child(2) {
-        background-image: url(../public/images/scrap-two.jpg);
+        background-image: url(../public/images/scrap-two.webp);
 
         .graphic-item--image {
-            background-image: url(../public/images/hoodie-2-front.jpg);
+            background-image: url(../public/images/hoodie-2-front.webp);
         }
 
         .graphic-item--image:hover {
-            background-image: url(../public/images/hoodie-2-back.jpg);
+            background-image: url(../public/images/hoodie-2-back.webp);
         }
     }
 
     .graphic-item:nth-child(3) {
-        background-image: url(../public/images/scrap-three.jpg);
+        background-image: url(../public/images/scrap-three.webp);
 
         .graphic-item--image {
-            background-image: url(../public/images/top-1-front.jpg);
+            background-image: url(../public/images/top-1-front.webp);
         }
 
         .graphic-item--image:hover {
-            background-image: url(../public/images/top-1-back.jpg);
+            background-image: url(../public/images/top-1-back.webp);
         }
     }
 
     .graphic-item:nth-child(4) {
-        background-image: url(../public/images/scrap-four.jpg);
+        background-image: url(../public/images/scrap-four.webp);
 
         .graphic-item--image {
-            background-image: url(../public/images/top-2-back.jpg);
+            background-image: url(../public/images/top-2-back.webp);
         }
 
         .graphic-item--image:hover {
-            background-image: url(../public/images/top-2-front.jpg);
+            background-image: url(../public/images/top-2-front.webp);
         }
     }
 
@@ -2002,7 +2002,7 @@ button {
         gap: 3rem;
 
         .header-img--container {
-            background-image: url(../public/images/me-cover-med.jpg);
+            background-image: url(../public/images/me-cover-med.webp);
         }
     }
 
@@ -2426,7 +2426,7 @@ button {
 
         .header-img--container {
             width: 100%;
-            background-image: url(../public/images/me-cover-large.jpg);
+            background-image: url(../public/images/me-cover-large.webp);
         }
     }
 
