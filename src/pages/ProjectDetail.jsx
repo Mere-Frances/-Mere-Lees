@@ -6,6 +6,8 @@ import prevArrow from '/public/images/prev.svg';
 import nextArrow from '/public/images/next.svg';
 import { MdOutlineArrowOutward } from "react-icons/md";
 
+import ProjectCarousel from '../components/ProjectCarousel';
+
 const ProjectDetail = () => {
     const { id } = useParams();
     const navigate = useNavigate();
@@ -26,118 +28,83 @@ const ProjectDetail = () => {
     };
 
     return (
-        <div className="project-detail--page">
+        <>
             <BackButton />
-            <div className="project-content-container">
-                <div className="project-left-border">
-                    <h4>0{project.id}</h4>
-                    <span className="vertical-span vertical-span-one"></span>
-                </div>
-
-                {/* title, text and mockup */}
-                <div className="large-project-left-side-content">
-                    {/* hidden mockup image */}
-                    {project.mockup && (
-                        <div className="small-project-mockup">
-                            <img src={project.mockup} alt="Mockup" />
-                        </div>
-                    )}
-                    {/* titles */}
-                    <h2 className="hidden-project-text-details">{project.name} {project.description}</h2>
-                    <p className="hidden-project-text-details">{project.biographyMajor}<br/><br/></p>
-                    <p className="hidden-project-text-details">{project.biographyMinor}</p>
-                    <div className="hidden-project-tags">
-                        {project.tags.map((tech, index) => (
-                            <span key={index} className="project-tag-icons">
-                                {tech}
-                            </span>
-                        ))}
-                    </div>
-                    {project.url && (
-                        <div className="hidden-project-text-details viewing-button">
+            <div className="project-detail--page">
+                    <div className='project-detail--header'>
+                        <div className='title-content'>
+                            <h1>{project.name} {project.description}</h1>
+                            <div className="project-tags">
+                                {project.tags.map((tech, index) => (
+                                    <span key={index} className="project-tags-icons">
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+                            <p>{project.caption}</p>
                             <div className="main-button">
                                 <a href={project.url}>See the real thing</a>
                                 <MdOutlineArrowOutward />
                             </div>
-                        </div>
-                    )}
-                    
-                    <div className="large-project-text">
-                        <h2>{project.name} {project.description}</h2>
-                        <p>{project.biographyMajor}<br/></p>
-                        <p>{project.biographyMinor}</p>
-                        <div className="project-tags">
-                            {project.tags.map((tech, index) => (
-                                <span key={index} className="project-tags-icons">
-                                    {tech}
-                                </span>
-                            ))}
-                        </div>
-                        {project.url && (
-                            <div className="viewing-button">
-                                <div className="main-button">
-                                    <a href={project.url}>See the real thing</a>
-                                    <MdOutlineArrowOutward />
+                            <div className="project-navigation-container">
+                                <div className="page-nav-arrows">
+                                    <div className="previous-arrow" onClick={handlePrevious}>
+                                        <img src={prevArrow} alt="Previous Arrow" className="arrow-icon previous-arrow-icon" />
+                                    </div>
+                                    <div className="next-arrow" onClick={handleNext}>
+                                        <img src={nextArrow} alt="Next Arrow" className="arrow-icon next-arrow-icon" />
+                                    </div>
                                 </div>
                             </div>
-                        )}
-                    </div>
-                    {/* med image */}
-                    {project.imageMed && (
-                        <div className="large-project-med-image">
-                            <img src={project.imageMed} alt="Medium" />
                         </div>
-                    )}
-                </div>
-
-                <div className="large-project-right-side-content">
-                    {/* mockup */}
-                    {project.mockup && (
-                        <div className="large-project-mockup">
+                        <div className='project-mockup'>
                             <img src={project.mockup} alt="Mockup" />
                         </div>
-                    )}
+                    </div>
 
-                    {/* large image */}
-                    {project.imageLarge && (
-                        <div className="large-project-large">
-                            <img src={project.imageLarge} alt="Large" />
+                    <div className="title-breaker--container title-breaker--container-outlier">
+                        <span></span>
+                        <h2>Overview</h2>
+                    </div>
+
+                    <p>{project.biographyMajor}</p>
+                    <p>{project.biographyMinor}</p>
+
+                    <ProjectCarousel/>
+
+                    <div className="title-breaker--container">
+                        <span></span>
+                        <h2>Style Tile</h2>
+                    </div>
+
+                    <section className='project-styletile--container'>
+                        <div className='project-styletile'>
+                            <div className='tile thumbnail'>
+                                <img src={project.thumbnail} alt="Mockup" />
+                            </div>
+                            <div className='tile palette'>
+                                <div className='palette-color' style={{ backgroundColor: project.color1 }}></div>
+                                <div className='palette-color' style={{ backgroundColor: project.color2 }}></div>
+                                <div className='palette-color' style={{ backgroundColor: project.color3 }}></div>
+                                <div className='palette-color' style={{ backgroundColor: project.color4 }}></div>
+                                <div className='palette-color' style={{ backgroundColor: project.color5 }}></div>
+                            </div>
+                            <div className='tile logo'>
+                                <img src={project.logo} alt="Mockup" />
+                            </div>
+                            <div className='tile headerset'>
+                                <img src={project.headerset} alt="Headerset" />
+                            </div>
+                            <div className='tile asset'>
+                                <img src={project.asset} alt="Asset design" />
+                            </div>
+                            <div className='tile cover'>
+                                <img src={project.coverImage} alt="Mockup" />
+                            </div>
                         </div>
-                    )}
-                    <div className="project-grid-item-5"></div>
-                </div>
+                    </section>
             </div>
-
-            <div className="hidden-small-project-images">
-                {project.imageMed && (
-                    <div className="small-project-med-image">
-                        <img src={project.imageMed} alt="Medium" />
-                    </div>
-                )}
-                {project.imageLarge && (
-                    <div className="small-project-large-image">
-                        <img src={project.imageLarge} alt="Large" />
-                    </div>
-                )}
-            </div>
-
-            <div className="project-navigation-container">
-                <div className="page-nav-arrows">
-                    <div className="previous-arrow" onClick={handlePrevious}>
-                        <img src={prevArrow} alt="Previous Arrow" className="arrow-icon previous-arrow-icon" />
-                    </div>
-                    <div className="next-arrow" onClick={handleNext}>
-                        <img src={nextArrow} alt="Next Arrow" className="arrow-icon next-arrow-icon" />
-                    </div>
-                </div>
-                {project.imageSmall && (
-                    <div className="project-overlap-img">
-                        <img src={project.imageSmall} alt="Small" />
-                    </div>
-                )}
-            </div>
-            {/* Add more project details here, and customize as needed */}
-        </div>
+        </>
     );
 }
 
