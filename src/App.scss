@@ -1073,7 +1073,7 @@ footer {
             animation: byBottom 1s ease both;
 
             h1 {
-                font-size: 8rem;
+                font-size: 6.5rem;
             }
 
             .project-tags {
@@ -1314,13 +1314,12 @@ footer {
         width: 100%;
         justify-content: space-between;
         padding: 3rem;
-        height: 80vh;
+        height: 91vh;
         gap: 3rem;
 
         .carousel-image--section {
             width: 100%;
             height: 100%;
-
             .carousel-primary--img {
                 height: 100%;
 
@@ -1343,6 +1342,7 @@ footer {
                 display: flex;
                 flex-direction: column;
                 gap: 3rem;
+                padding: 1rem;
 
                 h3 {
                     color: $primary-color;
