@@ -3,6 +3,7 @@ import { HashRouter } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from "@vercel/analytics/react"
 
 // components
 import NavBar from './components/NavBar';
@@ -18,6 +19,7 @@ const App = () => {
       <NavBar/>
       <DisclaimerCat/>
       <Footer/>
+      <Analytics/>
       <SpeedInsights/>
     </HashRouter>
   )
