@@ -9,7 +9,7 @@ const GraphicsPage = () => {
       <section className='single-page--header--container graphics-header'>
         <div className='single-page--header'>
           <div className='row'>
-            <img src='/public/images/hand-scribble.png'/>
+            <img src='/images/hand-scribble.png'/>
             <h1>Made</h1>
           </div>
             <p>These hand-made graphic hoodies and t-shirts are designed by yours truly, using fabric paint, a syringe,
@@ -22,28 +22,28 @@ const GraphicsPage = () => {
                 <MdOutlineArrowOutward />
             </div>
         </div>
-        <div className='image-wrapper'><img src='/public/images/pins.webp'/></div>
+        <div className='image-wrapper'><img src='/images/pins.webp'/></div>
       </section>
 
       <section className='content-section white-section extended-title graphics-items'>
         <div className="graphics-populated-items graphics-items">
         <div className="card">
-              <img className="card__content" src='/public/images/hoodie-1-front.webp'/>
+              <img className="card__content" src='/images/hoodie-1-front.webp'/>
               <img className='back-img' src='/public/images/hoodie-1-back.webp'/>
           </div>
 
           <div className="card">
-              <img className="card__content" src='/public/images/hoodie-1-front.webp'/>
+              <img className="card__content" src='/images/hoodie-1-front.webp'/>
               <img className='back-img' src='/public/images/hoodie-1-back.webp'/>
           </div>
 
           <div className="card">
-              <img className="card__content" src='/public/images/top-1-front.webp'/>
+              <img className="card__content" src='/images/top-1-front.webp'/>
               <img className='back-img' src='/public/images/top-1-back.webp'/>
           </div>
 
           <div className="card">
-              <img className="card__content" src='/public/images/top-2-front.webp'/>
+              <img className="card__content" src='/images/top-2-front.webp'/>
               <img className='back-img' src='/public/images/top-2-back.webp'/>
           </div>
         </div>
