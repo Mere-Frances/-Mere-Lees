@@ -29,22 +29,22 @@ const GraphicsPage = () => {
         <div className="graphics-populated-items graphics-items">
         <div className="card">
               <img className="card__content" src='/images/hoodie-1-front.webp'/>
-              <img className='back-img' src='/public/images/hoodie-1-back.webp'/>
+              <img className='back-img' src='/images/hoodie-1-back.webp'/>
           </div>
 
           <div className="card">
               <img className="card__content" src='/images/hoodie-1-front.webp'/>
-              <img className='back-img' src='/public/images/hoodie-1-back.webp'/>
+              <img className='back-img' src='/images/hoodie-1-back.webp'/>
           </div>
 
           <div className="card">
               <img className="card__content" src='/images/top-1-front.webp'/>
-              <img className='back-img' src='/public/images/top-1-back.webp'/>
+              <img className='back-img' src='/images/top-1-back.webp'/>
           </div>
 
           <div className="card">
               <img className="card__content" src='/images/top-2-front.webp'/>
-              <img className='back-img' src='/public/images/top-2-back.webp'/>
+              <img className='back-img' src='/images/top-2-back.webp'/>
           </div>
         </div>
       </section>   
