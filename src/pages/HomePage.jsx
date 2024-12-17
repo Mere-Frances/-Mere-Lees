@@ -47,7 +47,7 @@ const HomePage = () => {
             </Link>
             
             <Link to="/projects" className='quick-link--box main-link'>
-              <img src='/public/images/quicklink-img-3.png' alt='outline doodle of characters'/>
+              <img src='./public/images/quicklink-img-3.png' alt='outline doodle of characters'/>
               <h3>Projects</h3>
             </Link>
           </div>
