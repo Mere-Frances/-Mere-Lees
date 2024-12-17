@@ -37,7 +37,7 @@ const HomePage = () => {
         <div className='section-content--container extended-content--container'>
           <div className='quick-link--container' data-aos="fade-up">
             <Link to="/blog" className='quick-link--box main-link'>
-              <img src='/public/images/quicklink-img-1.PNG' alt='outline doodle of characters'/>
+              <img src='/images/quicklink-img-1.PNG' alt='outline doodle of characters'/>
               <h3>Blog</h3>
             </Link>
 
@@ -47,7 +47,7 @@ const HomePage = () => {
             </Link>
             
             <Link to="/projects" className='quick-link--box main-link'>
-              <img src='./public/images/quicklink-img-3.png' alt='outline doodle of characters'/>
+              <img src='/images/quicklink-img-3.png' alt='outline doodle of characters'/>
               <h3>Projects</h3>
             </Link>
           </div>

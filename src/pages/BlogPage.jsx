@@ -25,7 +25,7 @@ const BlogPage = () => {
             </div>
 
             <div className="blog-image--container pinned-image">
-              <img src='../public/images/me-cover-med.webp'/>
+              <img src='./images/me-cover-med.webp'/>
             </div>
 
             <div className="blog-content--text">
