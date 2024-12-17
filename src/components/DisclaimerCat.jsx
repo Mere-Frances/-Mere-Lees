@@ -26,13 +26,6 @@ const DisclaimerCat = () => {
       <img src='../images/cat-icon.png'
         className={`jumping-icon`}
       />
-    {isHovered && (
-      <div className="message-container">
-        <h3>Important Disclaimer!</h3>
-        <p>The projects showcased on this portfolio are created purely for educational and demonstrative purposes. They represent fictional scenarios and are not intended for commercial use.</p>
-        <h3 className='ignore-title'>Click the cat to ignore</h3>
-      </div>
-    )}
   </div>
   )
 }
