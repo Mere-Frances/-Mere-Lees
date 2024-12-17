@@ -6,7 +6,6 @@ const Prototypes = () => {
     const [prototypes, setPrototypes] = useState([]);
 
     useEffect(() => {
-        console.log(prototypeData);
         setPrototypes(prototypeData);
     }, []);
 

@@ -1,12 +1,13 @@
-import React from 'react'; 
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import projectData from '/public/projectData.json';
 import BackButton from '../components/BackButton';
 import prevArrow from '/public/images/prev.svg';
 import nextArrow from '/public/images/next.svg';
 import { MdOutlineArrowOutward } from "react-icons/md";
-
-import ProjectCarousel from '../components/ProjectCarousel';
+import ContentSection from '../components/ContentSection';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ProjectDetail = () => {
     const { id } = useParams();
@@ -27,82 +28,148 @@ const ProjectDetail = () => {
         navigate(`/project/${prevId}`);
     };
 
+    const filters = {
+        brief: (
+            <>
+                <p>{project.biographyBrief}</p>
+            </>
+        ),
+        tools: (
+            <>
+                 <p>{project.biographyTools}</p>
+            </>
+        ),
+        outcome: (
+            <>
+                <p>{project.biographyOutcome}</p>            
+            </>
+        ),
+        reflection: (
+            <>
+                <p>{project.biographyReflection}</p>            
+            </>
+        ),
+    };
+
+    const [activeFilter, setActiveFilter] = useState(Object.keys(filters)[0]);
+
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+          once: true,
+        });
+      }, []);
+
     return (
         <>
             <BackButton />
-            <div className="project-detail--page">
-                    <div className='project-detail--header'>
-                        <div className='title-content'>
-                            <h1>{project.name} {project.description}</h1>
-                            <div className="project-tags">
-                                {project.tags.map((tech, index) => (
-                                    <span key={index} className="project-tags-icons">
-                                        {tech}
-                                    </span>
-                                ))}
+            <section className='single-page--header--container'>
+                <div className='single-page--header'>
+                    <h1>{project.name}</h1>
+                    <p>{project.caption}</p>
+                    <div className="main-button">
+                        <a href={project.url}>See the real thing</a>
+                        <MdOutlineArrowOutward />
+                    </div>
+                    <div className="project-tags">
+                        {project.tags.map((tech, index) => (
+                            <span key={index} className="project-tags-icons">
+                                {tech}
+                            </span>
+                        ))}
+                    </div>
+                    <div className="project-navigation-container visible">
+                        <div className="page-nav-arrows">
+                            <div className="previous-arrow" onClick={handlePrevious}>
+                                <img src={prevArrow} alt="Previous Arrow" className="arrow-icon previous-arrow-icon" />
                             </div>
-                            <p>{project.caption}</p>
-                            <div className="main-button">
-                                <a href={project.url}>See the real thing</a>
-                                <MdOutlineArrowOutward />
-                            </div>
-                            <div className="project-navigation-container">
-                                <div className="page-nav-arrows">
-                                    <div className="previous-arrow" onClick={handlePrevious}>
-                                        <img src={prevArrow} alt="Previous Arrow" className="arrow-icon previous-arrow-icon" />
-                                    </div>
-                                    <div className="next-arrow" onClick={handleNext}>
-                                        <img src={nextArrow} alt="Next Arrow" className="arrow-icon next-arrow-icon" />
-                                    </div>
-                                </div>
+                            <div className="next-arrow" onClick={handleNext}>
+                                <img src={nextArrow} alt="Next Arrow" className="arrow-icon next-arrow-icon" />
                             </div>
                         </div>
-                        <div className='project-mockup'>
-                            <img src={project.mockup} alt="Mockup" />
+                    </div>
+                </div>
+                <div className='image-wrapper'><img src={project.previewImage} alt={project.name}/></div>
+            </section>
+
+            <section className='content-section pink-section'>
+                <ContentSection
+                    title='Under the hood'
+                    includeSvg={true}
+                />
+                <div className='section-content--container single-page--about--container'>
+                    <div className="product-filters" data-aos="fade-up">
+                        {Object.keys(filters).map((filterKey) => (
+                            <a
+                                key={filterKey}
+                                onClick={() => setActiveFilter(filterKey)}
+                                className={`main-button filter-link ${activeFilter === filterKey ? "active" : ""}`}
+                            >
+                                {filterKey.charAt(0).toUpperCase() + filterKey.slice(1)}
+                            </a>
+                        ))}
+                    </div>
+
+                    <div className="product-dynamic-content" data-aos="fade-up">
+                        {filters[activeFilter]}
+                    </div>
+                </div>
+            </section>
+
+            <section className='content-section white-section'>
+                <ContentSection
+                    title='Mockups & more'
+                    includeSvg={true}
+                />
+                <div className='single-page--gallery' data-aos="fade-up">
+                    <img src={project.mockup1} alt={project.name}/>
+                    <img src={project.screenshot1} alt={project.name}/>
+                    <img src={project.mockup2} alt={project.name}/>
+                    <img src={project.screenshot2} alt={project.name}/>
+                    <img src={project.mockup3} alt={project.name}/>
+                    <img src={project.mockup4} alt={project.name}/>
+                </div>
+            </section>
+
+            {/* <section className='content-section pink-section'>
+                <ContentSection
+                    title='Behind the scenes'
+                    includeSvg={true}
+                />
+                <div className='single-page--details'>
+                    <div class="card" data-aos="fade-up">
+                        <div class="card__content">
+                            <h3>Research</h3>
+                            <p>{project.research}</p> 
                         </div>
+                        <img  src={project.researchImage} alt={project.name}/>
                     </div>
-
-                    <div className="title-breaker--container title-breaker--container-outlier">
-                        <span></span>
-                        <h2>Overview</h2>
-                    </div>
-
-                    <p>{project.biographyMajor}</p>
-                    <p>{project.biographyMinor}</p>
-
-                    <ProjectCarousel/>
-
-                    <div className="title-breaker--container">
-                        <span></span>
-                        <h2>Style Tile</h2>
-                    </div>
-
-                    <section className='project-styletile--container'>
-                        <div className='project-styletile'>
-                            <div className='tile thumbnail'>
-                                <img src={project.thumbnail} alt="Mockup" />
-                            </div>
-                            <div className='tile palette'>
-                                <div className='palette-color' style={{ backgroundColor: project.color1 }}></div>
-                                <div className='palette-color' style={{ backgroundColor: project.color2 }}></div>
-                                <div className='palette-color' style={{ backgroundColor: project.color3 }}></div>
-                                <div className='palette-color' style={{ backgroundColor: project.color4 }}></div>
-                                <div className='palette-color' style={{ backgroundColor: project.color5 }}></div>
-                            </div>
-                            <div className='tile logo'>
-                                <img src={project.logo} alt="Mockup" />
-                            </div>
-                            <div className='tile headerset'>
-                                <img src={project.headerset} alt="Headerset" />
-                            </div>
-                            <div className='tile asset'>
-                                <img src={project.asset} alt="Asset design" />
-                            </div>
-                            <div className='tile cover'>
-                                <img src={project.coverImage} alt="Mockup" />
-                            </div>
+                    <div class="card" data-aos="fade-up">
+                        <div class="card__content">
+                            <h3>Wireframes</h3>
+                            <p>{project.wireframes}</p>                        
                         </div>
-                    </section>
+                        <img  src={project.wireframeImage} alt={project.name}/>
+                    </div>
+                    <div class="card" data-aos="fade-up">
+                        <div class="card__content">
+                            <h3>User Testing</h3>
+                            <p>{project.userTesting}</p>
+                        </div>
+                        <img  src={project.testingImage} alt={project.name}/>
+                    </div>
+                </div>
+            </section> */}
+
+            <div className="project-navigation-container hidden">
+                <div className="page-nav-arrows">
+                    <div className="previous-arrow" onClick={handlePrevious}>
+                        <img src={prevArrow} alt="Previous Arrow" className="arrow-icon previous-arrow-icon" />
+                    </div>
+                    <div className="next-arrow" onClick={handleNext}>
+                        <img src={nextArrow} alt="Next Arrow" className="arrow-icon next-arrow-icon" />
+                    </div>
+                </div>
             </div>
         </>
     );

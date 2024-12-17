@@ -1,80 +1,49 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Projects from '../components/Projects';
-import Prototypes from '../components/Prototypes';
-import BackButton from '../components/BackButton';
-import { FloatingCircles } from '../components/ProjectHeader';
+// import Prototypes from '../components/Prototypes';
 import Calculator from '../components/Calculator';
 import ColorPicker from '../components/ColorPicker';
-import Clock from '../components/Clock';
+import ContentSection from '../components/ContentSection';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ProjectsPage = () => {
-  // Creating a reference for the container of the Projects component
-  const projectsContainerRef = useRef(null);
-  const prototypesContainerRef = useRef(null);
-  const practicesContainerRef = useRef(null);
 
-  // Scroll function using `scrollIntoView`
-  const scrollToProjects = () => {
-    if (projectsContainerRef.current) {
-      projectsContainerRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-  const scrollToPrototypes = () => {
-    if (prototypesContainerRef.current) {
-      prototypesContainerRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-  const scrollToPractices = () => {
-    if (practicesContainerRef.current) {
-      practicesContainerRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   return (
     <>
-      <BackButton />
+      <header className="projects-header">
+        <div className="header-border--block text-block" data-aos="fade-up">
+          <p className='header-surtitle'>My projects</p>
+          <h2>"Everything you can imagine is <span>real</span>"</h2>
+          <p>Discover how my projects embrace the balance between freedom and precision, after all, creativity is a wild mind and a disciplined eye.</p>
+        </div>
+      </header>
 
-      <div className="projects-header--container">
-        <FloatingCircles 
-        scrollToProjects={scrollToProjects}
-        scrollToPrototypes={scrollToPrototypes}
-        scrollToPractices={scrollToPractices}
+      <section className='content-section white-section extended-title'>
+        <ContentSection
+            title='Website Design'
+            includeSvg={false}
         />
-      </div>
+        <Projects/>
+      </section>    
 
-      <div className="page-break--line">
-        <span />
-      </div>
-
-      <div className="title-breaker--container" ref={projectsContainerRef}>
-        <span></span>
-        <h2>Web Development Projects</h2>
-      </div>
-
-      {/* website projects */}
-      <div className="projects-items--container">
-        <Projects />
-      </div>
-
-      {/* <div className="title-breaker--container" ref={prototypesContainerRef}>
-        <span></span>
-        <h2>Design Prototypes & Visuals</h2>
-      </div>
-
-      <div className="projects-items--container">
-        <Prototypes />
-      </div> */}
-
-      <div className="title-breaker--container" ref={practicesContainerRef}>
-        <span></span>
-        <h2>Exercises & Mini Projects</h2>
-      </div>
-      
-      <div className="projects-items--container" >
-        <Calculator />
-        <ColorPicker />
-        <Clock />
-      </div>
+      <section className='content-section pink-section extended-title'>
+        <ContentSection
+            title='Practical Exercises'
+            includeSvg={true}
+        />
+        <div className='section-content--container extended-content--container practical-examples'>
+          <Calculator />
+          <ColorPicker />
+        </div>
+      </section>    
     </>
   );
 };
