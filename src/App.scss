@@ -1402,6 +1402,7 @@ footer {
     @include main-box-sizing;
     flex-direction: column;
     padding-bottom: 0;
+    width: 100%;
 
     .page-break--line {
         padding: 3vw 0 0 0;
