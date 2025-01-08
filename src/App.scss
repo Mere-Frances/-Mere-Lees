@@ -237,7 +237,7 @@ header {
         user-select: none;
         text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
 
-         .title {
+        .title {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -250,7 +250,7 @@ header {
             gap: 2vw;
         }
 
-         .title span {
+        .title span {
             display: inline-block;
             font-size: 5vw;
             color: $primary-color;
@@ -261,12 +261,12 @@ header {
             letter-spacing: 0.25vw;
         }
 
-         .title span:last-child {
+        .title span:last-child {
             font-size: 1vw;
             animation: byBottom 1s 0.25s ease both;
         }
 
-         .title span a {
+        .title span a {
             position: relative;
             display: inline-block;
             margin-left: 0.5vw;
@@ -278,7 +278,7 @@ header {
             cursor: auto;
         }
 
-         .title span a::after {
+        .title span a::after {
             content: "";
             height: .51vw;
             background-color: #ff6083;
@@ -383,9 +383,9 @@ header {
             }
         }
     }
-  }
-  
-  :root {
+}
+
+:root {
     --color-bg1: rgb(108, 0, 162);
     --color-bg2: rgb(0, 17, 82);
     --color1: 18, 113, 255;
@@ -396,45 +396,51 @@ header {
     --color-interactive: 140, 100, 255;
     --circle-size: 90%;
     --blending: hard-light;
-  }
-  
-  @keyframes moveInCircle {
+}
+
+@keyframes moveInCircle {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     50% {
-      transform: rotate(180deg);
+        transform: rotate(180deg);
     }
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
-  @keyframes moveVertical {
+}
+
+@keyframes moveVertical {
     0% {
-      transform: translateY(-50%);
+        transform: translateY(-50%);
     }
+
     50% {
-      transform: translateY(50%);
+        transform: translateY(50%);
     }
+
     100% {
-      transform: translateY(-50%);
+        transform: translateY(-50%);
     }
-  }
-  
-  @keyframes moveHorizontal {
+}
+
+@keyframes moveHorizontal {
     0% {
-      transform: translateX(-50%) translateY(-10%);
+        transform: translateX(-50%) translateY(-10%);
     }
+
     50% {
-      transform: translateX(50%) translateY(10%);
+        transform: translateX(50%) translateY(10%);
     }
+
     100% {
-      transform: translateX(-50%) translateY(-10%);
+        transform: translateX(-50%) translateY(-10%);
     }
-  }
-  
-  .gradient-bg {
+}
+
+.gradient-bg {
     width: 100%;
     height: 100%;
     position: relative;
@@ -442,95 +448,96 @@ header {
     background: linear-gradient(40deg, rgb(255, 213, 229), rgb(255, 205, 205));
     top: 0;
     left: 0;
-  
+
     svg {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 0;
-      height: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
     }
-  
+
     .gradients-container {
-      filter: url(#goo) blur(40px);
-      width: 100%;
-      height: 100%;
+        filter: url(#goo) blur(40px);
+        width: 100%;
+        height: 100%;
     }
-  
+
     .g1,
     .g2,
     .g3,
     .g4,
     .g5 {
-      position: absolute;
-      background: radial-gradient(circle at center, 
-      rgb(240 108 255 / 0.8) 0, 
-      rgba(var(--color1), 0) 50%) no-repeat;
-      mix-blend-mode: var(--blending);
-      width: var(--circle-size);
-      height: var(--circle-size);
-      top: calc(10% - var(--circle-size) / 2);
-      left: calc(20% - var(--circle-size) / 2);
-      opacity: 1;
-      transform-origin: center;
+        position: absolute;
+        background: radial-gradient(circle at center,
+                rgb(240 108 255 / 0.8) 0,
+                rgba(var(--color1), 0) 50%) no-repeat;
+        mix-blend-mode: var(--blending);
+        width: var(--circle-size);
+        height: var(--circle-size);
+        top: calc(10% - var(--circle-size) / 2);
+        left: calc(20% - var(--circle-size) / 2);
+        opacity: 1;
+        transform-origin: center;
     }
 
     .interactive {
-      position: absolute;
-      background: radial-gradient(circle at center, 
-      rgb(240 108 255 / 0.8) 0, 
-      rgba(var(--color1), 0) 50%) no-repeat;
-      mix-blend-mode: var(--blending);
-      width: var(--circle-size);
-      height: var(--circle-size);
-      top: calc(0% - var(--circle-size) / 2);
-      left: calc(0% - var(--circle-size) / 2);
-      opacity: 1;
-      transform-origin: center;
+        position: absolute;
+        background: radial-gradient(circle at center,
+                rgb(240 108 255 / 0.8) 0,
+                rgba(var(--color1), 0) 50%) no-repeat;
+        mix-blend-mode: var(--blending);
+        width: var(--circle-size);
+        height: var(--circle-size);
+        top: calc(0% - var(--circle-size) / 2);
+        left: calc(0% - var(--circle-size) / 2);
+        opacity: 1;
+        transform-origin: center;
     }
-  
+
     .g1 {
         background: radial-gradient(circle at center, rgba(255, 255, 255, 0.644) 0, rgba(var(--color1), 0) 50%);
         animation: moveVertical 15s ease infinite;
     }
-  
+
     .g2 {
         background: radial-gradient(circle at center, rgba(255, 164, 207, 0.945) 0, rgba(var(--color4), 0) 50%);
-      transform-origin: calc(50% - 400px);
-      animation: moveInCircle 20s reverse infinite;
+        transform-origin: calc(50% - 400px);
+        animation: moveInCircle 20s reverse infinite;
     }
-  
+
     .g3 {
         background: radial-gradient(circle at center, rgba(255, 147, 143, 0.747) 0, rgba(var(--color4), 0) 50%);
-      transform-origin: calc(50% + 400px);
-      animation: moveInCircle 20s linear infinite;
+        transform-origin: calc(50% + 400px);
+        animation: moveInCircle 20s linear infinite;
     }
-  
+
     .g4 {
         background: radial-gradient(circle at center, rgba(255, 147, 143, 0.747) 0, rgba(var(--color4), 0) 50%);
-      transform-origin: calc(50% - 100px);
-      animation: moveHorizontal 20s ease infinite;
+        transform-origin: calc(50% - 100px);
+        animation: moveHorizontal 20s ease infinite;
     }
-  
+
     .g5 {
         background: radial-gradient(circle at center, rgba(255, 157, 190, 0.959) 0, rgba(var(--color3), 0) 50%);
-      width: calc(var(--circle-size) * 2);
-      height: calc(var(--circle-size) * 2);
-      transform-origin: calc(60% - 300px) calc(40% + 400px);
-      animation: moveInCircle 15s ease infinite;
+        width: calc(var(--circle-size) * 2);
+        height: calc(var(--circle-size) * 2);
+        transform-origin: calc(60% - 300px) calc(40% + 400px);
+        animation: moveInCircle 15s ease infinite;
     }
-  
+
     .interactive {
-      background: radial-gradient(circle at center, rgba(242, 123, 255, 0.8) 0, rgba(var(--color-interactive), 0) 50%);
-      width: 100%;
-      height: 100%;
-      opacity: 0.7;
+        background: radial-gradient(circle at center, rgba(242, 123, 255, 0.8) 0, rgba(var(--color-interactive), 0) 50%);
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
     }
 }
 
-.sticker{
+.sticker {
     position: relative;
-    img{
+
+    img {
         position: absolute;
         right: 0;
         width: 17vw;
@@ -677,120 +684,69 @@ header {
 
 .stardew-project--container {
     padding-top: 4vw;
-  }
-  
-  .analytics-section {
+}
+
+.analytics-section {
     position: relative;
     width: 100%;
     padding: 3vw 7vw;
-  
+
     .analytics-image {
-      float: right;
-      margin-left: 5vw;
-      margin-bottom: 5vw;
-      border-radius: 50%;
-      background-color: #ffdada;
-  
-      img {
-        width: 35vw;
-      }
-    }
-  
-    .analytics-container {
-      display: block;
-      padding: 2vw;
-  
-      h3 {
-        color: #000;
-        text-align: start;
-        margin-bottom: 1.5vw;
-      }
+        float: right;
+        margin-left: 5vw;
+        margin-bottom: 5vw;
+        border-radius: 50%;
+        background-color: #ffdada;
 
-      .main-button{
-        margin-bottom: 1.5vw;
-      }
-  
-      p {
-        margin-bottom: 1.5vw;
-      }
-  
-      .quote {
-        font-style: italic;
-        margin-top: 1vw;
-      }
-  
-      .analytics-content {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        gap: 3vw;
-        margin-top: 2vw;
-  
-        .analytics {
-          background-color: $accent-color;
-          padding: 0vw 2.5vw;
-          border-radius: 2vw 2vw 2vw 0;
-  
-          h4, p{
-            color: #fff;
-          }
-
+        img {
+            width: 35vw;
         }
-      }
     }
-  }
-  
 
-// .stardew-project--container{
-//     padding-top: 4vw;
-// }
+    .analytics-container {
+        display: block;
+        padding: 2vw;
 
-// .analytics-section {
-//     position: relative;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     flex-direction: row-reverse;
-//     width: 100%;
-//     padding: 3vw;
-//     gap: 3vw;
-//     .analytics-image{
-//         background-color: #ffdada;
-//         border-radius: 50%;
-//         img{
-//             width: 40vw;
-//         }
-//     }
-//     .analytics-container{
-//         display: flex;
-//         flex-direction: column;
-//         gap: 3vw;
-//         padding: 2vw;
-//         height:80%;
-//         width: 50%;
-//         .quote{
-//             font-style: italic;
-//         }
-//         h3{
-//             color: #000;
-//             text-align: start;
-//         }
-//         .analytics-content{
-//             display: flex;
-//             align-items: center;
-//             text-align: center;
-//             gap: 3vw;
-//             .analytics{
-//                 background-color: $accent-color;
-//                 padding: 1vw 2vw;
-//                 border-radius: 2vw 2vw 2vw 0;
-//                 p, h4{
-//                     color: white;
-//                 }
-//             }
-//         }
-//     }
-// }
+        h3 {
+            color: #000;
+            text-align: start;
+            margin-bottom: 1.5vw;
+        }
+
+        .main-button {
+            margin-bottom: 1.5vw;
+        }
+
+        p {
+            margin-bottom: 1.5vw;
+        }
+
+        .quote {
+            font-style: italic;
+            margin-top: 1vw;
+        }
+
+        .analytics-content {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 3vw;
+            margin-top: 2vw;
+
+            .analytics {
+                background-color: $accent-color;
+                padding: 0vw 2.5vw;
+                border-radius: 2vw 2vw 2vw 0;
+
+                h4,
+                p {
+                    color: #fff;
+                }
+
+            }
+        }
+    }
+}
 
 .text-overlay--title {
     position: relative;
@@ -1688,84 +1644,6 @@ button {
     }
 }
 
-
-
-// ---------------------------------BLOG PAGE 3
-// .blog-results {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 5vw;
-// }
-
-// .blog-container {
-//     @include main-box-sizing;
-//     flex-direction: column;
-//     gap: 5vw;
-
-//     .blog-item--container {
-//         @include main-box-sizing;
-//         justify-content: space-between;
-//         background-color: $grey;
-//         width: 100%;
-//         gap: 3vw;
-
-//         .pinned-icon {
-//             position: absolute;
-//             @include center-style;
-//             height: 50px;
-//             width: 50px;
-//             background-color: $accent-color;
-//             border-radius: 50%;
-//             top: 22vh;
-//             right: 5vw;
-
-//             .fa-solid {
-//                 color: $secondary-color;
-//                 font-size: 20px;
-//             }
-//         }
-
-//         .blog-content--titles {
-//             @include main-box-sizing;
-//             flex-direction: column;
-//             align-items: flex-start;
-//             padding: 0;
-//             width: 40%;
-//             gap: 2vw;
-
-//             .blog-image--container {
-//                 width: 100%;
-//                 background-size: cover;
-//             }
-
-//             .pinned-image {
-//                 height: 60vh;
-//                 background-image: url(../public/images/myblog.webp);
-//             }
-//         }
-
-//         .blog-content--text {
-//             @include center-style;
-//             flex-direction: column;
-//             justify-content: space-between;
-//             text-align: start;
-//             gap: 2vw;
-//             padding: 0;
-//             width: 60%;
-
-//             .blog-date {
-//                 @include center-style;
-//                 justify-content: flex-end;
-//                 width: 100%;
-
-//                 h6 {
-//                     text-align: end;
-//                 }
-//             }
-//         }
-//     }
-// }
-
 .graphics-header {
     height: 30vw;
 
@@ -1912,9 +1790,9 @@ button {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 
-    .gradient-section{
-        .header-text--container{
-            .title{
+    .gradient-section {
+        .header-text--container {
+            .title {
                 padding-top: 10vw;
             }
         }
@@ -1935,9 +1813,9 @@ button {
         font-size: 2.2vw;
     }
 
-    .gradient-section{
-        .header-text--container{
-            .title{
+    .gradient-section {
+        .header-text--container {
+            .title {
                 padding-top: 15vw;
             }
         }
@@ -2083,7 +1961,8 @@ button {
             justify-content: center;
             width: 100%;
             height: 50vw;
-            img{
+
+            img {
                 width: 70%;
             }
         }
@@ -2136,19 +2015,23 @@ button {
         padding: 1vw;
     }
 
-    .blog-container{
-        .content-section{
-            .section-content--container{
-                .pinned-icon{
+    .blog-container {
+        .content-section {
+            .section-content--container {
+                .pinned-icon {
                     padding: 2vw;
                     border-radius: 5vw;
                     font-size: 2vw;
                 }
-                .blog-item--container{
+
+                .blog-item--container {
                     flex-direction: column;
-                    .blog-image--container, .blog-content--text{
+
+                    .blog-image--container,
+                    .blog-content--text {
                         width: 100%;
-                        img{
+
+                        img {
                             height: 45vw;
                             object-fit: cover;
                             object-position: bottom;
@@ -2218,7 +2101,7 @@ button {
         margin-top: 6vw;
     }
 
-    .analytics-section .analytics-container h3{
+    .analytics-section .analytics-container h3 {
         font-size: 4vw;
     }
 
@@ -2261,24 +2144,28 @@ button {
         }
     }
 
-    .gradient-section{
+    .gradient-section {
         height: 85vw;
-        .header-text--container{
-            .title{
+
+        .header-text--container {
+            .title {
                 padding-top: 15vw;
                 width: 80%;
 
                 span {
                     font-size: 10vw;
                 }
-                span a{
+
+                span a {
                     font-size: 4vw;
                     margin-left: 2vw;
                 }
-                span a::after{
+
+                span a::after {
                     height: 1vw;
                 }
-                span:last-child{
+
+                span:last-child {
                     font-size: 2vw;
                 }
             }
@@ -2454,31 +2341,36 @@ button {
         }
     }
 
-    .gradient-section{
+    .gradient-section {
         height: 120vw;
-        .header-text--container{
+
+        .header-text--container {
             height: 65vw;
             margin-top: 10vh;
-            .title{
+
+            .title {
                 width: 80%;
 
                 span {
                     font-size: 10vw;
                 }
-                span a{
+
+                span a {
                     font-size: 4vw;
                     margin-left: 2vw;
                 }
-                span a::after{
+
+                span a::after {
                     height: 1vw;
                 }
-                span:last-child{
+
+                span:last-child {
                     font-size: 2vw;
                 }
             }
         }
     }
-    
+
     .content-section {
         .section-content--container {
             padding: 8vw;
@@ -2552,15 +2444,16 @@ button {
         }
     }
 
-    .sticker{
-        img{
+    .sticker {
+        img {
             width: 21vw;
             margin-right: 19vw;
         }
     }
 
-    .stardew-project--container{
+    .stardew-project--container {
         padding: 5vw;
+
         .analytics-section {
             padding: 3vw;
             display: flex;
@@ -2568,30 +2461,39 @@ button {
             width: 100%;
             align-items: center;
             justify-content: center;
-            .analytics-image{
+
+            .analytics-image {
                 background-color: #ffdada;
                 border-radius: 50%;
-                img{
+
+                img {
                     width: 50vw;
                 }
             }
-            .analytics-container{
+
+            .analytics-container {
                 display: flex;
                 flex-direction: column;
                 gap: 2vw;
                 text-align: center;
-                .main-button, h3{
+
+                .main-button,
+                h3 {
                     text-align: center;
                     justify-content: center;
                 }
-                h3{
+
+                h3 {
                     font-size: 5vw;
                 }
-                .analytics-content{
+
+                .analytics-content {
                     justify-content: center;
-                    .analytics{
+
+                    .analytics {
                         padding: .5vw 5vw;
-                        h4{
+
+                        h4 {
                             font-size: 10vw;
                         }
                     }
@@ -2661,10 +2563,10 @@ button {
         height: 28vw;
     }
 
-    .blog-container{
-        .content-section{
-            .section-content--container{
-                .pinned-icon{
+    .blog-container {
+        .content-section {
+            .section-content--container {
+                .pinned-icon {
                     padding: 3vw;
                     border-radius: 5vw;
                     font-size: 3vw;
@@ -2706,9 +2608,9 @@ button {
     align-items: flex-start;
     padding-top: 3vw;
     z-index: 1000;
-  }
-  
-  .disclaimer-popup {
+}
+
+.disclaimer-popup {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2721,19 +2623,20 @@ button {
     gap: 2vw;
     opacity: 0;
     animation: fadeIn 0.3s ease-in-out forwards;
-    h3{
+
+    h3 {
         color: $primary-color;
     }
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: scale(0.9);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
+}
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

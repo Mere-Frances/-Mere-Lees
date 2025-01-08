@@ -586,7 +586,8 @@ header {
   padding: 0vw 2.5vw;
   border-radius: 2vw 2vw 2vw 0;
 }
-.analytics-section .analytics-container .analytics-content .analytics h4, .analytics-section .analytics-container .analytics-content .analytics p {
+.analytics-section .analytics-container .analytics-content .analytics h4,
+.analytics-section .analytics-container .analytics-content .analytics p {
   color: #fff;
 }
 
@@ -1671,10 +1672,12 @@ button:active {
   .blog-container .content-section .section-content--container .blog-item--container {
     flex-direction: column;
   }
-  .blog-container .content-section .section-content--container .blog-item--container .blog-image--container, .blog-container .content-section .section-content--container .blog-item--container .blog-content--text {
+  .blog-container .content-section .section-content--container .blog-item--container .blog-image--container,
+  .blog-container .content-section .section-content--container .blog-item--container .blog-content--text {
     width: 100%;
   }
-  .blog-container .content-section .section-content--container .blog-item--container .blog-image--container img, .blog-container .content-section .section-content--container .blog-item--container .blog-content--text img {
+  .blog-container .content-section .section-content--container .blog-item--container .blog-image--container img,
+  .blog-container .content-section .section-content--container .blog-item--container .blog-content--text img {
     height: 45vw;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1983,7 +1986,8 @@ button:active {
     gap: 2vw;
     text-align: center;
   }
-  .stardew-project--container .analytics-section .analytics-container .main-button, .stardew-project--container .analytics-section .analytics-container h3 {
+  .stardew-project--container .analytics-section .analytics-container .main-button,
+  .stardew-project--container .analytics-section .analytics-container h3 {
     text-align: center;
     justify-content: center;
   }
