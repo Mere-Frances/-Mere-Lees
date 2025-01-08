@@ -207,169 +207,6 @@ header {
     @include main-box-sizing;
     height: 98vh;
     gap: 4vw;
-
-    // .header-text--container {
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     align-items: center;
-    //     background-image: url(../public/images/header-image.png);
-    //     background-position: top center;
-    //     background-size: cover;
-    //     width: 100%;
-    //     height: 100%;
-    //     gap: 1vw;
-
-    //     section {
-    //         display: flex;
-    //     }
-
-    //     section .title {
-    //         display: flex;
-    //         flex-direction: column;
-    //         align-items: center;
-    //         transform: translateY(-50px);
-    //         overflow: hidden;
-    //         font-weight: 500;
-    //         width: 40vw;
-    //         text-align: center;
-    //         gap: 2vw;
-    //     }
-
-    //     section .title span {
-    //         display: inline-block;
-    //         font-size: 5vw;
-    //         color: $primary-color;
-    //         text-transform: uppercase;
-    //         transform: translateX(-100%);
-    //         animation: byBottom 1s ease both;
-    //         font-weight: 600;
-    //         letter-spacing: 0.25vw;
-    //     }
-
-    //     section .title span:last-child {
-    //         font-size: 1vw;
-    //         animation: byBottom 1s 0.25s ease both;
-    //     }
-
-    //     section .title span a {
-    //         position: relative;
-    //         display: inline-block;
-    //         margin-left: 0.5vw;
-    //         text-decoration: none;
-    //         font-size: 2vw;
-    //         text-transform: lowercase;
-    //         font-family: "Rouge Script", cursive;
-    //         color: #e76a87;
-    //         cursor: auto;
-    //     }
-
-    //     section .title span a::after {
-    //         content: "";
-    //         height: .55vw;
-    //         background-color: #e76a87;
-    //         position: absolute;
-    //         bottom: -15%;
-    //         left: -2%;
-    //         width: 100%;
-    //         animation: linkAfter 0.9s 1s ease both;
-    //     }
-
-    //     @-moz-keyframes byBottom {
-    //         0% {
-    //             transform: translateY(150%);
-    //         }
-
-    //         100% {
-    //             transform: translateY(0);
-    //         }
-    //     }
-
-    //     @-webkit-keyframes byBottom {
-    //         0% {
-    //             transform: translateY(150%);
-    //         }
-
-    //         100% {
-    //             transform: translateY(0);
-    //         }
-    //     }
-
-    //     @-o-keyframes byBottom {
-    //         0% {
-    //             transform: translateY(150%);
-    //         }
-
-    //         100% {
-    //             transform: translateY(0);
-    //         }
-    //     }
-
-    //     @keyframes byBottom {
-    //         0% {
-    //             transform: translateY(150%);
-    //         }
-
-    //         100% {
-    //             transform: translateY(0);
-    //         }
-    //     }
-
-    //     @-moz-keyframes linkAfter {
-    //         0% {
-    //             width: 0;
-    //         }
-
-    //         100% {
-    //             width: 30px;
-    //         }
-    //     }
-
-    //     @-webkit-keyframes linkAfter {
-    //         0% {
-    //             width: 0;
-    //         }
-
-    //         100% {
-    //             width: 30px;
-    //         }
-    //     }
-
-    //     @-o-keyframes linkAfter {
-    //         0% {
-    //             width: 0;
-    //         }
-
-    //         100% {
-    //             width: 30px;
-    //         }
-    //     }
-
-    //     @keyframes linkAfter {
-    //         0% {
-    //             width: 0;
-    //         }
-
-    //         100% {
-    //             width: 100%;
-    //         }
-    //     }
-
-
-    //     .header-links--container {
-    //         @include main-box-sizing;
-    //         flex-wrap: wrap;
-    //         padding: 0;
-    //         gap: 5vw;
-    //         transform: translateX(-100%);
-    //         animation: byBottom 1s ease both;
-
-    //         .header-links {
-    //             --hovered-color: #e76a87;
-    //         }
-    //     }
-    // }
-
 }
 
 .gradient-section {
@@ -828,6 +665,55 @@ header {
     }
 }
 
+.stardew-project--container{
+    padding-top: 4vw;
+}
+
+.analytics-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3vw;
+    gap: 3vw;
+    .analytics-image{
+        background-color: #ffdada;
+        border-radius: 50%;
+        img{
+            width: 40vw;
+        }
+    }
+    .analytics-container{
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+        padding: 2vw;
+        height:80%;
+        width: 50%;
+        .quote{
+            font-style: italic;
+        }
+        h3{
+            color: #000;
+            text-align: start;
+        }
+        .analytics-content{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 3vw;
+            .analytics{
+                background-color: $accent-color;
+                padding: 1vw 2vw;
+                border-radius: 2vw 2vw 2vw 0;
+                p, h4{
+                    color: white;
+                }
+            }
+        }
+    }
+}
 
 .text-overlay--title {
     position: relative;
@@ -1438,6 +1324,7 @@ header {
 footer {
     @include main-box-sizing;
     flex-direction: column;
+    padding-bottom: 0;
 
     .page-break--line {
         padding: 3vw 0 0 0;
@@ -2114,8 +2001,13 @@ button {
         }
 
         .image-wrapper {
+            display: flex;
+            justify-content: center;
             width: 100%;
             height: 50vw;
+            img{
+                width: 70%;
+            }
         }
     }
 
@@ -2578,6 +2470,29 @@ button {
         }
     }
 
+    .stardew-project--container{
+        padding: 5vw;
+        .analytics-section {
+            flex-direction: column;
+            .analytics-container{
+                width: 100%;
+                text-align: center;
+                h3{
+                    text-align: center;
+                }
+                .analytics-content{
+                    justify-content: center;
+                    .analytics{
+                        padding: 1vw 3vw;
+                         h4{
+                            font-size: 8vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .hidden {
         padding: 7vw 0;
 
@@ -2629,6 +2544,14 @@ button {
                 }
             }
         }
+    }
+
+    .single-page--gallery {
+        gap: 3vw;
+    }
+
+    .single-page--gallery img {
+        height: 28vw;
     }
 
     .blog-container{

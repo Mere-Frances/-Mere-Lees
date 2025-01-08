@@ -525,6 +525,56 @@ header {
   color: rgba(247, 168, 186, 0.5333333333);
 }
 
+.stardew-project--container {
+  padding-top: 4vw;
+}
+
+.analytics-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 3vw;
+  gap: 3vw;
+}
+.analytics-section .analytics-image {
+  background-color: #ffdada;
+  border-radius: 50%;
+}
+.analytics-section .analytics-image img {
+  width: 40vw;
+}
+.analytics-section .analytics-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  padding: 2vw;
+  height: 80%;
+  width: 50%;
+}
+.analytics-section .analytics-container .quote {
+  font-style: italic;
+}
+.analytics-section .analytics-container h3 {
+  color: #000;
+  text-align: start;
+}
+.analytics-section .analytics-container .analytics-content {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 3vw;
+}
+.analytics-section .analytics-container .analytics-content .analytics {
+  background-color: #e995a9;
+  padding: 1vw 2vw;
+  border-radius: 2vw 2vw 2vw 0;
+}
+.analytics-section .analytics-container .analytics-content .analytics p, .analytics-section .analytics-container .analytics-content .analytics h4 {
+  color: white;
+}
+
 .text-overlay--title {
   position: relative;
   display: flex;
@@ -1042,6 +1092,7 @@ footer {
   flex-direction: row;
   padding: 2.5vw;
   flex-direction: column;
+  padding-bottom: 0;
 }
 @media (max-width: 440px) {
   footer {
@@ -1555,8 +1606,13 @@ button:active {
     display: none;
   }
   .single-page--header--container .image-wrapper {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 50vw;
+  }
+  .single-page--header--container .image-wrapper img {
+    width: 70%;
   }
   .hidden {
     display: flex;
@@ -1880,6 +1936,28 @@ button:active {
   .text-scroll-container .text-scroll .text {
     font-size: 4vw;
   }
+  .stardew-project--container {
+    padding: 5vw;
+  }
+  .stardew-project--container .analytics-section {
+    flex-direction: column;
+  }
+  .stardew-project--container .analytics-section .analytics-container {
+    width: 100%;
+    text-align: center;
+  }
+  .stardew-project--container .analytics-section .analytics-container h3 {
+    text-align: center;
+  }
+  .stardew-project--container .analytics-section .analytics-container .analytics-content {
+    justify-content: center;
+  }
+  .stardew-project--container .analytics-section .analytics-container .analytics-content .analytics {
+    padding: 1vw 3vw;
+  }
+  .stardew-project--container .analytics-section .analytics-container .analytics-content .analytics h4 {
+    font-size: 8vw;
+  }
   .hidden {
     padding: 7vw 0;
   }
@@ -1916,6 +1994,12 @@ button:active {
   }
   .calculator .key-container .number-keys .number {
     font-size: 1vw;
+  }
+  .single-page--gallery {
+    gap: 3vw;
+  }
+  .single-page--gallery img {
+    height: 28vw;
   }
   .blog-container .content-section .section-content--container .pinned-icon {
     padding: 3vw;

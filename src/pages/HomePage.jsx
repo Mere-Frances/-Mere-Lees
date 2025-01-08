@@ -7,6 +7,7 @@ import ContentSection from '../components/ContentSection';
 import TextScroll from '../components/TextScroll';
 import projectData from '/public/projectData.json';
 import GradientSection from '../components/BubbleBackground';
+import Analytics from '../components/Analytics';
 
 const HomePage = () => {
   const [projects, setProjects] = useState([]);
@@ -75,7 +76,9 @@ const HomePage = () => {
         </div>
       </section>
 
-
+     <section>
+      <Analytics/>
+     </section>
     </>
   )
 }

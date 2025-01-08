@@ -30,7 +30,7 @@ const Projects = () => {
                         to={`/project/${index}`} 
                         className={`project-item project-item--${index + 1}`}
                     >
-                        <div className='image-wrapper'><img src={project.previewImage} alt={project.name}/></div>
+                        <div className='image-wrapper'><img loading="lazy" src={project.previewImage} alt={project.name}/></div>
                         <div className='row'>
                             <h6>
                                 {project.date 

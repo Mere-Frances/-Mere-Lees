@@ -1,6 +1,5 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Projects from '../components/Projects';
-// import Prototypes from '../components/Prototypes';
 import Calculator from '../components/Calculator';
 import ColorPicker from '../components/ColorPicker';
 import ContentSection from '../components/ContentSection';
