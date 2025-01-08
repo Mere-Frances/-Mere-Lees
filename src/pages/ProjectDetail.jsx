@@ -68,7 +68,7 @@ const ProjectDetail = () => {
                     <h1>{project.name}</h1>
                     <p>{project.caption}</p>
                     <div className="main-button">
-                        <a href={project.url}>See the real thing</a>
+                        <a href={project.url} target='blank'>See the real thing</a>
                         <MdOutlineArrowOutward />
                     </div>
                     <div className="project-tags">

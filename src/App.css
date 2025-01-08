@@ -428,6 +428,17 @@ header {
   opacity: 0.7;
 }
 
+.sticker {
+  position: relative;
+}
+.sticker img {
+  position: absolute;
+  right: 0;
+  width: 17vw;
+  margin-right: 2vw;
+  z-index: 5;
+}
+
 .quick-link--container {
   display: flex;
   flex-wrap: wrap;
@@ -531,48 +542,52 @@ header {
 
 .analytics-section {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  padding: 3vw;
-  gap: 3vw;
+  padding: 3vw 7vw;
 }
 .analytics-section .analytics-image {
-  background-color: #ffdada;
+  float: right;
+  margin-left: 5vw;
+  margin-bottom: 5vw;
   border-radius: 50%;
+  background-color: #ffdada;
 }
 .analytics-section .analytics-image img {
-  width: 40vw;
+  width: 35vw;
 }
 .analytics-section .analytics-container {
-  display: flex;
-  flex-direction: column;
-  gap: 3vw;
+  display: block;
   padding: 2vw;
-  height: 80%;
-  width: 50%;
-}
-.analytics-section .analytics-container .quote {
-  font-style: italic;
 }
 .analytics-section .analytics-container h3 {
   color: #000;
   text-align: start;
+  margin-bottom: 1.5vw;
+}
+.analytics-section .analytics-container .main-button {
+  margin-bottom: 1.5vw;
+}
+.analytics-section .analytics-container p {
+  margin-bottom: 1.5vw;
+}
+.analytics-section .analytics-container .quote {
+  font-style: italic;
+  margin-top: 1vw;
 }
 .analytics-section .analytics-container .analytics-content {
   display: flex;
   align-items: center;
   text-align: center;
   gap: 3vw;
+  margin-top: 2vw;
 }
 .analytics-section .analytics-container .analytics-content .analytics {
   background-color: #e995a9;
-  padding: 1vw 2vw;
+  padding: 0vw 2.5vw;
   border-radius: 2vw 2vw 2vw 0;
 }
-.analytics-section .analytics-container .analytics-content .analytics p, .analytics-section .analytics-container .analytics-content .analytics h4 {
-  color: white;
+.analytics-section .analytics-container .analytics-content .analytics h4, .analytics-section .analytics-container .analytics-content .analytics p {
+  color: #fff;
 }
 
 .text-overlay--title {
@@ -1936,27 +1951,46 @@ button:active {
   .text-scroll-container .text-scroll .text {
     font-size: 4vw;
   }
+  .sticker img {
+    width: 21vw;
+    margin-right: 19vw;
+  }
   .stardew-project--container {
     padding: 5vw;
   }
   .stardew-project--container .analytics-section {
+    padding: 3vw;
+    display: flex;
     flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .stardew-project--container .analytics-section .analytics-image {
+    background-color: #ffdada;
+    border-radius: 50%;
+  }
+  .stardew-project--container .analytics-section .analytics-image img {
+    width: 50vw;
   }
   .stardew-project--container .analytics-section .analytics-container {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
     text-align: center;
   }
-  .stardew-project--container .analytics-section .analytics-container h3 {
+  .stardew-project--container .analytics-section .analytics-container .main-button, .stardew-project--container .analytics-section .analytics-container h3 {
     text-align: center;
+    justify-content: center;
   }
   .stardew-project--container .analytics-section .analytics-container .analytics-content {
     justify-content: center;
   }
   .stardew-project--container .analytics-section .analytics-container .analytics-content .analytics {
-    padding: 1vw 3vw;
+    padding: 0.5vw 5vw;
   }
   .stardew-project--container .analytics-section .analytics-container .analytics-content .analytics h4 {
-    font-size: 8vw;
+    font-size: 10vw;
   }
   .hidden {
     padding: 7vw 0;

@@ -40,7 +40,7 @@ const NavBar = () => {
               className={activeLink === "/projects" ? "active" : ""}
               onClick={() => setActiveLink("/projects")}
             >
-              Projects
+              My Work
             </Link>
           </div>
         </div>

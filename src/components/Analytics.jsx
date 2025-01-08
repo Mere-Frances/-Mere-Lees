@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { MdOutlineArrowOutward } from "react-icons/md";
 import AOS from 'aos';
 
 const cubicBezierEasing = (t) => {
@@ -64,40 +65,46 @@ const Analytics = () => {
   
   return (
     <>
-      <section className='content-section white-section stardew-project--container'>
-        <div className='section-content--container'>
+            {/* <div className='section-content--container'>
           <div className='text-overlay--title'>
             <h2>Live User Platform</h2>
             <h5>Live User Platform</h5>
           </div>
-        </div>
-        <section className='analytics-section' ref={containerRef} data-aos="fade-up">
-            <div className='analytics-image'>
-                <img src='/images/stardew-mockup.png' alt="Background Image"/>
-            </div>
-            <div className='analytics-container'>
-                <h3>Stardew Planner</h3>
-                <p>Stardew Planner is an online guide and planner for the popular video game, Stardew Valley. The site is actively used by the game community and even provides a feedback form for users to submit ideas and feedback.</p>
+        </div> */}
+        <section className='content-section white-section stardew-project--container'>
+            <section className='analytics-section' ref={containerRef} data-aos="fade-up">
+                <a className='analytics-image' href='https://stardew-planner.vercel.app/' target='blank'>
+                <img src='/images/stardew-mockup.png' alt="Stardew Valley Planner" />
+                </a>
+                <div className='analytics-container'>
+                <h3>Stardew Valley Planner</h3>
+                <div className="main-button">
+                    <a href='https://stardew-planner.vercel.app/' target='blank'>See the real thing</a>
+                    <MdOutlineArrowOutward />
+                </div>
+                <p>
+                    Stardew Planner is an online guide and planner for the popular video game, Stardew Valley. The site is actively used by the game community and even provides a feedback form for users to submit ideas and feedback.<br/><br/>
+                    I created and designed Stardew Planner to provide players (and myself) with an intuitive and visually appealing platform to plan their farms, search content, and overall optimize their gameplay.
+                </p>
                 <p className='quote'>'I just love using the planner it is so useful, thanks a lot.' - Real user review</p>
                 <div className='analytics-content'>
                     <div className='analytics'>
-                        <h4>{clicks}</h4>
-                        <p>Online</p>
+                    <h4>{clicks}</h4>
+                    <p>Online</p>
                     </div>
-
                     <div className='analytics'>
-                        <h4>{visitors}</h4>
-                        <p>Visitors</p>
+                    <h4>{visitors}</h4>
+                    <p>Visitors</p>
                     </div>
-
                     <div className='analytics'>
-                        <h4>{pageViews}</h4>
-                        <p>Page Views</p>
+                    <h4>{pageViews}</h4>
+                    <p>Page Views</p>
                     </div>
                 </div>
-            </div>
-        </section>
-      </section>
+                </div>
+            </section>
+            </section>
+
     </>
   );
 };

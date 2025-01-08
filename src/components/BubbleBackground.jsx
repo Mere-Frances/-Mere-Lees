@@ -58,7 +58,7 @@ const GradientSection = () => {
                     <Link to="/graphics">Graphics</Link>
                 </div>
                 <div className="main-button header-links">
-                    <Link to="/projects">Projects</Link>
+                    <Link to="/projects">My Work</Link>
                 </div>
             </div>
         </div>

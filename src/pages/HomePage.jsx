@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../components/Header'
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -23,11 +22,9 @@ const HomePage = () => {
     });
   }, []);
 
-
   return (
     <>
     <GradientSection/>
-      {/* <Header/> */}
       <TextScroll/>
 
       <section className='content-section pink-section'>
@@ -49,7 +46,7 @@ const HomePage = () => {
             
             <Link to="/projects" className='quick-link--box main-link'>
               <img src='/images/quicklink-img-3.png' alt='outline doodle of characters'/>
-              <h3>Projects</h3>
+              <h3>My Work</h3>
             </Link>
           </div>
         </div>
@@ -57,7 +54,7 @@ const HomePage = () => {
 
       <section className='content-section white-section'>
             <ContentSection 
-            title='Latest Works' 
+            title='Latest Work' 
             includeSvg={true}
         />
         <div className='section-content--container minimised-container project-previews'>
@@ -76,9 +73,13 @@ const HomePage = () => {
         </div>
       </section>
 
-     <section>
-      <Analytics/>
-     </section>
+      <div className='sticker'>
+        <img src='/images/sticker.png'/>
+      </div>
+
+      <section>
+        <Analytics/>
+      </section>
     </>
   )
 }

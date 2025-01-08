@@ -37,7 +37,7 @@ const Projects = () => {
                                     ? `${format(new Date(project.date), 'MMMM d, yyyy')}` 
                                     : 'Date unavailable'}
                             </h6>
-                            <object><a href={project.url}>The real thing<MdOutlineArrowOutward /></a></object>
+                            <object><a href={project.url} target='blank'>The real thing<MdOutlineArrowOutward /></a></object>
                         </div>
                         <p>{project.name}{project.description}</p>
                     </Link>
