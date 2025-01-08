@@ -2217,6 +2217,10 @@ button {
         margin-top: 6vw;
     }
 
+    .analytics-section .analytics-container h3{
+        font-size: 4vw;
+    }
+
     .single-page--details {
         flex-direction: column;
         padding: 7vw 20vw;
@@ -2578,6 +2582,9 @@ button {
                 .main-button, h3{
                     text-align: center;
                     justify-content: center;
+                }
+                h3{
+                    font-size: 5vw;
                 }
                 .analytics-content{
                     justify-content: center;

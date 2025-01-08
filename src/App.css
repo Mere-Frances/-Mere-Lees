@@ -1718,6 +1718,9 @@ button:active {
   .back-button {
     margin-top: 6vw;
   }
+  .analytics-section .analytics-container h3 {
+    font-size: 4vw;
+  }
   .single-page--details {
     flex-direction: column;
     padding: 7vw 20vw;
@@ -1982,6 +1985,9 @@ button:active {
   .stardew-project--container .analytics-section .analytics-container .main-button, .stardew-project--container .analytics-section .analytics-container h3 {
     text-align: center;
     justify-content: center;
+  }
+  .stardew-project--container .analytics-section .analytics-container h3 {
+    font-size: 5vw;
   }
   .stardew-project--container .analytics-section .analytics-container .analytics-content {
     justify-content: center;
