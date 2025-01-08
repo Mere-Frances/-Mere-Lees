@@ -56,7 +56,7 @@ const Analytics = () => {
   
   return (
     <>
-      <section className='content-section white-section stardew-project--container'>
+      <section className='content-section white-section stardew-project--container' data-aos="fade-up">
         <div className='section-content--container'>
           <div className='text-overlay--title'>
             <h2>Live User Platform</h2>
