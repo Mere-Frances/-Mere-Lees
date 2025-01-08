@@ -9,6 +9,13 @@ const Analytics = () => {
     const [visitors, setVisitors] = useState(0);
     const [pageViews, setPageViews] = useState(0);
     const [clicks, setClicks] = useState(0);
+
+      useEffect(() => {
+        AOS.init({
+          duration: 1000,
+          once: true,
+        });
+      }, []);
   
     const containerRef = useRef(null);
   
