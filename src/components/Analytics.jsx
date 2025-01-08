@@ -65,7 +65,7 @@ const Analytics = () => {
         </div>
         <section className='analytics-section' ref={containerRef}>
             <div className='analytics-image'>
-                <img src='/public/images/stardew-mockup.png' alt="Background Image"/>
+                <img src='/images/stardew-mockup.png' alt="Background Image"/>
             </div>
             <div className='analytics-container'>
                 <h3>Stardew Planner</h3>
