@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import AOS from 'aos';
 
 const cubicBezierEasing = (t) => {
   return t * (2 - t);
@@ -56,14 +57,14 @@ const Analytics = () => {
   
   return (
     <>
-      <section className='content-section white-section stardew-project--container' data-aos="fade-up">
+      <section className='content-section white-section stardew-project--container'>
         <div className='section-content--container'>
           <div className='text-overlay--title'>
             <h2>Live User Platform</h2>
             <h5>Live User Platform</h5>
           </div>
         </div>
-        <section className='analytics-section' ref={containerRef}>
+        <section className='analytics-section' ref={containerRef} data-aos="fade-up">
             <div className='analytics-image'>
                 <img src='/images/stardew-mockup.png' alt="Background Image"/>
             </div>
