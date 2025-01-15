@@ -67,6 +67,28 @@
     },
     {
         "id": 4,
+        "name": "FOGB",
+        "description": ": Friends of Golden Bay",
+        "caption": "Friends of Golden Bay; a local conservational community, working to protect beautiful Golden Bay.",
+        "url": "https://friends-of-golden-bay.vercel.app/",
+        "previewMockup": "./images/fogb-mockup.webp",
+        "previewImage": "./images/fogb-mockup2.webp",
+        "biographyBrief": "For an educational assignment, I undertook a project to redesign the Friends of Golden Bay (FOGB) website. The goal was to enhance their communication, improve functionality and usability, and effectively convey their mission to current and potential users. The project required a modern, mobile-first design that aligned with their brand identity and values, while also improving user engagement.",
+        "biographyTools": "I utilized web technologies, including HTML, CSS, and JavaScript, alongside user experience design processes such as research, wireframing, and prototyping. Feedback from FOGB owners and iterative design methods were key in ensuring the design met the organization’s needs. Responsive design principles were applied to ensure functionality across mobile, tablet, and laptop devices.",
+        "biographyOutcome": "The final design successfully addressed the issues of incoherent content and poor usability. The site now features a minimal, modern design that reflects the FOGB brand and provides clear access to information about their mission, campaigns, and ways to join or donate. Call-to-action elements and consistent design choices enhanced user engagement and accessibility.",
+        "biographyReflection": "This project was a valuable learning experience in applying user-centered design principles. Feedback from the FOGB owners helped refine the solution and ensure it aligned with their goals. I gained practical skills in responsive design and user research while creating a website that improved usability and engagement for a meaningful cause.",
+        "tags": ["Gulp JS", "JQuery", "Figma", "Vercel", "Prototyping", "User Testing"],
+        "mockup1": "./images/fogb-mockup3.webp",
+        "mockup2": "./images/fogb-mockup1.webp",
+        "mockup3": "./images/fogb-mockup4.webp",
+        "mockup4": "./images/fogb-mockup2.webp",
+        "screenshot1": "./images/goldenbay-prev.webp",
+        "screenshot2": "./images/fogb-mockup.webp",
+        "logo": "./images/seastay-logo.webp",
+        "date": "2024-12-01"
+    },
+    {
+        "id": 5,
         "name": "Amy's Beauty Salon",
         "description": ": Reimagined",
         "caption": "A simple yet stylish website that set the foundation for my web design journey, blending functionality with minimalism.",
@@ -87,7 +109,7 @@
         "date": "2024-12-01"
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "Hugo Prints",
         "description": ": Off the grid",
         "caption": "A sleek, interactive prototype for an online print store, blending modern design with an intuitive user experience.",
@@ -108,7 +130,7 @@
         "date": "2024-12-01"
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "Lego Star Wars",
         "description": ": Geek out",
         "caption": "A playful, interactive catalog where LEGO Star Wars fans can explore and filter their favorite minifigures effortlessly.",
@@ -129,7 +151,7 @@
         "date": "2024-12-01"
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "Loosies Superette",
         "description": ": The revival",
         "caption": "A redesign of Loosie’s Superette, creating a vibrant digital space, reflecting the brand’s personality while making key info easy to find.",
@@ -150,7 +172,7 @@
         "date": "2024-12-01"
     },
     {
-        "id": 8,
+        "id": 9,
         "name": "The Pokedex",
         "description": "",
         "caption": "A React-based Pokedex app that allows users to filter and view detailed information about all Pokémon.",
@@ -171,7 +193,7 @@
         "date": "2024-12-01"
     },
     {
-        "id": 9,
+        "id": 10,
         "name": "Platypus Marketplace",
         "description": ": Pre-loved",
         "caption": "A user-friendly marketplace for buying and selling second-hand shoes, focusing on accessibility and brand identity.",
@@ -192,7 +214,7 @@
         "date": "2024-12-01"
     },
     {
-        "id": 10,
+        "id": 11,
         "name": "Workout App",
         "description": ": Get active",
         "caption": "A workout app designed to help users stay motivated and track progress with personalized routines.",
