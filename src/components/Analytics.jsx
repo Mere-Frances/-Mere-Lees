@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { MdOutlineArrowOutward } from "react-icons/md";
+import TextReveal from './TextReveal';
 import AOS from 'aos';
 
 const cubicBezierEasing = (t) => {
@@ -65,19 +66,15 @@ const Analytics = () => {
   
   return (
     <>
-            {/* <div className='section-content--container'>
-          <div className='text-overlay--title'>
-            <h2>Live User Platform</h2>
-            <h5>Live User Platform</h5>
-          </div>
-        </div> */}
         <section className='content-section white-section stardew-project--container'>
             <section className='analytics-section' ref={containerRef} data-aos="fade-up">
                 <a className='analytics-image' href='https://stardew-planner.vercel.app/' target='blank'>
                 <img src='/images/stardew-mockup.png' alt="Stardew Valley Planner" />
                 </a>
                 <div className='analytics-container'>
-                <h3>Stardew Valley Planner</h3>
+                <div className='text-rev--cont'>
+                  <TextReveal text="Stardew Valley Planner" />
+                </div>
                 <div className="main-button">
                     <a href='https://stardew-planner.vercel.app/' target='blank'>See the real thing</a>
                     <MdOutlineArrowOutward />

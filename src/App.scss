@@ -85,6 +85,18 @@ h3 {
     font-weight: 500;
 }
 
+.text-rev--cont{
+    .text-reveal{
+        .text-rev--letter{
+            font-size: 2.2vw;
+            text-transform: uppercase;
+            letter-spacing: 0.25vw;
+            font-family: 'Albert Sans', sans-serif;
+            font-weight: 500;
+        }
+    }
+}
+
 h4 {
     font-family: "Reenie Beanie", cursive;
     font-weight: 400;
@@ -176,13 +188,105 @@ a {
     }
 }
 
+.parallax{
+    width: 100%;
+    #scroll-animate {
+        overflow: hidden;
+      }
+      
+      #scroll-animate-main {
+        width: 100%;
+        position: fixed;
+        left: 0;
+      }
+      
+      #heightPage,
+      #heightScroll {
+        width: 10px;
+        top: 0;
+        position: absolute;
+        z-index: 99;
+      }
+      
+      #heightPage {
+        left: 0;
+      }
+      
+      #heightScroll {
+        right: 0;
+      }
+      
+      header {
+        width: 100%;
+        height: 100%;
+        background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 50%;
+        top: 0;
+        position: fixed;
+        z-index: -1;
+      }
+      
+      footer {
+        width: 100%;
+        height: 300px;
+        background: gray;
+        bottom: -300px;
+        position: fixed;
+        z-index: -1;
+      }
+      
+      .content {
+        height: 1000px;
+        min-height: 1000px;
+        background: #ededed;
+        position: relative;
+        z-index: 1;
+      }
+      
+      .wrapper-parallax {
+        margin-top: 100%;
+        margin-bottom: 300px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+      }
+      
+      h1 {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 150px;
+        color: #fff;
+      }
+      
+      header h1 {}
+      
+      .content h1 {
+        line-height: 1000px;
+        color: #999;
+      }
+      
+      footer h1 {
+        line-height: 300px;
+      }
+      
+      header,
+      footer,
+      #scroll-animate-main {
+        transition-property: all;
+        transition-duration: 0.4s;
+        transition-timing-function: cubic-bezier(0, 0, 0, 1);
+      }
+      
+}
 
 .hidden {
     display: none;
 }
 
 .extended-title {
-    padding-top: 5vw
+    padding-top: 14vw
 }
 
 nav {
@@ -649,6 +753,25 @@ header {
     }
 }
 
+.special-section {
+    .content-section--wave {
+        background-color: transparent;
+    }
+    .content-section--wave svg {
+        fill: white;
+    }
+
+    .section-content--container {
+        background-color: white;
+
+        .text-overlay--title {
+            h5 {
+                color: #ffdada;
+            }
+        }
+    }
+}
+
 .pink-section {
     .content-section--wave svg {
         fill: #ffdada;
@@ -838,17 +961,144 @@ header {
     }
 }
 
+
+.text-rev--cont{
+    width: fit-content;
+    padding: 1vw 0;
+}
+
+.text-reveal {
+    display: inline-block;
+    overflow: hidden;
+  
+    span {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      transition-delay: var(--delay, 0s);
+    }
+
+    .text-rev--letter{
+        font-size: 4vw;
+    }
+  
+    &.visible span {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+
 // ___________________________________ //
 // _____________ PROJECTS ____________ //
 // ___________________________________ //
 
+.special-section .content-section--wave {
+    -webkit-filter: drop-shadow( 3px -12px 8px rgba(0, 0, 0, 0.1)); /* WebKit prefix for older browser support */
+    filter: drop-shadow( 3px -12px 8px rgba(0, 0, 0, 0.1)); /* Standard syntax */
+  }
+  
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  
+    font-family: Arial, sans-serif;
+  }
+  
+  .parallax-container {
+    position: relative;
+    height: auto;
+  }
+  
+  .para-sec {
+    position: fixed;
+    top: 0;
+    height: 50vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .para-sec-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 235, 235);
+    z-index: 1;
+    height: 55vw;
+    .para-sec--head{
+        height: 100%;
+        width: 100%;
+        img{
+            object-fit: cover;
+            height: 80%;
+            width: 100%;
+        }
+    }
+    h1{
+        position: absolute;
+        top: 30%;
+        display: inline-block;
+        font-size: 5vw;
+        color: #292929;
+        text-transform: uppercase;
+        transform: translateX(-100%);
+        animation: byBottom 1s ease both;
+        font-weight: 600;
+        letter-spacing: 0.25vw;
+    }
+    .para-sec-text-rev{
+        position: absolute;
+        top: 40%;
+        .text-reveal span{
+            font-family: Poppins;
+            color: $primary-color;
+            font-size: 1vw;
+        }
+    }
+    p{
+        position: absolute;
+        top: 50%;
+        width: 40vw;
+        text-align: center;
+    }
+  }
+  
+  .para-sec-2 {
+    z-index: 2;
+    height: 100%;
+    position: relative;
+    top: 20vw;
+    .special-wave{
+        .special-section .content-section--wave svg {
+            fill: #ffffff;
+            background-color: transparent;
+        }
+    }
+  }
+
 .populated-items {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    background-color: white;
     column-gap: 2vw;
     row-gap: 5vw;
     width: 100%;
     padding: 5vw;
+    padding-bottom: 0;
 
     .project-item {
         display: flex;
@@ -871,8 +1121,7 @@ header {
 
             img {
                 width: 100%;
-                height: 100%;
-                object-fit: cover;
+                -o-object-fit: cover;
                 border-radius: inherit;
                 transition: transform 0.4s ease;
             }
@@ -897,7 +1146,7 @@ header {
         }
 
         &:hover img {
-            transform: scale(1.1);
+            transform: scale(1.25);
         }
 
         p {
@@ -1359,6 +1608,8 @@ footer {
     flex-direction: column;
     padding-bottom: 0;
     width: 100%;
+    z-index: 10;
+    background-color: white;
 
     .page-break--line {
         padding: 3vw 0 0 0;
@@ -1367,6 +1618,7 @@ footer {
     .footer--container {
         @include main-box-sizing;
         justify-content: space-between;
+        background-color: white;
         width: 100%;
         padding: 3vw 0 3vw 0;
 
@@ -1821,6 +2073,15 @@ button {
         }
     }
 
+    .text-rev--cont{
+        .text-reveal {
+            .text-rev--letter{
+            font-size: 2.5vw;
+            }
+        }
+    }
+
+
     .single-page--gallery {
         grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
     }
@@ -1840,6 +2101,15 @@ button {
         .main-link--box {
             height: 50vh;
             text-align: center;
+        }
+    }
+
+    .parallax-container{
+        .para-sec-1{
+            height: 67vw;
+        }
+        .para-sec-2{
+            top: 30vw;
         }
     }
 
@@ -1926,6 +2196,23 @@ button {
                 object a {
                     font-size: 1.8vw;
                 }
+            }
+        }
+    }
+
+    .parallax-container{
+        .para-sec-1 p{
+            width: 60vw;
+        }
+        .para-sec-1 .para-sec-text-rev .text-reveal span{
+            font-size: 1.5vw;
+        }
+    }
+
+    .text-rev--cont{
+        .text-reveal {
+            .text-rev--letter{
+            font-size: 2.8vw;
             }
         }
     }
@@ -2258,6 +2545,14 @@ button {
         font-size: 3vw;
     }
 
+    .text-rev--cont{
+        .text-reveal{
+            .text-rev--letter{
+                font-size: 3vw;
+            }
+        }
+    }
+
     h5 {
         font-size: 10vw;
     }
@@ -2268,6 +2563,27 @@ button {
 
     p {
         font-size: 2.8vw;
+    }
+
+    .parallax-container{
+        .para-sec-1{
+            height: 100vw;
+            p{
+                width: 80vw;
+            }
+        }
+        .para-sec-2{
+            top: 56vw;
+        }
+    }
+
+    .parallax-container{
+        .para-sec-1 .para-sec-text-rev {
+            top: 38%;
+            .text-reveal span{
+                font-size: 2vw;
+            }
+        }
     }
 
     .populated-items {
@@ -2476,6 +2792,13 @@ button {
                 flex-direction: column;
                 gap: 2vw;
                 text-align: center;
+                align-items: center;
+
+                .text-rev--cont{
+                    .text-reveal span{
+                        font-size: 4vw;
+                    }
+                }
 
                 .main-button,
                 h3 {

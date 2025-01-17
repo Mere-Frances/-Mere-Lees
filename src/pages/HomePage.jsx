@@ -7,6 +7,7 @@ import TextScroll from '../components/TextScroll';
 import projectData from '/public/projectData.json';
 import GradientSection from '../components/BubbleBackground';
 import Analytics from '../components/Analytics';
+import TextReveal from '../components/TextReveal';
 
 const HomePage = () => {
   const [projects, setProjects] = useState([]);

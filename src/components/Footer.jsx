@@ -16,11 +16,15 @@ const Footer = () => {
             <a className="copyright" href="">&copy;2024 Mere Lees</a>
             <div className="footer-socials--container">
                 <div className="main-button">
-                    <a href="https://linkedin.com/in/meredith-lees-49a166274">LinkedIn</a>
+                    <a target='blank' href="https://www.behance.net/merryberry2">Behance</a>
                 </div>
-                <a href="">/</a>
+                <p href="">/</p>
                 <div className="main-button">
-                    <a href="https://github.com/Mere-Frances">Github</a>
+                    <a target='blank' href="https://linkedin.com/in/meredith-lees-49a166274">LinkedIn</a>
+                </div>
+                <p href="">/</p>
+                <div className="main-button">
+                    <a target='blank' href="https://github.com/Mere-Frances">Github</a>
                 </div>
             </div>
         </div>

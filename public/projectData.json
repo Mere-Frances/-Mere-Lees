@@ -1,12 +1,11 @@
 [
     {
-        "id": 1,
         "name": "Storytime Foundation",
         "description": "",
         "caption": "A redesign for the charity, Storytime, an organization that focuses on helping strengthen whānau facing adversity in Aotearoa by supporting the building of bonds between a parent and child.",
         "url": "https://storytime-frontend-woad.vercel.app/#/",
         "previewMockup": "./images/storytime-foundation-preview-mockups.png",
-        "previewImage": "./images/storytimemockup2.jpg",
+        "previewImage": "./images/storytime-mockup-prev.png",
         "biographyBrief": "The redesign and recoding of the Storytime website focused on creating an inclusive and accessible digital space that aligns with the organization’s mission to support New Zealand families. The project aimed to enhance the user experience by improving accessibility, cultural representation, and mindful content presentation. Key design principles incorporated bicultural elements through te reo Māori integration and embraced diversity to ensure that every visitor feels seen and valued. Additionally, the redesign emphasized interactive and engaging resources, fostering connections between parents and children while supporting the foundation’s community initiatives.",
         "biographyTools": "This project utilized a range of modern tools and technologies to achieve its goals. The frontend was developed with Vite and React, ensuring a fast and responsive user interface. On the backend, a custom WordPress CMS theme was created, enhanced by WooCommerce for e-commerce functionality and various WordPress plugins for added features. A full-stack architecture integrated a robust database to manage dynamic content, store data, and handle user interactions securely. These tools allowed for seamless integration of the donation portal, store, and educational resources, creating a comprehensive and user-friendly platform.",
         "biographyOutcome": "The final website successfully transformed Storytime into an inviting and culturally enriched platform. It features a vibrant design with an imaginative and colorful aesthetic that reflects the foundation’s values. The site includes a streamlined donation process, an accessible online store, and thoughtfully curated resources for families. Accessibility standards, such as WCAG compliance, were incorporated to make the website usable for individuals of all abilities. By integrating user feedback, the design maintained consistent typography, responsive layouts, and interactive storytelling elements, ensuring the platform resonates with its primary and secondary audiences.",
@@ -22,13 +21,12 @@
         "date": "2024-12-01"
     },
     {
-        "id": 2,
         "name": "Hospice NZ",
         "description": "",
         "caption": "A compassionate and user-friendly website that improves accessibility and enhances the emotional connection for visitors seeking hospice care information, to provide a supportive, welcoming online experience.",
         "url": "https://hospice-frontend.vercel.app/",
         "previewMockup": "./images/hospice-preview-mockup.png",
-        "previewImage": "./images/hospice-mockup4.png",
+        "previewImage": "./images/hospice-mockup-prev.png",
         "biographyBrief": "The redesign and recoding of the Hospice NZ website focused on creating a compassionate and accessible platform that reflects the organization’s commitment to providing support for individuals and families facing end-of-life care. The project aimed to enhance user experience through intuitive navigation, emotional resonance, and easy access to vital resources, while prioritizing a soothing, respectful, and inclusive design.",
         "biographyTools": "The project was built using modern tools and technologies, with the frontend developed in React for a dynamic and responsive interface. A custom WordPress theme was implemented on the backend, allowing for efficient content management, while WooCommerce was integrated for donation functionality, ensuring a seamless, user-friendly experience for visitors seeking care information and support.",
         "biographyOutcome": "The final website successfully transformed Hospice NZ's online presence, offering a calming and user-centric design that makes critical resources easy to access. The platform provides clear navigation to information about services, donations, and support, while adhering to WCAG accessibility standards to ensure inclusivity for all visitors, regardless of ability.",
@@ -44,13 +42,12 @@
         "date": "2024-12-01"
     },
     {
-        "id": 3,
         "name": "SeaStay Suites",
         "description": ": A retreat",
         "caption": "A platform for booking beachside accommodations in New Zealand, promoting sustainable tourism and local businesses.",
         "url": "https://sea-stay.vercel.app/",
         "previewMockup": "./images/seastay-prev-mockup.png",
-        "previewImage": "./images/seastay-mockup4.webp",
+        "previewImage": "./images/seastay-mockup-prev.png",
         "biographyBrief": "The SeaStay project was a fictional assignment, simulating a collaborative initiative with Tourism New Zealand to develop a platform dedicated to finding and booking beachside accommodations across New Zealand. Aiming to support sustainable tourism, SeaStay was designed to highlight New Zealand’s coastal beauty and diverse regions while fostering local business growth. The website offers refined search filters, detailed location information, and user ratings, providing a streamlined and user-friendly booking experience that enhances both traveler convenience and local tourism visibility. By aligning with Tourism New Zealand's brand identity, SeaStay aims to increase awareness and traffic for New Zealand's unique beachfront accommodations and local tourism initiatives.",
         "biographyTools": "The SeaStay project utilized a variety of tools and technologies essential for efficient development and design. Figma was employed for creating wireframes, designing UI components, and conducting prototyping and user testing. Visual Studio Code served as the primary coding environment, while GitHub was used for project storage and collaboration. Vercel was the deployment platform, making the website publicly accessible. JavaScript libraries such as jQuery, Mapbox, Swiper JS, and Fullpage JS were integrated to add interactivity and enhance the user experience. Additional tools included Gulp JS for task automation, Font Awesome for icons, and Unsplash for project images, creating a polished and functional final product.",
         "biographyOutcome": "The final SeaStay website met all specified deliverables, providing users with an easy-to-navigate interface to book beachfront accommodations. It offers a range of search filters to simplify finding seaside properties, detailed location information, and guest reviews, enhancing the user experience and supporting the local tourism industry. Despite a few HTML code warnings regarding empty headings populated by JavaScript, the project adhered to industry standards and achieved a consistent, modern design that reflects Tourism New Zealand's brand and appeals to travelers. SeaStay presents an accessible and visually appealing solution to address the demand for beachfront accommodations, promoting local tourism and facilitating a seamless booking experience.",
@@ -66,13 +63,12 @@
         "date": "2024-12-01"
     },
     {
-        "id": 4,
         "name": "FOGB",
         "description": ": Friends of Golden Bay",
         "caption": "Friends of Golden Bay; a local conservational community, working to protect beautiful Golden Bay.",
         "url": "https://friends-of-golden-bay.vercel.app/",
         "previewMockup": "./images/fogb-mockup.webp",
-        "previewImage": "./images/fogb-mockup2.webp",
+        "previewImage": "./images/fogb-mockup-prev.png",
         "biographyBrief": "For an educational assignment, I undertook a project to redesign the Friends of Golden Bay (FOGB) website. The goal was to enhance their communication, improve functionality and usability, and effectively convey their mission to current and potential users. The project required a modern, mobile-first design that aligned with their brand identity and values, while also improving user engagement.",
         "biographyTools": "I utilized web technologies, including HTML, CSS, and JavaScript, alongside user experience design processes such as research, wireframing, and prototyping. Feedback from FOGB owners and iterative design methods were key in ensuring the design met the organization’s needs. Responsive design principles were applied to ensure functionality across mobile, tablet, and laptop devices.",
         "biographyOutcome": "The final design successfully addressed the issues of incoherent content and poor usability. The site now features a minimal, modern design that reflects the FOGB brand and provides clear access to information about their mission, campaigns, and ways to join or donate. Call-to-action elements and consistent design choices enhanced user engagement and accessibility.",
@@ -88,12 +84,11 @@
         "date": "2024-12-01"
     },
     {
-        "id": 5,
         "name": "Amy's Beauty Salon",
         "description": ": Reimagined",
         "caption": "A simple yet stylish website that set the foundation for my web design journey, blending functionality with minimalism.",
         "url": "",
-        "previewImage": "./images/amyssalon-mockup1.webp",
+        "previewImage": "./images/amy's-mockup-prev.png",
         "biographyBrief": "This project marked my first coding assignment, where I designed and developed a simple yet functional website using HTML, CSS, and a bit of JavaScript. This project was a great opportunity to put my design skills to use in a web development setting, and I focused on creating a minimalistic and visually cohesive design that served its purpose effectively.",
         "biographyTools": "The primary technologies I used for this project were HTML and CSS, which helped me build the structure and style of the website. I also incorporated basic JavaScript for added functionality, enhancing the interactivity of the site in subtle but effective ways. Figma was a key design tool throughout the project, allowing me to prototype the website and finalize its layout before coding. This combination of tools enabled me to create a cohesive and visually appealing final product that adhered to the intended design principles.",
         "biographyOutcome": "The website successfully achieved its goal of delivering a simple, clean user interface that aligns with modern design standards. Users found the website easy to navigate, and the feedback on the visual appeal and functionality was overwhelmingly positive. This project demonstrated my ability to create a working website from concept to completion, proving my understanding of the design process and validating my initial approach to combining form and function.",
@@ -109,12 +104,11 @@
         "date": "2024-12-01"
     },
     {
-        "id": 6,
         "name": "Hugo Prints",
         "description": ": Off the grid",
         "caption": "A sleek, interactive prototype for an online print store, blending modern design with an intuitive user experience.",
         "url": "https://hugo-designs.vercel.app/",
-        "previewImage": "./images/hugoprints-mockup1.webp",
+        "previewImage": "./images/hugo-mockup-prev.png",
         "biographyBrief": "This personal side project involved designing and developing a prototype for an online print store for a family member. The goal was to create a single-page website that was visually appealing, easy to navigate, and functional. The design aimed to reflect the business’s brand while providing an engaging user experience for potential customers looking to purchase print products. It was intended to be a proof of concept, showcasing how the online store could look and operate in a real-world scenario.",
         "biographyTools": "For this project, I used a combination of front-end technologies to bring the design to life. I structured the website with HTML, styled it with SCSS, and added interactivity using JavaScript and jQuery. To enhance the visual and functional elements, I incorporated libraries like Swiper JS for image sliders and Mapbox for an interactive map. The design was crafted using Figma to ensure a modern and responsive layout that would work seamlessly across devices.",
         "biographyOutcome": "The outcome was a functional and visually appealing prototype that met the project's objectives. The website design was responsive, allowing users to have an optimal viewing experience across different devices. The interactive features, like the image slider and map, added a layer of dynamism that improved user engagement. The project served as a valuable prototype that could be refined further for a live production version of the online print store.",
@@ -130,12 +124,11 @@
         "date": "2024-12-01"
     },
     {
-        "id": 7,
         "name": "Lego Star Wars",
         "description": ": Geek out",
         "caption": "A playful, interactive catalog where LEGO Star Wars fans can explore and filter their favorite minifigures effortlessly.",
         "url": "https://lego-star-wars-minifigs.vercel.app/",
-        "previewImage": "./images/lego-starwars-minifig-mockup1.webp",
+        "previewImage": "./images/lego-mockup-prev.png",
         "biographyBrief": "For this LEGO Star Wars minifigure catalog website, my goal was to build an interactive single-page experience that allowed users to seamlessly explore and discover various minifigure collections. The design approach focused on delivering a smooth, immersive experience, highlighting each minifigure while making the navigation intuitive and engaging. The catalog's layout is designed to be visually appealing and simple to use, with filtering options to help users locate specific minifigures easily.",
         "biographyTools": "I used several JavaScript plugins and libraries to bring this project to life. Fullpage.js was a key component in creating the smooth, scrollable single-page navigation, which gives the site a dynamic, modern feel. Gulp.js was used as a build toolkit, allowing me to automate tasks like minifying CSS and JavaScript, compiling Sass, and auto-refreshing the browser during development—making the process efficient and the code clean. Additionally, Node modules helped manage dependencies, ensuring that the project was organized and easy to maintain. For initial designs and layouts, I used Figma to prototype the UI components, refining the visual flow and catalog structure before development.",
         "biographyOutcome": "The final site successfully combines smooth navigation with visually appealing catalog sections, offering users a unique and engaging experience. Fullpage.js enabled a distinct single-page structure that lets users seamlessly scroll through the catalog, enhancing overall usability. Task automation with Gulp.js improved development efficiency, enabling a well-optimized, responsive site that feels lightweight and professional. Filtering options were also implemented to allow users to narrow down minifigures based on specific criteria, giving the site both functionality and depth.",
@@ -151,12 +144,11 @@
         "date": "2024-12-01"
     },
     {
-        "id": 8,
         "name": "Loosies Superette",
         "description": ": The revival",
         "caption": "A redesign of Loosie’s Superette, creating a vibrant digital space, reflecting the brand’s personality while making key info easy to find.",
         "url": "https://loosies-superette.vercel.app/",
-        "previewImage": "./images/loosiessuperette-mockup1.webp",
+        "previewImage": "./images/loosies-mockup-prev.png",
         "biographyBrief": "This project was a collaborative effort focused on enhancing the user experience of Loosie’s diner website. The original site lacked important information like service details, opening hours, and a design that visually represented the diner's brand. Our team worked together to identify these gaps and address them by creating a detailed UX brief. This document outlined each stage of the design process, helping to guide the development team later on. We prioritized delivering essential information—such as menu options and contact details—while ensuring the design aligned with Loosie's brand identity and catered to the target audience's needs.",
         "biographyTools": "Our team leveraged various tools to make the project both efficient and collaborative. Figma was essential in creating prototypes and visual layouts, enabling us to quickly iterate on designs. We used SCSS/SASS for styling, ensuring a clean and organized codebase that allowed for easy updates and responsive design adjustments. Regular scrums and collaborative meetings were key to maintaining alignment, allowing each team member to bring their strengths to the table. The use of a CSS pre-processor enhanced our workflow, making it easier to apply styles consistently throughout the site.",
         "biographyOutcome": "The redesigned website effectively conveyed Loosie’s brand and provided the necessary information for users, significantly improving accessibility and user satisfaction. Our thoughtful approach to UX, coupled with streamlined navigation and responsive design, resulted in a visually appealing and user-friendly website. The completed design featured valid HTML and CSS that adhered to industry standards, ensuring compatibility across devices. Additionally, our team’s consistent use of CSS methodologies led to a cohesive and well-structured layout, bringing Loosie's brand to life.",
@@ -172,12 +164,11 @@
         "date": "2024-12-01"
     },
     {
-        "id": 9,
         "name": "The Pokedex",
         "description": "",
         "caption": "A React-based Pokedex app that allows users to filter and view detailed information about all Pokémon.",
         "url": "https://pokedev-api.vercel.app/",
-        "previewImage": "./images/thepokedex-mockup1.webp",
+        "previewImage": "./images/pokedex-mockup-prev.png",
         "biographyBrief": "In this project, I created a Pokedex app using React and the PokeAPI, designed to allow users to browse, filter, and explore a full list of Pokemon. Users can search by type, name, or number and view detailed information about each Pokemon. This project served as a practical application of API integration, filter functionality, and responsive UI design, helping me deepen my understanding of building accessible and engaging interfaces in React.",
         "biographyTools": "The project utilized a range of tools and technologies to ensure an efficient and scalable build. React.js served as the primary framework, enabling a smooth, single-page application (SPA) experience. I used Vite as the project’s build tool for optimized development and production environments. The PokeAPI was essential for data sourcing, and I incorporated filtering functions to create a seamless, user-friendly experience. To keep the project organized, I followed Agile methodologies, used a project management tool to meet deadlines, and managed dependencies to streamline the development process.",
         "biographyOutcome": "The finished Pokedex app allows users to interact with a polished, intuitive interface where they can easily search and filter Pokemon data. The app’s responsive design and accessible navigation make it suitable for all audiences, and it performs well across devices, meeting industry standards for client-side applications. UML diagrams were created to document the app’s behavior and logic, supporting an organized, maintainable codebase. Overall, the app achieved its goals of functionality, performance, and accessibility, reflecting industry standards for SPAs.",
@@ -193,12 +184,11 @@
         "date": "2024-12-01"
     },
     {
-        "id": 10,
         "name": "Platypus Marketplace",
         "description": ": Pre-loved",
         "caption": "A user-friendly marketplace for buying and selling second-hand shoes, focusing on accessibility and brand identity.",
         "url": "https://github.com/PSTL-02/Second-Hand-Shoe-Reselling",
-        "previewImage": "./images/platypusmarkerplace-mockup3.webp",
+        "previewImage": "./images/platypus-mockup-prev.png",
         "biographyBrief": "Platypus Marketplace is a fictional website developed by myself and two other students, to provide a secondhand marketplace for buying and selling pre-loved shoes. Created with accessibility and ease of use in mind, the platform enables users to browse listings, create posts, and navigate easily with intuitive filters and clear hierarchies. Key features include a streamlined search function, categorized filters, and a user-friendly listing modal, making the posting process quick and intuitive. Each listing page presents essential details in a structured format that prioritizes visibility without obstructing images, offering a cohesive and visually appealing experience for shoe enthusiasts and casual users alike.",
         "biographyTools": "The development of Platypus Marketplace involved a comprehensive set of tools and technologies. Built on the MERN stack, the project utilized MongoDB for custom database needs, Express.js, and React for front-end design and functionality. SCSS/SASS was used to streamline and style CSS, enhancing the visual consistency of the site. Postman facilitated API testing, and Trello served as the project management tool, organizing tasks and tracking development progress. We used GitHub for version control and collaborative coding, which allowed team members to contribute code remotely while maintaining consistent standards. This approach ensured timely delivery, task alignment, and clear communication throughout the project.",
         "biographyOutcome": "The final design of Platypus Marketplace successfully met the objectives outlined in the brief, creating a platform that stays true to the Platypus brand identity and promotes self-expression through accessible, user-centered design. The site received positive feedback from users for its unique aesthetic, usability, and clear connection to Platypus's emphasis on authenticity, inclusivity, and individuality. The design allows for self-expression by encouraging users to buy and sell footwear that represents their personality, while the streamlined interface provides an inclusive experience that’s easy for all audiences to navigate. The completed project reflects the brand’s values, offering a meaningful and enjoyable experience for users seeking to give footwear a second life.",
@@ -214,12 +204,11 @@
         "date": "2024-12-01"
     },
     {
-        "id": 11,
         "name": "Workout App",
         "description": ": Get active",
         "caption": "A workout app designed to help users stay motivated and track progress with personalized routines.",
         "url": "https://frontend-boilerplate-cyan.vercel.app/",
-        "previewImage": "./images/workoutapp-mockup1.webp",
+        "previewImage": "./images/workout-mockup-prev.png",
         "biographyBrief": "This project was my first full-stack application, built using the MERN stack—MongoDB, Express.js, React, and Node.js—alongside SCSS for styling. I designed this platform as an interactive space where users can register, log in, and manage their own posts while engaging with content from other users. The core functionality of the site revolves around CRUD operations, enabling users to create, edit, and delete posts and comments. I implemented password hashing and salting for secure user authentication, while a custom database API keeps the app running efficiently and securely. SCSS/SASS brings a clean and modern design to the interface, making the site easy to navigate and visually engaging.",
         "biographyTools": "To bring this project to life, I used a variety of essential tools and technologies that made the development process both challenging and rewarding. MongoDB served as the database, storing user and post data, while Express.js and Node.js handled server-side logic. React was used on the front end to create a dynamic and responsive interface, while SCSS provided the styling needed for a modern and polished look. For testing and validating the API, I used Postman, which helped ensure each endpoint functioned as intended. Working with the MERN stack and SCSS demonstrated the power and flexibility of these technologies in building an interactive, full-stack application.",
         "biographyOutcome": "The final outcome is a user-friendly, interactive platform that allows for seamless user management and content interaction. The CRUD functionality and secure authentication work together smoothly, providing users with a cohesive experience in creating and engaging with content. The SCSS styling gave the project a clean and contemporary look, aligning well with the goals of accessibility and ease of use. It was exciting to see all the features—user registration, login, posting, and commenting—come together into a functional application that aligns well with the initial design vision.",

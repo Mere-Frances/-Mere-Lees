@@ -54,6 +54,14 @@ h3 {
   font-weight: 500;
 }
 
+.text-rev--cont .text-reveal .text-rev--letter {
+  font-size: 2.2vw;
+  text-transform: uppercase;
+  letter-spacing: 0.25vw;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 500;
+}
+
 h4 {
   font-family: "Reenie Beanie", cursive;
   font-weight: 400;
@@ -139,12 +147,90 @@ a {
   /* Full underline */
 }
 
+.parallax {
+  width: 100%;
+}
+.parallax #scroll-animate {
+  overflow: hidden;
+}
+.parallax #scroll-animate-main {
+  width: 100%;
+  position: fixed;
+  left: 0;
+}
+.parallax #heightPage,
+.parallax #heightScroll {
+  width: 10px;
+  top: 0;
+  position: absolute;
+  z-index: 99;
+}
+.parallax #heightPage {
+  left: 0;
+}
+.parallax #heightScroll {
+  right: 0;
+}
+.parallax header {
+  width: 100%;
+  height: 100%;
+  background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 50%;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+}
+.parallax footer {
+  width: 100%;
+  height: 300px;
+  background: gray;
+  bottom: -300px;
+  position: fixed;
+  z-index: -1;
+}
+.parallax .content {
+  height: 1000px;
+  min-height: 1000px;
+  background: #ededed;
+  position: relative;
+  z-index: 1;
+}
+.parallax .wrapper-parallax {
+  margin-top: 100%;
+  margin-bottom: 300px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+.parallax h1 {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 150px;
+  color: #fff;
+}
+.parallax .content h1 {
+  line-height: 1000px;
+  color: #999;
+}
+.parallax footer h1 {
+  line-height: 300px;
+}
+.parallax header,
+.parallax footer,
+.parallax #scroll-animate-main {
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+
 .hidden {
   display: none;
 }
 
 .extended-title {
-  padding-top: 5vw;
+  padding-top: 14vw;
 }
 
 nav {
@@ -515,6 +601,19 @@ header {
   color: #ffdada;
 }
 
+.special-section .content-section--wave {
+  background-color: transparent;
+}
+.special-section .content-section--wave svg {
+  fill: white;
+}
+.special-section .section-content--container {
+  background-color: white;
+}
+.special-section .section-content--container .text-overlay--title h5 {
+  color: #ffdada;
+}
+
 .pink-section .content-section--wave svg {
   fill: #ffdada;
 }
@@ -667,14 +766,133 @@ header {
     transform: translateX(-100%);
   }
 }
+.text-rev--cont {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1vw 0;
+}
+
+.text-reveal {
+  display: inline-block;
+  overflow: hidden;
+}
+.text-reveal span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition-delay: var(--delay, 0s);
+}
+.text-reveal .text-rev--letter {
+  font-size: 4vw;
+}
+.text-reveal.visible span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.special-section .content-section--wave { /* WebKit prefix for older browser support */
+  filter: drop-shadow(3px -12px 8px rgba(0, 0, 0, 0.1)); /* Standard syntax */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.parallax-container {
+  position: relative;
+  height: auto;
+}
+
+.para-sec {
+  position: fixed;
+  top: 0;
+  height: 50vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.para-sec-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 235, 235);
+  z-index: 1;
+  height: 55vw;
+}
+.para-sec-1 .para-sec--head {
+  height: 100%;
+  width: 100%;
+}
+.para-sec-1 .para-sec--head img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 80%;
+  width: 100%;
+}
+.para-sec-1 h1 {
+  position: absolute;
+  top: 30%;
+  display: inline-block;
+  font-size: 5vw;
+  color: #292929;
+  text-transform: uppercase;
+  transform: translateX(-100%);
+  animation: byBottom 1s ease both;
+  font-weight: 600;
+  letter-spacing: 0.25vw;
+}
+.para-sec-1 .para-sec-text-rev {
+  position: absolute;
+  top: 40%;
+}
+.para-sec-1 .para-sec-text-rev .text-reveal span {
+  font-family: Poppins;
+  color: #292929;
+  font-size: 1vw;
+}
+.para-sec-1 p {
+  position: absolute;
+  top: 50%;
+  width: 40vw;
+  text-align: center;
+}
+
+.para-sec-2 {
+  z-index: 2;
+  height: 100%;
+  position: relative;
+  top: 20vw;
+}
+.para-sec-2 .special-wave .special-section .content-section--wave svg {
+  fill: #ffffff;
+  background-color: transparent;
+}
+
 .populated-items {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  background-color: white;
   -moz-column-gap: 2vw;
        column-gap: 2vw;
   row-gap: 5vw;
   width: 100%;
   padding: 5vw;
+  padding-bottom: 0;
 }
 .populated-items .project-item {
   display: flex;
@@ -697,9 +915,7 @@ header {
 }
 .populated-items .project-item .image-wrapper img {
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
   border-radius: inherit;
   transition: transform 0.4s ease;
 }
@@ -720,7 +936,7 @@ header {
   font-weight: 500;
 }
 .populated-items .project-item:hover img {
-  transform: scale(1.1);
+  transform: scale(1.25);
 }
 .populated-items .project-item p {
   position: relative;
@@ -1110,6 +1326,8 @@ footer {
   flex-direction: column;
   padding-bottom: 0;
   width: 100%;
+  z-index: 10;
+  background-color: white;
 }
 @media (max-width: 440px) {
   footer {
@@ -1126,6 +1344,7 @@ footer .footer--container {
   flex-direction: row;
   padding: 2.5vw;
   justify-content: space-between;
+  background-color: white;
   width: 100%;
   padding: 3vw 0 3vw 0;
 }
@@ -1522,6 +1741,9 @@ button:active {
   .gradient-section .header-text--container .title {
     padding-top: 15vw;
   }
+  .text-rev--cont .text-reveal .text-rev--letter {
+    font-size: 2.5vw;
+  }
   .single-page--gallery {
     grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
   }
@@ -1538,6 +1760,12 @@ button:active {
   .main-links--container .main-link--box {
     height: 50vh;
     text-align: center;
+  }
+  .parallax-container .para-sec-1 {
+    height: 67vw;
+  }
+  .parallax-container .para-sec-2 {
+    top: 30vw;
   }
   .single-page--header--container {
     height: 45vw;
@@ -1599,6 +1827,15 @@ button:active {
   }
   .populated-items .project-item .row object a {
     font-size: 1.8vw;
+  }
+  .parallax-container .para-sec-1 p {
+    width: 60vw;
+  }
+  .parallax-container .para-sec-1 .para-sec-text-rev .text-reveal span {
+    font-size: 1.5vw;
+  }
+  .text-rev--cont .text-reveal .text-rev--letter {
+    font-size: 2.8vw;
   }
   .single-page--header--container {
     flex-direction: column;
@@ -1835,6 +2072,9 @@ button:active {
   h3 {
     font-size: 3vw;
   }
+  .text-rev--cont .text-reveal .text-rev--letter {
+    font-size: 3vw;
+  }
   h5 {
     font-size: 10vw;
   }
@@ -1843,6 +2083,21 @@ button:active {
   }
   p {
     font-size: 2.8vw;
+  }
+  .parallax-container .para-sec-1 {
+    height: 100vw;
+  }
+  .parallax-container .para-sec-1 p {
+    width: 80vw;
+  }
+  .parallax-container .para-sec-2 {
+    top: 56vw;
+  }
+  .parallax-container .para-sec-1 .para-sec-text-rev {
+    top: 38%;
+  }
+  .parallax-container .para-sec-1 .para-sec-text-rev .text-reveal span {
+    font-size: 2vw;
   }
   .populated-items {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -1985,6 +2240,10 @@ button:active {
     flex-direction: column;
     gap: 2vw;
     text-align: center;
+    align-items: center;
+  }
+  .stardew-project--container .analytics-section .analytics-container .text-rev--cont .text-reveal span {
+    font-size: 4vw;
   }
   .stardew-project--container .analytics-section .analytics-container .main-button,
   .stardew-project--container .analytics-section .analytics-container h3 {

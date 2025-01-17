@@ -15,7 +15,6 @@
     "aos": "^2.3.4",
     "axios": "^1.7.9",
     "date-fns": "^4.1.0",
-    "gsap": "^3.12.5",
     "jquery": "^3.7.1",
     "locomotive-scroll": "^4.1.4",
     "react": "^18.3.1",
