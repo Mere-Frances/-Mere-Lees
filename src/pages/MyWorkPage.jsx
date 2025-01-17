@@ -41,7 +41,7 @@ const MyWork = () => {
       <div className="parallax-container">
         <section className="para-sec para-sec-1">
           <h1>My Work</h1>
-          <div className="text-rev--cont para-sec-text-rev">
+          <div className="text-rev--cont para-sec-text-rev small-rev--let">
             <TextReveal text="Projects & Case Studies" />
           </div>
           <p>

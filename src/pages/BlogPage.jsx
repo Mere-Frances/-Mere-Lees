@@ -2,6 +2,7 @@ import React from 'react';
 import Blog from '../components/Blog';
 import BackButton from '../components/BackButton';
 import ContentSection from '../components/ContentSection';
+import TextReveal from '../components/TextReveal';
 
 import { FaThumbtack } from "react-icons/fa";
 
@@ -14,9 +15,14 @@ const BlogPage = () => {
 
       <section className='content-section pinned-blog'>
         <ContentSection 
-            title='My Story' 
+            title='Blog' 
             includeSvg={false}
         />
+        <div className='text-rev--cont-cent'>
+          <div className='text-rev--cont small-rev--let'>
+            <TextReveal text="Read all about it" />
+          </div>
+        </div>
         <div className='section-content--container extended-content--container'>
           <div className="blog-item--container">
 
@@ -30,7 +36,9 @@ const BlogPage = () => {
 
             <div className="blog-content--text">
               <div className="blog-content--titles">
-                <h6 id="blogSubTitle">My Story</h6>
+              <div className='text-rev--cont'>
+                <TextReveal text="Personal" />
+              </div>
               </div>
               <p id="blogMainText">My name is Meredith, and I am a creative UI/UX designer, developer and graphic
                   designer. I was born and rasied here in Aotearoa and spent two years of my life persuing my design

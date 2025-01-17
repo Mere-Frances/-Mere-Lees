@@ -43,8 +43,8 @@ const GradientSection = () => {
         <div className="header-text--container">
                 <div className="title">
                     <span>Haere mai Welcome.</span>
-                    <span className='sub-head'>Take a look around
-                        <a>My portfolio</a>   
+                    <span className='sub-head'>My name is Meredith, and I'm a UI/UX
+                        <a>Designer & Developer</a>   
                     </span>
                 </div>
             {/* <p>My name is Meredith, and I am a creative UI/UX designer and web developer.

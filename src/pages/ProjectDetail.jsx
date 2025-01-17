@@ -9,6 +9,8 @@ import ContentSection from '../components/ContentSection';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import ProjectHeadTest from '../components/ProjectHeadTest';
+
 const ProjectDetail = () => {
     const { id } = useParams();
     const navigate = useNavigate();
@@ -63,7 +65,8 @@ const ProjectDetail = () => {
     return (
         <>
             <BackButton />
-            <section className='single-page--header--container'>
+            <ProjectHeadTest/>
+            {/* <section className='single-page--header--container'>
                 <div className='single-page--header'>
                     <h1>{project.name}</h1>
                     <p>{project.caption}</p>
@@ -90,7 +93,7 @@ const ProjectDetail = () => {
                     </div>
                 </div>
                 <div className='image-wrapper'><img src={project.previewImage} alt={project.name}/></div>
-            </section>
+            </section> */}
 
             <section className='content-section pink-section'>
                 <ContentSection

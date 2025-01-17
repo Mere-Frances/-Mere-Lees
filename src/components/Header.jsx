@@ -9,8 +9,8 @@ const Header = () => {
             <section>
                 <div className="title">
                     <span>Haere mai Welcome.</span>
-                    <span className='sub-head'>Take a look around
-                        <a>My portfolio</a>   
+                    <span className='sub-head'>I'm Meredith, a UI/UX
+                        <a>Designer</a>   
                     </span>
                 </div>
             </section>

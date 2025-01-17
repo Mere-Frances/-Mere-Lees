@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import blogData from '/public/blogData.json';
 import ContentSection from './ContentSection';
+import TextReveal from './TextReveal';
 
 const Blog = () => {
     const [blogs, setBlogs] = useState([]);
@@ -18,7 +19,7 @@ const Blog = () => {
                 return (
                     <section key={index} className={`content-section ${sectionClass}`}>
                         <ContentSection 
-                            title={blog.title} 
+                            title='' 
                             includeSvg={true}
                         />
                         <div className='section-content--container extended-content--container'>
@@ -29,8 +30,9 @@ const Blog = () => {
 
                                 <div className="blog-content--text">
                                     <div className="blog-content--titles">
-                                        <h6 className="blogSubTitle">{blog.subTitle}</h6>
-                                        {/* <h2 className="blogTitle">{blog.title}</h2> */}
+                                    <div className='text-rev--cont'>
+                                        <TextReveal text={blog.title} />
+                                    </div>
                                     </div>
                                     <p className="blogMainText" dangerouslySetInnerHTML={{ __html: blog.mainText }}></p>
                                     <div className="blog-date">

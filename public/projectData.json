@@ -4,6 +4,7 @@
         "description": "",
         "caption": "A redesign for the charity, Storytime, an organization that focuses on helping strengthen whānau facing adversity in Aotearoa by supporting the building of bonds between a parent and child.",
         "url": "https://storytime-frontend-woad.vercel.app/#/",
+        "urlCase": "https://www.behance.net/gallery/216947379/The-Storytime-Foundation/modules/1235623923",
         "previewMockup": "./images/storytime-foundation-preview-mockups.png",
         "previewImage": "./images/storytime-mockup-prev.png",
         "biographyBrief": "The redesign and recoding of the Storytime website focused on creating an inclusive and accessible digital space that aligns with the organization’s mission to support New Zealand families. The project aimed to enhance the user experience by improving accessibility, cultural representation, and mindful content presentation. Key design principles incorporated bicultural elements through te reo Māori integration and embraced diversity to ensure that every visitor feels seen and valued. Additionally, the redesign emphasized interactive and engaging resources, fostering connections between parents and children while supporting the foundation’s community initiatives.",
@@ -63,7 +64,7 @@
         "date": "2024-12-01"
     },
     {
-        "name": "FOGB",
+        "name": "Friends of Golden Bay",
         "description": ": Friends of Golden Bay",
         "caption": "Friends of Golden Bay; a local conservational community, working to protect beautiful Golden Bay.",
         "url": "https://friends-of-golden-bay.vercel.app/",

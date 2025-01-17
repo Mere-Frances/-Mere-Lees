@@ -58,8 +58,9 @@ h3 {
   font-size: 2.2vw;
   text-transform: uppercase;
   letter-spacing: 0.25vw;
-  font-family: "Albert Sans", sans-serif;
   font-weight: 500;
+  font-family: Poppins;
+  color: #292929;
 }
 
 h4 {
@@ -231,6 +232,10 @@ a {
 
 .extended-title {
   padding-top: 14vw;
+}
+
+.small-rev--let .text-reveal .text-rev--letter {
+  font-size: 1.2vw;
 }
 
 nav {
@@ -597,6 +602,12 @@ header {
   padding-top: 0;
 }
 
+.pinned-blog .text-rev--cont-cent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw 0 3vw 0;
+}
 .pinned-blog .section-content--container .text-overlay--title h5 {
   color: #ffdada;
 }
@@ -860,11 +871,6 @@ body, html {
   position: absolute;
   top: 40%;
 }
-.para-sec-1 .para-sec-text-rev .text-reveal span {
-  font-family: Poppins;
-  color: #292929;
-  font-size: 1vw;
-}
 .para-sec-1 p {
   position: absolute;
   top: 50%;
@@ -955,31 +961,28 @@ body, html {
   width: 100%;
 }
 
-.single-page--header--container {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  height: 38vw;
-}
-.single-page--header--container .single-page--header {
+.project-head--cont {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 2vw 4vw;
-  width: 50%;
+  align-items: center;
+  padding: 2vw;
   gap: 2vw;
 }
-.single-page--header--container .single-page--header h1,
-.single-page--header--container .single-page--header p {
+.project-head--cont p {
   width: 70%;
+  text-align: center;
 }
-.single-page--header--container .single-page--header .project-tags {
+.project-head--cont .project-head--links {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+.project-head--cont .project-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
-.single-page--header--container .single-page--header .project-tags .project-tags-icons {
+.project-head--cont .project-tags .project-tags-icons {
   color: #292929;
   padding: 5px 10px;
   border-radius: 5px;
@@ -989,64 +992,33 @@ body, html {
   color: #292929;
   font-size: 1vw;
 }
-.single-page--header--container .single-page--header .project-tags .project-tags-icons:nth-child(6n+1) {
+.project-head--cont .project-tags .project-tags-icons:nth-child(6n+1) {
   background-color: #748982;
   color: #EEEEEE;
 }
-.single-page--header--container .single-page--header .project-tags .project-tags-icons:nth-child(6n+2) {
+.project-head--cont .project-tags .project-tags-icons:nth-child(6n+2) {
   background-color: #D2D2AF;
 }
-.single-page--header--container .single-page--header .project-tags .project-tags-icons:nth-child(6n+3) {
+.project-head--cont .project-tags .project-tags-icons:nth-child(6n+3) {
   background-color: #D3E1D4;
 }
-.single-page--header--container .single-page--header .project-tags .project-tags-icons:nth-child(6n+4) {
+.project-head--cont .project-tags .project-tags-icons:nth-child(6n+4) {
   background-color: #F6AB6A;
 }
-.single-page--header--container .single-page--header .project-tags .project-tags-icons:nth-child(6n+5) {
+.project-head--cont .project-tags .project-tags-icons:nth-child(6n+5) {
   background-color: #ECD7C4;
 }
-.single-page--header--container .single-page--header .project-tags .project-tags-icons:nth-child(6n+6) {
+.project-head--cont .project-tags .project-tags-icons:nth-child(6n+6) {
   background-color: #293030;
   color: #EEEEEE;
 }
-.single-page--header--container .single-page--header .project-navigation-container {
-  height: 5vw;
+.project-head--cont .image-wrapper {
+  width: 80%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: row;
-  padding: 2.5vw;
-  padding: 2.5vw 0;
-  flex-direction: row;
-  justify-content: space-between;
 }
-@media (max-width: 440px) {
-  .single-page--header--container .single-page--header .project-navigation-container {
-    padding: 1.5vw;
-  }
-}
-.single-page--header--container .single-page--header .project-navigation-container .page-nav-arrows {
-  display: flex;
-  align-items: center;
-  width: 30%;
-  height: 100%;
-  gap: 5vw;
-}
-.single-page--header--container .single-page--header .project-navigation-container .page-nav-arrows .previous-arrow,
-.single-page--header--container .single-page--header .project-navigation-container .page-nav-arrows .next-arrow {
-  cursor: url("../public/images/grab-cursor.png"), auto;
-}
-.single-page--header--container .image-wrapper {
-  padding: 2vw;
-  width: 50%;
-  height: inherit;
-}
-.single-page--header--container .image-wrapper img {
-  height: 100%;
-  width: 100%;
-  border-radius: 1vw;
-  -o-object-fit: cover;
-     object-fit: cover;
+.project-head--cont .image-wrapper img {
+  width: inherit;
 }
 
 .single-page--gallery {
@@ -1371,7 +1343,7 @@ footer .footer--container .copyright {
   flex-direction: row;
   padding: 2.5vw;
   justify-content: flex-start;
-  margin-top: 6vw;
+  margin-top: 7vw;
   padding: 0 3vw;
 }
 @media (max-width: 440px) {
@@ -1741,9 +1713,6 @@ button:active {
   .gradient-section .header-text--container .title {
     padding-top: 15vw;
   }
-  .text-rev--cont .text-reveal .text-rev--letter {
-    font-size: 2.5vw;
-  }
   .single-page--gallery {
     grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
   }
@@ -1766,18 +1735,6 @@ button:active {
   }
   .parallax-container .para-sec-2 {
     top: 30vw;
-  }
-  .single-page--header--container {
-    height: 45vw;
-  }
-  .single-page--header--container .single-page--header {
-    width: 60%;
-  }
-  .single-page--header--container .single-page--header p {
-    width: 100%;
-  }
-  .single-page--header--container .image-wrapper {
-    width: 40%;
   }
   .populated-items .project-item {
     height: 50vw;
@@ -1819,6 +1776,9 @@ button:active {
   nav {
     padding: 1rem 5vw;
   }
+  .back-button {
+    margin-top: 10vh;
+  }
   .populated-items {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
@@ -1836,37 +1796,6 @@ button:active {
   }
   .text-rev--cont .text-reveal .text-rev--letter {
     font-size: 2.8vw;
-  }
-  .single-page--header--container {
-    flex-direction: column;
-    height: auto;
-  }
-  .single-page--header--container .single-page--header {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    padding: 7vw;
-    gap: 3vw;
-  }
-  .single-page--header--container .single-page--header p {
-    width: 100%;
-  }
-  .single-page--header--container .single-page--header h1 {
-    display: flex;
-    flex-wrap: wrap;
-    width: auto;
-  }
-  .single-page--header--container .single-page--header .visible {
-    display: none;
-  }
-  .single-page--header--container .image-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 50vw;
-  }
-  .single-page--header--container .image-wrapper img {
-    width: 70%;
   }
   .hidden {
     display: flex;
@@ -1957,7 +1886,8 @@ button:active {
     font-size: 1.8vw;
   }
   .back-button {
-    margin-top: 6vw;
+    margin-top: 10vw;
+    padding: 1.5vw 5vw;
   }
   .analytics-section .analytics-container h3 {
     font-size: 4vw;
@@ -2026,6 +1956,12 @@ button:active {
   .populated-items .project-item .row object a {
     font-size: 1.8vw;
   }
+  .project-head--cont {
+    gap: 3vw;
+  }
+  .project-head--cont .image-wrapper {
+    width: 85%;
+  }
   .clock {
     height: 55vh;
     width: 100%;
@@ -2071,6 +2007,10 @@ button:active {
   }
   h3 {
     font-size: 3vw;
+  }
+  .back-button {
+    margin-top: 15vw;
+    padding: 1.5vw 5vw;
   }
   .text-rev--cont .text-reveal .text-rev--letter {
     font-size: 3vw;
@@ -2268,6 +2208,28 @@ button:active {
   .hidden .page-nav-arrows .previous-arrow img,
   .hidden .page-nav-arrows .next-arrow img {
     width: 20vw;
+  }
+  .project-head--cont {
+    gap: 5vw;
+  }
+  .project-head--cont p {
+    width: 90%;
+  }
+  .project-head--cont .project-head--links {
+    padding: 2vw 0;
+  }
+  .project-head--cont .project-head--links .main-button a {
+    font-size: 3vw;
+  }
+  .project-head--cont .project-tags {
+    width: 80%;
+    justify-content: center;
+  }
+  .project-head--cont .project-tags .project-tags-icons {
+    font-size: 2.2vw;
+  }
+  .project-head--cont .image-wrapper {
+    width: 90%;
   }
   .clock {
     height: 35vh;
