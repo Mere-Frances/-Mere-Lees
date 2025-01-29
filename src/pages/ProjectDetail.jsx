@@ -2,10 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import projectData from '/public/projectData.json';
 import BackButton from '../components/BackButton';
-import prevArrow from '/public/images/prev.svg';
-import nextArrow from '/public/images/next.svg';
-import { MdOutlineArrowOutward } from "react-icons/md";
-import ContentSection from '../components/ContentSection';
+import { MdKeyboardDoubleArrowUp, MdOutlineArrowForward, MdOutlineArrowBack } from "react-icons/md";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -55,122 +52,87 @@ const ProjectDetail = () => {
 
     const [activeFilter, setActiveFilter] = useState(Object.keys(filters)[0]);
 
-    useEffect(() => {
-        AOS.init({
-          duration: 1000,
-          once: true,
-        });
-      }, []);
+        // 🆕 Scroll-to-Top Button Logic
+        const [showScroll, setShowScroll] = useState(false);
+
+        useEffect(() => {
+            const handleScroll = () => {
+                if (window.scrollY > 300) {
+                    setShowScroll(true);
+                } else {
+                    setShowScroll(false);
+                }
+            };
+    
+            window.addEventListener("scroll", handleScroll);
+            return () => window.removeEventListener("scroll", handleScroll);
+        }, []);
+    
+        const scrollToTop = () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+
+      useEffect(() => {
+        AOS.refresh();
+    }, [id]);
 
     return (
         <>
             <BackButton />
             <ProjectHeadTest/>
-            {/* <section className='single-page--header--container'>
-                <div className='single-page--header'>
-                    <h1>{project.name}</h1>
-                    <p>{project.caption}</p>
-                    <div className="main-button">
-                        <a href={project.url} target='blank'>See the real thing</a>
-                        <MdOutlineArrowOutward />
+
+            <div className='project-case--cont'>
+                {project.caseRef && (
+                <div className='project-case-block video-block'>
+                    <div className='case-text'>
+                        <h3>{project.name}</h3>
+                        <p>{project.caseIntro}</p>
+                        <p>{project.caseRef}</p>
                     </div>
-                    <div className="project-tags">
-                        {project.tags.map((tech, index) => (
-                            <span key={index} className="project-tags-icons">
-                                {tech}
-                            </span>
-                        ))}
-                    </div>
-                    <div className="project-navigation-container visible">
-                        <div className="page-nav-arrows">
-                            <div className="previous-arrow" onClick={handlePrevious}>
-                                <img src={prevArrow} alt="Previous Arrow" className="arrow-icon previous-arrow-icon" />
-                            </div>
-                            <div className="next-arrow" onClick={handleNext}>
-                                <img src={nextArrow} alt="Next Arrow" className="arrow-icon next-arrow-icon" />
-                            </div>
-                        </div>
-                    </div>
+                    <video controls autoPlay muted loop preload="auto" data-aos="fade-up">
+                        <source src={project.caseVid} type="video/mp4"/>
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
-                <div className='image-wrapper'><img src={project.previewImage} alt={project.name}/></div>
-            </section> */}
-
-            <section className='content-section pink-section'>
-                <ContentSection
-                    title='Under the hood'
-                    includeSvg={true}
-                />
-                <div className='section-content--container single-page--about--container'>
-                    <div className="product-filters" data-aos="fade-up">
-                        {Object.keys(filters).map((filterKey) => (
-                            <a
-                                key={filterKey}
-                                onClick={() => setActiveFilter(filterKey)}
-                                className={`main-button filter-link ${activeFilter === filterKey ? "active" : ""}`}
-                            >
-                                {filterKey.charAt(0).toUpperCase() + filterKey.slice(1)}
-                            </a>
-                        ))}
-                    </div>
-
-                    <div className="product-dynamic-content" data-aos="fade-up">
-                        {filters[activeFilter]}
-                    </div>
+                )}
+                <div className='project-case-block'>
+                    <img src={project.caseBlock1} data-aos="fade-up"/>
                 </div>
-            </section>
-
-            <section className='content-section white-section'>
-                <ContentSection
-                    title='Mockups & more'
-                    includeSvg={true}
-                />
-                <div className='single-page--gallery' data-aos="fade-up">
-                    <img src={project.mockup1} alt={project.name}/>
-                    <img src={project.screenshot1} alt={project.name}/>
-                    <img src={project.mockup2} alt={project.name}/>
-                    <img src={project.screenshot2} alt={project.name}/>
-                    <img src={project.mockup3} alt={project.name}/>
-                    <img src={project.mockup4} alt={project.name}/>
+                <div className='project-case-block'>
+                    <img src={project.caseBlock2} data-aos="fade-up"/>
                 </div>
-            </section>
-
-            {/* <section className='content-section pink-section'>
-                <ContentSection
-                    title='Behind the scenes'
-                    includeSvg={true}
-                />
-                <div className='single-page--details'>
-                    <div class="card" data-aos="fade-up">
-                        <div class="card__content">
-                            <h3>Research</h3>
-                            <p>{project.research}</p> 
-                        </div>
-                        <img  src={project.researchImage} alt={project.name}/>
-                    </div>
-                    <div class="card" data-aos="fade-up">
-                        <div class="card__content">
-                            <h3>Wireframes</h3>
-                            <p>{project.wireframes}</p>                        
-                        </div>
-                        <img  src={project.wireframeImage} alt={project.name}/>
-                    </div>
-                    <div class="card" data-aos="fade-up">
-                        <div class="card__content">
-                            <h3>User Testing</h3>
-                            <p>{project.userTesting}</p>
-                        </div>
-                        <img  src={project.testingImage} alt={project.name}/>
-                    </div>
+                <div className='project-case-block'>
+                    <img src={project.caseBlock3} data-aos="fade-up"/>
                 </div>
-            </section> */}
+                <div className='project-case-block'>
+                    <img src={project.caseBlock4}/>
+                </div>
+                <div className='project-case-block'>
+                    <img src={project.caseBlock5} data-aos="fade-up"/>
+                </div>
+                <div className='project-case-block'>
+                    <img src={project.caseBlock6} data-aos="fade-up"/>
+                </div>
+            </div>
 
-            <div className="project-navigation-container hidden">
+            {showScroll && (
+                <div className="main-button back-up" onClick={scrollToTop}>
+                    <a href={project.urlCase} target='_blank' rel="noopener noreferrer">
+                        Back to top
+                    </a>
+                    <MdKeyboardDoubleArrowUp className='up-arrow' />
+                </div>
+            )}
+
+            <div className="project-navigation-container">
                 <div className="page-nav-arrows">
-                    <div className="previous-arrow" onClick={handlePrevious}>
-                        <img src={prevArrow} alt="Previous Arrow" className="arrow-icon previous-arrow-icon" />
+                    <div className="secondary-button" onClick={handlePrevious}>
+                    <MdOutlineArrowBack className='large-svg'/>
+                        <h3>Prev</h3>
                     </div>
-                    <div className="next-arrow" onClick={handleNext}>
-                        <img src={nextArrow} alt="Next Arrow" className="arrow-icon next-arrow-icon" />
+                    <div className="secondary-button" onClick={handleNext}>
+                        <h3>Next</h3>
+                        <MdOutlineArrowForward className='large-svg'/>
                     </div>
                 </div>
             </div>

@@ -75,7 +75,7 @@ const Analytics = () => {
                 <div className='text-rev--cont'>
                   <TextReveal text="Stardew Valley Planner" />
                 </div>
-                <div className="main-button">
+                <div className="secondary-button">
                     <a href='https://stardew-planner.vercel.app/' target='blank'>See the real thing</a>
                     <MdOutlineArrowOutward />
                 </div>

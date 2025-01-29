@@ -22,7 +22,7 @@ const GraphicsPage = () => {
                 <MdOutlineArrowOutward />
             </div>
         </div>
-        <div className='image-wrapper'><img src='/images/pins.webp'/></div>
+        {/* <div className='image-wrapper'><img src='/images/pins.webp'/></div> */}
       </section>
 
       <section className='content-section white-section extended-title graphics-items'>

@@ -1,7 +1,7 @@
 [
     {
         "name": "Storytime Foundation",
-        "description": "",
+        "description": " | Case Study",
         "caption": "A redesign for the charity, Storytime, an organization that focuses on helping strengthen whānau facing adversity in Aotearoa by supporting the building of bonds between a parent and child.",
         "url": "https://storytime-frontend-woad.vercel.app/#/",
         "urlCase": "https://www.behance.net/gallery/216947379/The-Storytime-Foundation/modules/1235623923",
@@ -18,12 +18,17 @@
         "mockup4": "./images/storytimemockup4.jpg",
         "screenshot1": "./images/storytime-screenshot-1.png",
         "screenshot2": "./images/storytime-screenshot-2.png",
-        "logo": "./images/storytime-logo.png",
-        "date": "2024-12-01"
+        "date": "2024-12-01",
+        "caseBlock1": "./images/storytime-casestudy-block-1.jpg",
+        "caseBlock2": "./images/storytime-casestudy-block-2.jpg",
+        "caseBlock3": "./images/storytime-casestudy-block-3.jpg",
+        "caseBlock4": "./images/storytime-casestudy-block-4.jpg",
+        "caseBlock5": "./images/storytime-casestudy-block-5.jpg",
+        "caseBlock6": "./images/storytime-casestudy-block-6.jpg"
     },
     {
         "name": "Hospice NZ",
-        "description": "",
+        "description": " | Case Study",
         "caption": "A compassionate and user-friendly website that improves accessibility and enhances the emotional connection for visitors seeking hospice care information, to provide a supportive, welcoming online experience.",
         "url": "https://hospice-frontend.vercel.app/",
         "previewMockup": "./images/hospice-preview-mockup.png",
@@ -39,12 +44,17 @@
         "mockup4": "./images/hospice-mockup4.png",
         "screenshot1": "./images/hospice.screenshot-1.png",
         "screenshot2": "./images/hospice-screenshot-2.png",
-        "logo": "./images/storytime-logo.png",
-        "date": "2024-12-01"
+        "date": "2024-12-01",
+        "caseBlock1": "./images/hospice-casestudy-block-1.jpg",
+        "caseBlock2": "./images/hospice-casestudy-block-2.jpg",
+        "caseBlock3": "./images/hospice-casestudy-block-3.jpg",
+        "caseBlock4": "./images/hospice-casestudy-block-4.jpg",
+        "caseBlock5": "./images/hospice-casestudy-block-5.jpg",
+        "caseBlock6": "./images/hospice-casestudy-block-6.jpg"
     },
     {
         "name": "SeaStay Suites",
-        "description": ": A retreat",
+        "description": " | Case Study",
         "caption": "A platform for booking beachside accommodations in New Zealand, promoting sustainable tourism and local businesses.",
         "url": "https://sea-stay.vercel.app/",
         "previewMockup": "./images/seastay-prev-mockup.png",
@@ -60,12 +70,17 @@
         "mockup4": "./images/seastay-mockup4.webp",
         "screenshot1": "./images/seastay-prev.jpg",
         "screenshot2": "./images/seastay-screenshot-2.png",
-        "logo": "./images/seastay-logo.webp",
-        "date": "2024-12-01"
+        "date": "2024-12-01",
+        "caseBlock1": "./images/seastay-casestudy-block-1.jpg",
+        "caseBlock2": "./images/seastay-casestudy-block-2.jpg",
+        "caseBlock3": "./images/seastay-casestudy-block-3.jpg",
+        "caseBlock4": "./images/seastay-casestudy-block-4.jpg",
+        "caseBlock5": "./images/seastay-casestudy-block-5.jpg",
+        "caseBlock6": "./images/seastay-casestudy-block-6.jpg"
     },
     {
         "name": "Friends of Golden Bay",
-        "description": ": Friends of Golden Bay",
+        "description": " | Case Study",
         "caption": "Friends of Golden Bay; a local conservational community, working to protect beautiful Golden Bay.",
         "url": "https://friends-of-golden-bay.vercel.app/",
         "previewMockup": "./images/fogb-mockup.webp",
@@ -81,12 +96,17 @@
         "mockup4": "./images/fogb-mockup2.webp",
         "screenshot1": "./images/goldenbay-prev.webp",
         "screenshot2": "./images/fogb-mockup.webp",
-        "logo": "./images/seastay-logo.webp",
-        "date": "2024-12-01"
+        "date": "2024-12-01",
+        "caseBlock1": "./images/fogb-casestudy-block-1.jpg",
+        "caseBlock2": "./images/fogb-casestudy-block-2.jpg",
+        "caseBlock3": "./images/fogb-casestudy-block-3.jpg",
+        "caseBlock4": "./images/fogb-casestudy-block-4.jpg",
+        "caseBlock5": "./images/fogb-casestudy-block-5.jpg",
+        "caseBlock6": "./images/fogb-casestudy-block-6.jpg"
     },
     {
         "name": "Amy's Beauty Salon",
-        "description": ": Reimagined",
+        "description": " | Case Study",
         "caption": "A simple yet stylish website that set the foundation for my web design journey, blending functionality with minimalism.",
         "url": "",
         "previewImage": "./images/amy's-mockup-prev.png",
@@ -101,19 +121,24 @@
         "mockup4": "./images/amyssalon-mockup4.webp",
         "screenshot1": "./images/amy-screenshot-1.jpg",
         "screenshot2": "./images/amy-screenshot-2.png",
-        "logo": "./images/amy-logo.webp",
-        "date": "2024-12-01"
+        "date": "2024-12-01",
+        "caseBlock1": "./images/amys-casestudy-block-1.jpg",
+        "caseBlock2": "./images/amys-casestudy-block-2.jpg",
+        "caseBlock3": "./images/amys-casestudy-block-3.jpg",
+        "caseBlock4": "./images/amys-casestudy-block-4.jpg",
+        "caseBlock5": "./images/amys-casestudy-block-5.jpg",
+        "caseBlock6": "./images/amys-casestudy-block-6.jpg"
     },
     {
         "name": "Hugo Prints",
-        "description": ": Off the grid",
+        "description": " | Landing Page",
         "caption": "A sleek, interactive prototype for an online print store, blending modern design with an intuitive user experience.",
         "url": "https://hugo-designs.vercel.app/",
         "previewImage": "./images/hugo-mockup-prev.png",
-        "biographyBrief": "This personal side project involved designing and developing a prototype for an online print store for a family member. The goal was to create a single-page website that was visually appealing, easy to navigate, and functional. The design aimed to reflect the business’s brand while providing an engaging user experience for potential customers looking to purchase print products. It was intended to be a proof of concept, showcasing how the online store could look and operate in a real-world scenario.",
+        "caseIntro": "This personal side project involved designing and developing a prototype for an online print store for a family member. The goal was to create a single-page website that was visually appealing, easy to navigate, and functional. The design aimed to reflect the business’s brand while providing an engaging user experience for potential customers looking to purchase print products. It was intended to be a proof of concept, showcasing how the online store could look and operate in a real-world scenario.",
         "biographyTools": "For this project, I used a combination of front-end technologies to bring the design to life. I structured the website with HTML, styled it with SCSS, and added interactivity using JavaScript and jQuery. To enhance the visual and functional elements, I incorporated libraries like Swiper JS for image sliders and Mapbox for an interactive map. The design was crafted using Figma to ensure a modern and responsive layout that would work seamlessly across devices.",
         "biographyOutcome": "The outcome was a functional and visually appealing prototype that met the project's objectives. The website design was responsive, allowing users to have an optimal viewing experience across different devices. The interactive features, like the image slider and map, added a layer of dynamism that improved user engagement. The project served as a valuable prototype that could be refined further for a live production version of the online print store.",
-        "biographyReflection": "This project allowed me to experiment with several front-end technologies and refine my skills in web design. Working with jQuery, SCSS, and JavaScript libraries to enhance the user experience was an excellent learning opportunity. I enjoyed the challenge of balancing aesthetics with functionality while ensuring the site remained user-friendly. It also provided a chance to practice responsive design, which I found essential for creating a seamless experience across various screen sizes. This project ignited my passion for web development and provided me with a tangible result to showcase in my portfolio.",
+        "caseRef": "This project allowed me to experiment with several front-end technologies and refine my skills in web design. Working with jQuery, SCSS, and JavaScript libraries to enhance the user experience was an excellent learning opportunity. I enjoyed the challenge of balancing aesthetics with functionality while ensuring the site remained user-friendly. It also provided a chance to practice responsive design, which I found essential for creating a seamless experience across various screen sizes. This project ignited my passion for web development and provided me with a tangible result to showcase in my portfolio.",
         "tags": ["JQuery", "Swiper JS", "Mapbox", "SCSS/SASS", "Figma", "Filtering"],
         "mockup1": "./images/hugoprints-mockup1.webp",
         "mockup2": "./images/hugoprints-mockup2.webp",
@@ -121,12 +146,14 @@
         "mockup4": "./images/hugoprints-mockup4.webp",
         "screenshot1": "./images/hugo-screenshot-1.jpg",
         "screenshot2": "./images/hugo-screenshot-2.webp",
-        "logo": "./images/hugo-logo.webp",
-        "date": "2024-12-01"
+        "date": "2024-12-01",
+        "caseVid": "./images/hugo-promo-vid.mp4",
+        "caseBlock1": "./images/hugo-casestudy-block-1.jpg",
+        "caseBlock2": "./images/hugo-casestudy-block-2.jpg"
     },
     {
         "name": "Lego Star Wars",
-        "description": ": Geek out",
+        "description": " | Interactive UI Experiment",
         "caption": "A playful, interactive catalog where LEGO Star Wars fans can explore and filter their favorite minifigures effortlessly.",
         "url": "https://lego-star-wars-minifigs.vercel.app/",
         "previewImage": "./images/lego-mockup-prev.png",
@@ -141,12 +168,11 @@
         "mockup4": "./images/lego-starwars-minifig-mockup4.webp",
         "screenshot1": "./images/lego-screenshot-1.jpg",
         "screenshot2": "./images/lego-screenshot-2.webp",
-        "logo": "./images/lego-logo.webp",
         "date": "2024-12-01"
     },
     {
         "name": "Loosies Superette",
-        "description": ": The revival",
+        "description": " | Case Study",
         "caption": "A redesign of Loosie’s Superette, creating a vibrant digital space, reflecting the brand’s personality while making key info easy to find.",
         "url": "https://loosies-superette.vercel.app/",
         "previewImage": "./images/loosies-mockup-prev.png",
@@ -161,12 +187,11 @@
         "mockup4": "./images/loosiessuperette-mockup4.webp",
         "screenshot1": "./images/loosies-screenshot-1.png",
         "screenshot2": "./images/loosies-screenshot-2.png",
-        "logo": "./images/loosies-logo.webp",
         "date": "2024-12-01"
     },
     {
         "name": "The Pokedex",
-        "description": "",
+        "description": " | Interactive UI Experiment",
         "caption": "A React-based Pokedex app that allows users to filter and view detailed information about all Pokémon.",
         "url": "https://pokedev-api.vercel.app/",
         "previewImage": "./images/pokedex-mockup-prev.png",
@@ -181,12 +206,11 @@
         "mockup4": "./images/thepokedex-mockup4.webp",
         "screenshot1": "./images/pokedex-screenshot-1.png",
         "screenshot2": "./images/pokedex-screenshot-2.webp",
-        "logo": "./images/pokedex-logo.webp",
         "date": "2024-12-01"
     },
     {
         "name": "Platypus Marketplace",
-        "description": ": Pre-loved",
+        "description": " | Case Study",
         "caption": "A user-friendly marketplace for buying and selling second-hand shoes, focusing on accessibility and brand identity.",
         "url": "https://github.com/PSTL-02/Second-Hand-Shoe-Reselling",
         "previewImage": "./images/platypus-mockup-prev.png",
@@ -201,12 +225,17 @@
         "mockup4": "./images/platypusmarkerplace-mockup4.webp",
         "screenshot1": "./images/platypus-screenshot-1.png",
         "screenshot2": "./images/platypus-screenshot-2.png",
-        "logo": "./images/platypus-logo.webp",
-        "date": "2024-12-01"
+        "date": "2024-12-01",
+        "caseBlock1": "./images/platypus-casestudy-block-1.jpg",
+        "caseBlock2": "./images/platypus-casestudy-block-2.jpg",
+        "caseBlock3": "./images/platypus-casestudy-block-3.jpg",
+        "caseBlock4": "./images/platypus-casestudy-block-4.jpg",
+        "caseBlock5": "./images/platypus-casestudy-block-5.jpg",
+        "caseBlock6": "./images/platypus-casestudy-block-6.jpg"
     },
     {
         "name": "Workout App",
-        "description": ": Get active",
+        "description": " | Interactive UI Experiment",
         "caption": "A workout app designed to help users stay motivated and track progress with personalized routines.",
         "url": "https://frontend-boilerplate-cyan.vercel.app/",
         "previewImage": "./images/workout-mockup-prev.png",
@@ -221,7 +250,6 @@
         "mockup4": "./images/workoutapp-mockup4.webp",
         "screenshot1": "./images/workout-screenshot-1.webp",
         "screenshot2": "./images/workout-screenshot-2.jpg",
-        "logo": "./images/workout-logo.webp",
         "date": "2024-12-01"
     }
 ]
