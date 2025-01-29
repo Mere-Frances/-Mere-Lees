@@ -2371,24 +2371,28 @@ button:active {
   .stardew-project--container .analytics-section .analytics-container .analytics-content .analytics h4 {
     font-size: 10vw;
   }
-  .hidden {
-    padding: 7vw 0;
+  .project-navigation-container .secondary-button {
+    padding: 2.2vw 3.5vw;
   }
-  .hidden .page-nav-arrows .previous-arrow img,
-  .hidden .page-nav-arrows .next-arrow img {
-    width: 20vw;
+  .project-navigation-container .secondary-button svg {
+    font-size: 4vw;
   }
   .project-head--cont {
     gap: 5vw;
+    padding: 6vw 3vw;
   }
   .project-head--cont p {
     width: 90%;
   }
   .project-head--cont .project-head--links {
     padding: 2vw 0;
+    flex-direction: column;
   }
   .project-head--cont .project-head--links .main-button a {
     font-size: 3vw;
+  }
+  .project-head--cont .project-head--links span {
+    display: none;
   }
   .project-head--cont .project-tags {
     width: 80%;
@@ -2399,6 +2403,12 @@ button:active {
   }
   .project-head--cont .image-wrapper {
     width: 90%;
+  }
+  .back-up {
+    padding-bottom: 10vw;
+  }
+  .back-up svg {
+    font-size: 5vw;
   }
   .clock {
     height: 35vh;

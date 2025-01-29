@@ -2965,29 +2965,43 @@ button {
         }
     }
 
-    .hidden {
-        padding: 7vw 0;
+    // .hidden {
+    //     padding: 7vw 0;
 
-        .page-nav-arrows {
+    //     .page-nav-arrows {
 
-            .previous-arrow,
-            .next-arrow {
-                img {
-                    width: 20vw;
-                }
+    //         .previous-arrow,
+    //         .next-arrow {
+    //             img {
+    //                 width: 20vw;
+    //             }
+    //         }
+    //     }
+    // }
+
+    .project-navigation-container{
+        .secondary-button{
+            padding: 2.2vw 3.5vw;
+            svg{
+                font-size: 4vw;
             }
         }
     }
 
     .project-head--cont{
         gap: 5vw;
+        padding: 6vw 3vw;
         p {
             width: 90%;
         }
         .project-head--links {
             padding: 2vw 0;
+            flex-direction: column;
             .main-button a{
                 font-size: 3vw;
+            }
+            span{
+                display: none;
             }
         }
         .project-tags{
@@ -2999,6 +3013,13 @@ button {
         }
         .image-wrapper{
             width: 90%;
+        }
+    }
+
+    .back-up{
+        padding-bottom: 10vw;
+        svg{
+            font-size: 5vw;
         }
     }
 
