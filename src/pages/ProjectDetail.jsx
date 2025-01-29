@@ -87,7 +87,6 @@ const ProjectDetail = () => {
                     <div className='case-text'>
                         <h3>{project.name}</h3>
                         <p>{project.caseIntro}</p>
-                        <p>{project.caseRef}</p>
                     </div>
                     <video controls autoPlay muted loop preload="auto" data-aos="fade-up">
                         <source src={project.caseVid} type="video/mp4"/>

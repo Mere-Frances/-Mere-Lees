@@ -26,18 +26,22 @@ const ProjectHeadTest = () => {
                 <h1>{project.name}</h1>
                 <p>{project.caption}</p>
                 <div className='project-head--links'>
-                    <div className="secondary-button">
-                        <a href={project.url} target='_blank' rel="noopener noreferrer">
-                            See the real thing
-                        </a>
-                        <MdOutlineArrowOutward />
-                    </div>
+                    {project.url && (
+                        <>
+                            <div className="secondary-button">
+                                <a href={project.url} target='_blank' rel="noopener noreferrer">
+                                    See the real thing
+                                </a>
+                                <MdOutlineArrowOutward />
+                            </div>
+                        </>
+                    )}
                     {project.urlCase && (
                         <>
                             <span>•</span>
                             <div className="secondary-button">
                                 <a href={project.urlCase} target='_blank' rel="noopener noreferrer">
-                                    Read the case study
+                                    Bēhance Case Study
                                 </a>
                                 <MdOutlineArrowOutward />
                             </div>
