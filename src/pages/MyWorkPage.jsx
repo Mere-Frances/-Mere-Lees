@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Projects from '../components/Projects';
+import GraphicProjects from '../components/GraphicProjects';
 import Footer from '../components/Footer';
 import ContentSection from '../components/ContentSection';
 import TextReveal from '../components/TextReveal';
@@ -7,27 +8,21 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const MyWork = () => {
-  // State to hold the current window width
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  // Set up effect hook to listen for window resize
   useEffect(() => {
-    // Update windowWidth on resize
     const handleResize = () => setWindowWidth(window.innerWidth);
 
-    // Attach resize event listener
     window.addEventListener('resize', handleResize);
 
-    // Clean up event listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
 
-  // Determine the image path based on window width
   const imagePath = windowWidth <= 440
-    ? '/images/mobile-pattern-background.png' // For mobile (width <= 440px)
-    : '/images/pattern-background.png'; // Default image for larger devices
+    ? '/images/mobile-pattern-background.png'
+    : '/images/pattern-background.png';
 
   useEffect(() => {
     AOS.init({
@@ -57,6 +52,15 @@ const MyWork = () => {
           <section className="content-section extended-title special-section">
             <ContentSection title="Website Design" includeSvg={true} />
             <Projects />
+          </section>
+        </section>
+
+        <section className="para-sec para-sec-2 para-sec-graphics-sec">
+          <section className='content-section pink-section pink-projects'>
+            <ContentSection 
+            title='Graphic Design' 
+            includeSvg={true}/>
+            <GraphicProjects/>
             <Footer />
           </section>
         </section>

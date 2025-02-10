@@ -1085,6 +1085,20 @@ body, html {
     justify-content: center;
     align-items: center;
   }
+
+  .para-sec-graphics-sec{
+    background-color: white;
+    .pink-projects .populated-items{
+        background-color: #ffdada;
+        column-gap: 3vw;
+    }
+    .pink-projects .extendo-pink{
+        padding-bottom: 8vw;
+        .image-wrapper {
+            img {}
+        }
+    }
+    }
   
   .para-sec-1 {
     display: flex;
@@ -1394,10 +1408,14 @@ body, html {
 .project-case--cont{
     padding: 3vw;
     .project-case-block{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         width: 100%;
         img, video{
             display: block;
             max-width: 100%;
+            width: 100%;
         }
     }
     .video-block{
@@ -2140,6 +2158,40 @@ button {
     }
 }
 
+@media only screen and (min-width: 2200px) {
+    
+.project-case--cont{
+    .project-case-block{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        img, video{
+            width: 70%;
+        }
+    }
+    .video-block{
+        display: flex;
+        width: 70%;
+        padding: 2vw;
+        gap: 4vw;
+        video{
+            width: 50%;
+        }
+        .case-text{
+            display: flex;
+            flex-direction: column;
+            gap: 2vw;
+            h3{
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+
+}
+
 @media (max-width: 1200px) {
 
     .single-page--gallery {
@@ -2267,6 +2319,18 @@ button {
             .row {
                 object a {
                     font-size: 1.2vw;
+                }
+            }
+        }
+    }
+
+    .para-sec-graphics-sec{
+        .pink-projects .populated-items {
+            column-gap: 8vw;
+            .project-item{
+                height: fit-content;
+                .image-wrapper {
+                    img {}
                 }
             }
         }

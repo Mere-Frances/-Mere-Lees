@@ -875,6 +875,17 @@ body, html {
   align-items: center;
 }
 
+.para-sec-graphics-sec {
+  background-color: white;
+}
+.para-sec-graphics-sec .pink-projects .populated-items {
+  background-color: #ffdada;
+  -moz-column-gap: 3vw;
+       column-gap: 3vw;
+}
+.para-sec-graphics-sec .pink-projects .extendo-pink {
+  padding-bottom: 8vw;
+}
 .para-sec-1 {
   display: flex;
   flex-direction: column;
@@ -1172,11 +1183,15 @@ body, html {
   padding: 3vw;
 }
 .project-case--cont .project-case-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
 }
 .project-case--cont .project-case-block img, .project-case--cont .project-case-block video {
   display: block;
   max-width: 100%;
+  width: 100%;
 }
 .project-case--cont .video-block {
   display: flex;
@@ -1826,6 +1841,34 @@ button:active {
   transform: rotate(-45deg);
 }
 
+@media only screen and (min-width: 2200px) {
+  .project-case--cont .project-case-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .project-case--cont .project-case-block img, .project-case--cont .project-case-block video {
+    width: 70%;
+  }
+  .project-case--cont .video-block {
+    display: flex;
+    width: 70%;
+    padding: 2vw;
+    gap: 4vw;
+  }
+  .project-case--cont .video-block video {
+    width: 50%;
+  }
+  .project-case--cont .video-block .case-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+  }
+  .project-case--cont .video-block .case-text h3 {
+    color: #292929;
+  }
+}
 @media (max-width: 1200px) {
   .single-page--gallery {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -1916,6 +1959,14 @@ button:active {
   }
   .populated-items .project-item .row object a {
     font-size: 1.2vw;
+  }
+  .para-sec-graphics-sec .pink-projects .populated-items {
+    -moz-column-gap: 8vw;
+         column-gap: 8vw;
+  }
+  .para-sec-graphics-sec .pink-projects .populated-items .project-item {
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .calculator {
     width: 36vw;
