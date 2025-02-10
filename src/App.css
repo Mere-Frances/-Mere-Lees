@@ -1386,7 +1386,6 @@ body, html {
   padding: 1vw;
 }
 .blog-container .blog-item--container .blog-image--container img {
-  height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
