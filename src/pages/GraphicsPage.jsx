@@ -1,40 +1,47 @@
 import React from 'react';
 import BackButton from '../components/BackButton';
 import { MdOutlineArrowOutward } from "react-icons/md";
+import ContentSection from '../components/ContentSection';
+import TextReveal from '../components/TextReveal';
 
 const GraphicsPage = () => {
   return (
     <>
-      <BackButton/>
-      <section className='single-page--header--container graphics-header'>
-        <div className='single-page--header'>
-          <div className='row'>
-            <img src='/images/hand-scribble.png'/>
-            <h1>Made</h1>
-          </div>
-            <p>These hand-made graphic hoodies and t-shirts are designed by yours truly, using fabric paint, a syringe,
-              and a whole lot of patience. Each piece embodies the unique and intricate style of cyber-sigilism,
-              making wearable art that's truly one-of-a-kind. You'll be wearing a piece of art that’s been
-              meticulously crafted with a personal touch, ensuring each item is as unique as you are. Thank you for
-              supporting my passion and for letting my art become a part of your life!</p>
-            <div className="main-button">
-                <a>I sell stuff </a>
-                <MdOutlineArrowOutward />
+      <BackButton pageLink='/'/>
+
+      <section id="blogResults" className="blog-container">
+        <section className='content-section pinned-blog'>
+          <ContentSection 
+              title='Handmade' 
+              includeSvg={false}
+          />
+          <div className='text-rev--cont-cent'>
+            <div className='text-rev--cont small-rev--let'>
+              <TextReveal text="My Arts & Crafts" />
             </div>
-        </div>
-        {/* <div className='image-wrapper'><img src='/images/pins.webp'/></div> */}
+          </div>
+          <div className='section-content--container minimised-container project-previews'>
+          <p className='centre-text'>I don’t just build websites—I love creating things with my hands too! When I’m not 
+            coding or designing, I’m painting one-of-a-kind hoodies and crafting little phone hippers (yep, those cute 
+            mini accessories that hang off your phone). Everything is made from scratch, with a whole lot of love and creativity.
+            <br/><br/>
+              These hand-made graphic hoodies, t-shirts and phone hippers are designed by yours truly, using paint, custom moulds,
+              and a whole lot of patience. Each clothing piece embodies the unique and intricate style of cyber-sigilism,
+              making wearable art that's truly one-of-a-kind.</p>
+          </div>
+        </section>
       </section>
 
-      <section className='content-section white-section extended-title graphics-items'>
+      <section className='content-section white-section graphics-items'>
         <div className="graphics-populated-items graphics-items">
-        <div className="card">
+          <div className="card">
               <img className="card__content" src='/images/hoodie-1-front.webp'/>
               <img className='back-img' src='/images/hoodie-1-back.webp'/>
           </div>
 
           <div className="card">
-              <img className="card__content" src='/images/hoodie-1-front.webp'/>
-              <img className='back-img' src='/images/hoodie-1-back.webp'/>
+              <img className="card__content" src='/images/hoodie-2-front.webp'/>
+              <img className='back-img' src='/images/hoodie-2-back.webp'/>
           </div>
 
           <div className="card">
@@ -48,6 +55,20 @@ const GraphicsPage = () => {
           </div>
         </div>
       </section>   
+
+      <section className='content-section white-section graphics-items'>
+        <div className="graphics-populated-items graphics-items">
+        <div className="card cute-card">
+              <img className="card__content" src='/images/bunny-1-front.jpg'/>
+              <img className='back-img' src='/images/bunny-1-back.jpg'/>
+          </div>
+
+          <div className="card cute-card">
+              <img className="card__content" src='/images/cat-1-front.jpg'/>
+              <img className='back-img' src='/images/cat-1-back.jpg'/>
+          </div>
+        </div>
+      </section>  
     </>
   )
 }

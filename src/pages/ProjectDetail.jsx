@@ -78,47 +78,36 @@ const ProjectDetail = () => {
 
     return (
         <>
-            <BackButton />
+            <BackButton pageLink='/projects'/>
             <ProjectHeadTest/>
 
             <div className='project-case--cont'>
                 {project.caseRef && (
-                <div className='project-case-block video-block'>
-                    <div className='case-text'>
-                        <h3>{project.name}</h3>
-                        <p>{project.caseIntro}</p>
+                    <div className='project-case-block video-block'>
+                        <div className='case-text'>
+                            <h3>{project.name}</h3>
+                            <p>{project.caseIntro}</p>
+                        </div>
+                        <video controls autoPlay muted loop preload="auto" data-aos="fade-up">
+                            <source src={project.caseVid} type="video/mp4"/>
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
-                    <video controls autoPlay muted loop preload="auto" data-aos="fade-up">
-                        <source src={project.caseVid} type="video/mp4"/>
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
                 )}
-                <div className='project-case-block'>
-                    <img src={project.caseBlock1} data-aos="fade-up"/>
-                </div>
-                <div className='project-case-block'>
-                    <img src={project.caseBlock2} data-aos="fade-up"/>
-                </div>
-                <div className='project-case-block'>
-                    <img src={project.caseBlock3} data-aos="fade-up"/>
-                </div>
-                <div className='project-case-block'>
-                    <img src={project.caseBlock4}/>
-                </div>
-                <div className='project-case-block'>
-                    <img src={project.caseBlock5} data-aos="fade-up"/>
-                </div>
-                <div className='project-case-block'>
-                    <img src={project.caseBlock6} data-aos="fade-up"/>
-                </div>
+                
+                {Object.keys(project)
+                    .filter(key => key.startsWith("caseBlock")) // Selects all caseBlock keys dynamically
+                    .map((key, index) => (
+                        <div className='project-case-block' key={index}>
+                            <img src={project[key]} data-aos="fade-up" alt={`Case Block ${index + 1}`} />
+                        </div>
+                    ))
+                }
             </div>
 
             {showScroll && (
                 <div className="main-button back-up" onClick={scrollToTop}>
-                    <a href={project.urlCase} target='_blank' rel="noopener noreferrer">
                         Back to top
-                    </a>
                     <MdKeyboardDoubleArrowUp className='up-arrow' />
                 </div>
             )}

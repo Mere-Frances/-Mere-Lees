@@ -1,19 +1,18 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import React from 'react';
+import { useNavigate, Link } from 'react-router-dom';
+import Links from '../routes/Links';
 
-const BackButton = () => {
+const BackButton = ({pageLink}) => {
   const navigate = useNavigate();
 
-  const handleGoBack = () => {
-    navigate(-1);
-  };
+  // const handleGoBack = () => {
+  //   navigate(-1);
+  // };
 
   return (
-    <div className="back-button secondary-button">
-        <div className="main-button" onClick={handleGoBack}>
-            <p>Back</p>
-        </div>
-    </div>
+    <Link className="back-button secondary-button" to={pageLink}>
+      Back
+    </Link>
   )
 }
 

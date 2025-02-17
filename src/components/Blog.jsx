@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import blogData from '/public/blogData.json';
 import ContentSection from './ContentSection';
 import TextReveal from './TextReveal';
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Blog = () => {
     const [blogs, setBlogs] = useState([]);
@@ -13,7 +14,6 @@ const Blog = () => {
     return (
         <>
             {blogs.map((blog, index) => {
-                // Alternate between 'pink-section' and 'blue-section' based on the index
                 const sectionClass = index % 2 === 0 ? 'pink-section' : 'blue-section';
 
                 return (
@@ -33,6 +33,16 @@ const Blog = () => {
                                     <div className='text-rev--cont'>
                                         <TextReveal text={blog.title} />
                                     </div>
+                                    
+                                    {blog.link && (
+                                        <>
+                                            <a href={blog.link} target='_blank' rel="noopener noreferrer" className="secondary-button blog-external-btn">
+                                                    Check this out
+                                                <MdOutlineArrowOutward />
+                                            </a>
+                                        </>
+                                    )}
+
                                     </div>
                                     <p className="blogMainText" dangerouslySetInnerHTML={{ __html: blog.mainText }}></p>
                                     <div className="blog-date">

@@ -1,5 +1,18 @@
 [
     {
+        "name": "LOLFS",
+        "description": " | Freelance Project",
+        "caption": "LOLFS is a collection of Living Off The Land (LOTL) file-sharing techniques, inspired by LOLRMM and LOLBAS. It categorizes methods for stealthy file transfers used by attackers and defenders.",
+        "url": "https://www.lolfs.app/",
+        "urlCase": "",
+        "previewMockup": "./images/lolfs-prev-mockup.png",
+        "previewImage": "./images/lolfs-mockup-prev.png",
+        "tags": ["React", "User testing", "Client Contract", "Fullstack", "Freelance"],
+        "date": "2025-04-12",
+        "caseBlock1": "./images/lolfs-casestudy-block-1.jpg",
+        "caseBlock2": "./images/lolfs-casestudy-block-2.jpg"
+    },
+    {
         "name": "Storytime Foundation",
         "description": " | Case Study",
         "caption": "A redesign for the charity, Storytime, an organization that focuses on helping strengthen whānau facing adversity in Aotearoa by supporting the building of bonds between a parent and child.",
@@ -155,6 +168,26 @@
         "caseBlock2": "./images/hugo-casestudy-block-2.jpg"
     },
     {
+        "name": "Big Bird",
+        "description": " | Case Study",
+        "caption": "An AR mobile device game, designed for the young people of Wellington when they visit Zealandia.",
+        "url": "https://www.figma.com/proto/5sNgr7r2zBebuNoLBSTdSN/Big-Bird-Proto?page-id=0%3A1&node-id=46-324&starting-point-node-id=46%3A324&t=OFEQghzn0EpmMdWA-1",
+        "urlCase": "https://www.behance.net/gallery/174086381/Big-Bird-App",
+        "previewImage": "./images/bigbird-mockup-prev.png",
+        "tags": ["Figma", "User Testing", "Collaboration", "Research", "Mobile app"],
+        "date": "2023-06-30",
+        "caseBlock1": "./images/bigbird-casestudy-block-1.jpg",
+        "caseBlock2": "./images/bigbird-casestudy-block-2.jpg",
+        "caseBlock3": "./images/bigbird-casestudy-block-3.jpg",
+        "caseBlock4": "./images/bigbird-casestudy-block-4.jpg",
+        "caseBlock5": "./images/bigbird-casestudy-block-5.jpg",
+        "caseBlock6": "./images/bigbird-casestudy-block-6.jpg",
+        "caseBlock7": "./images/bigbird-casestudy-block-7.gif",
+        "caseBlock8": "./images/bigbird-casestudy-block-8.jpg",
+        "caseBlock9": "./images/bigbird-casestudy-block-9.jpg",
+        "caseBlock10": "./images/bigbird-casestudy-block-10.jpg"
+    },
+    {
         "name": "Lego Star Wars",
         "description": " | Interactive UI Experiment",
         "caption": "A playful, interactive catalog where LEGO Star Wars fans can explore and filter their favorite minifigures effortlessly.",
@@ -193,25 +226,6 @@
         "date": "2024-12-01"
     },
     {
-        "name": "The Pokedex",
-        "description": " | Interactive UI Experiment",
-        "caption": "A React-based Pokedex app that allows users to filter and view detailed information about all Pokémon.",
-        "url": "https://pokedev-api.vercel.app/",
-        "previewImage": "./images/pokedex-mockup-prev.png",
-        "biographyBrief": "In this project, I created a Pokedex app using React and the PokeAPI, designed to allow users to browse, filter, and explore a full list of Pokemon. Users can search by type, name, or number and view detailed information about each Pokemon. This project served as a practical application of API integration, filter functionality, and responsive UI design, helping me deepen my understanding of building accessible and engaging interfaces in React.",
-        "biographyTools": "The project utilized a range of tools and technologies to ensure an efficient and scalable build. React.js served as the primary framework, enabling a smooth, single-page application (SPA) experience. I used Vite as the project’s build tool for optimized development and production environments. The PokeAPI was essential for data sourcing, and I incorporated filtering functions to create a seamless, user-friendly experience. To keep the project organized, I followed Agile methodologies, used a project management tool to meet deadlines, and managed dependencies to streamline the development process.",
-        "biographyOutcome": "The finished Pokedex app allows users to interact with a polished, intuitive interface where they can easily search and filter Pokemon data. The app’s responsive design and accessible navigation make it suitable for all audiences, and it performs well across devices, meeting industry standards for client-side applications. UML diagrams were created to document the app’s behavior and logic, supporting an organized, maintainable codebase. Overall, the app achieved its goals of functionality, performance, and accessibility, reflecting industry standards for SPAs.",
-        "biographyReflection": "",
-         "tags": ["API", "Vite", "React JS", "Filtering"],
-        "mockup1": "./images/thepokedex-mockup1.webp",
-        "mockup2": "./images/thepokedex-mockup2.webp",
-        "mockup3": "./images/thepokedex-mockup3.webp",
-        "mockup4": "./images/thepokedex-mockup4.webp",
-        "screenshot1": "./images/pokedex-screenshot-1.png",
-        "screenshot2": "./images/pokedex-screenshot-2.webp",
-        "date": "2024-12-01"
-    },
-    {
         "name": "Platypus Marketplace",
         "description": " | Case Study",
         "caption": "A user-friendly marketplace for buying and selling second-hand shoes, focusing on accessibility and brand identity.",
@@ -235,24 +249,5 @@
         "caseBlock4": "./images/platypus-casestudy-block-4.jpg",
         "caseBlock5": "./images/platypus-casestudy-block-5.jpg",
         "caseBlock6": "./images/platypus-casestudy-block-6.jpg"
-    },
-    {
-        "name": "Workout App",
-        "description": " | Interactive UI Experiment",
-        "caption": "A workout app designed to help users stay motivated and track progress with personalized routines.",
-        "url": "https://frontend-boilerplate-cyan.vercel.app/",
-        "previewImage": "./images/workout-mockup-prev.png",
-        "biographyBrief": "This project was my first full-stack application, built using the MERN stack—MongoDB, Express.js, React, and Node.js—alongside SCSS for styling. I designed this platform as an interactive space where users can register, log in, and manage their own posts while engaging with content from other users. The core functionality of the site revolves around CRUD operations, enabling users to create, edit, and delete posts and comments. I implemented password hashing and salting for secure user authentication, while a custom database API keeps the app running efficiently and securely. SCSS/SASS brings a clean and modern design to the interface, making the site easy to navigate and visually engaging.",
-        "biographyTools": "To bring this project to life, I used a variety of essential tools and technologies that made the development process both challenging and rewarding. MongoDB served as the database, storing user and post data, while Express.js and Node.js handled server-side logic. React was used on the front end to create a dynamic and responsive interface, while SCSS provided the styling needed for a modern and polished look. For testing and validating the API, I used Postman, which helped ensure each endpoint functioned as intended. Working with the MERN stack and SCSS demonstrated the power and flexibility of these technologies in building an interactive, full-stack application.",
-        "biographyOutcome": "The final outcome is a user-friendly, interactive platform that allows for seamless user management and content interaction. The CRUD functionality and secure authentication work together smoothly, providing users with a cohesive experience in creating and engaging with content. The SCSS styling gave the project a clean and contemporary look, aligning well with the goals of accessibility and ease of use. It was exciting to see all the features—user registration, login, posting, and commenting—come together into a functional application that aligns well with the initial design vision.",
-        "biographyReflection": "Working on this full-stack project was a fantastic opportunity to dive deep into the MERN stack and experience how each technology contributes to a fully functional application. Building a secure user management system with hashed and salted passwords was especially rewarding, as it challenged me to focus on application security alongside functionality. Seeing everything come together—from the API to the front-end design—reinforced the value of full-stack development in creating interactive and user-centered applications. Overall, this project pushed me to explore new technologies and tools, and it has motivated me to keep building and refining my skills in full-stack development.",
-        "tags": ["API", "Postman", "Fullstack", "SCSS/SASS", "Express JS", "MongoDB", "Custom Database", "Mern"],
-        "mockup1": "./images/workoutapp-mockup1.webp",
-        "mockup2": "./images/workoutapp-mockup2.webp",
-        "mockup3": "./images/workoutapp-mockup3.webp",
-        "mockup4": "./images/workoutapp-mockup4.webp",
-        "screenshot1": "./images/workout-screenshot-1.webp",
-        "screenshot2": "./images/workout-screenshot-2.jpg",
-        "date": "2024-12-01"
     }
 ]

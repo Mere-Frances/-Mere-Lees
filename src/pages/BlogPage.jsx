@@ -9,7 +9,8 @@ import { FaThumbtack } from "react-icons/fa";
 const BlogPage = () => {
   return (
     <>
-      <BackButton/>
+      <BackButton
+      pageLink='/'/>
 
       <section id="blogResults" className="blog-container">
 
@@ -23,6 +24,7 @@ const BlogPage = () => {
             <TextReveal text="Read all about it" />
           </div>
         </div>
+        
         <div className='section-content--container extended-content--container'>
           <div className="blog-item--container">
 
@@ -31,7 +33,7 @@ const BlogPage = () => {
             </div>
 
             <div className="blog-image--container pinned-image">
-              <img src='./images/me-cover-med.webp'/>
+              <img src='./images/me-and-cricket.jpg'/>
             </div>
 
             <div className="blog-content--text">

@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
+import Links from "../routes/Links";
+
 
 const DisclaimerCat = () => {
     const [isHovered, setIsHovered] = useState(false);
@@ -16,17 +19,18 @@ const DisclaimerCat = () => {
       setIsVisible(false);
     };
   return (
-    <div
-    className="icon-container"
-    onClick={handleClick}
-    onMouseEnter={handleMouseEnter}
-    onMouseLeave={handleMouseLeave}
-    style={{ display: isVisible ? 'flex' : 'none' }}
-    >
-      <img src='../images/cat-icon.png'
-        className={`jumping-icon`}
-      />
-  </div>
+    <Link
+      to='/graphics'
+      className="icon-container"
+      onClick={handleClick}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      style={{ display: isVisible ? 'flex' : 'none' }}
+      >
+        <img src='../images/cat-icon.png'
+          className={`jumping-icon`}
+        />
+    </Link>
   )
 }
 

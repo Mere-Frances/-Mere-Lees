@@ -129,6 +129,11 @@ p {
     font-size: 1vw;
 }
 
+.centre-text{
+    text-align: center;
+    width: 80%;
+}
+
 a {
     font-family: Poppins;
     color: $primary-color;
@@ -298,8 +303,6 @@ a {
         font-size: 150px;
         color: #fff;
       }
-      
-      header h1 {}
       
       .content h1 {
         line-height: 1000px;
@@ -1094,9 +1097,7 @@ body, html {
     }
     .pink-projects .extendo-pink{
         padding-bottom: 8vw;
-        .image-wrapper {
-            img {}
-        }
+
     }
     }
   
@@ -1183,7 +1184,7 @@ body, html {
 
             img {
                 width: 100%;
-                -o-object-fit: cover;
+                object-fit: cover;
                 border-radius: inherit;
                 transition: transform 0.4s ease;
             }
@@ -1660,6 +1661,14 @@ body, html {
                 width: 100%;
                 justify-content: flex-end;
             }
+
+            .blog-external-btn{
+                width: fit-content;
+                background-color: white;
+            }
+            .blog-external-btn:hover {
+                color: #e995a9;
+            }
         }
     }
 
@@ -2117,6 +2126,10 @@ button {
             transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
         }
 
+        .cute-card{
+            background-image: url(../public/images/scrap-two.jpg);
+        }
+
         .card__content {
             width: 100%;
             height: 100%;
@@ -2328,9 +2341,6 @@ button {
             column-gap: 8vw;
             .project-item{
                 height: fit-content;
-                .image-wrapper {
-                    img {}
-                }
             }
         }
     }
